@@ -81,3 +81,22 @@ document.getElementById("next-btn").addEventListener("click", () => {
 
 // Inicializar
 cargarAmuletos();
+
+
+// Verificar si es un dispositivo móvil
+function isMobileDevice() {
+  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+}
+
+// Forzar viewport de escritorio si es móvil
+if (isMobileDevice()) {
+  const viewport = document.querySelector('meta[name="viewport"]');
+  if (viewport) {
+    viewport.setAttribute('content', 'width=1024, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+  } else {
+    const meta = document.createElement('meta');
+    meta.name = 'viewport';
+    meta.content = 'width=1024, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+    document.getElementsByTagName('head')[0].appendChild(meta);
+  }
+}
