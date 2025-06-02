@@ -1,9 +1,40 @@
-/* ===== MARCO GENERAL DE LA PÁGINA ===== */
+/* ===== VARIABLES CSS PARA RESPONSIVIDAD ===== */
+:root {
+  /* Tamaños base */
+  --page-padding: clamp(20px, 5vw, 60px);
+  --section-padding: clamp(15px, 3vw, 30px);
+  --subsection-padding: clamp(10px, 2vw, 20px);
+  
+  /* Esquinas de página */
+  --corner-page-size: clamp(60px, 12vw, 120px);
+  
+  /* Esquinas de sección */
+  --corner-section-size: clamp(25px, 4vw, 40px);
+  
+  /* Esquinas de subsección */
+  --corner-subsection-size: clamp(15px, 2.5vw, 25px);
+  
+  /* Bordes horizontales */
+  --border-height: clamp(30px, 6vw, 60px);
+  --border-spacing: clamp(5px, 1vw, 10px);
+  
+  /* Navegación */
+  --arrow-width: clamp(45px, 9vw, 90px);
+  --arrow-height: clamp(70px, 14vw, 140px);
+  
+  /* Título */
+  --title-font-size: clamp(1.2rem, 4vw, 2.2rem);
+  --title-padding: clamp(10px, 2vw, 15px);
+}
+
+/* ===== MARCO GENERAL DE LA PÁGINA RESPONSIVE ===== */
 .page-frame {
   position: relative;
   min-height: 100vh;
-  padding: 60px 40px;
+  padding: var(--page-padding);
   box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* Contenedores de bordes de página */
@@ -20,14 +51,16 @@
   bottom: 0;
 }
 
-/* ===== ESTILOS GENERALES PARA BORDES ===== */
+/* ===== ESTILOS GENERALES PARA BORDES RESPONSIVE ===== */
 .corner {
-  width: 120px;
-  height: 120px;
+  width: var(--corner-page-size);
+  height: var(--corner-page-size);
   object-fit: contain;
   object-position: center;
   flex-shrink: 0;
   position: absolute;
+  max-width: 25vw;
+  max-height: 25vh;
 }
 
 /* Posicionamiento de esquinas de página */
@@ -51,12 +84,14 @@
   right: 0;
 }
 
-/* ===== MARCOS DE SECCIONES ===== */
+/* ===== MARCOS DE SECCIONES RESPONSIVE ===== */
 .bordered-section {
   position: relative;
-  margin: 2rem 0;
-  padding: 30px;
+  margin: clamp(1rem, 3vw, 2rem) 0;
+  padding: var(--section-padding);
   box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
 }
 
 .section-frame {
@@ -75,10 +110,12 @@
 .section-frame .corner-bl,
 .section-frame .corner-br {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: var(--corner-section-size);
+  height: var(--corner-section-size);
   object-fit: contain;
   object-position: center;
+  max-width: 15vw;
+  max-height: 15vh;
 }
 
 .section-frame .corner-tl { top: 0; left: 0; }
@@ -89,26 +126,32 @@
 /* Marcos más pequeños para historia y efectos */
 .bordered-subsection {
   position: relative;
-  margin: 1rem 0;
-  padding: 20px;
+  margin: clamp(0.5rem, 2vw, 1rem) 0;
+  padding: var(--subsection-padding);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .bordered-subsection .section-frame .corner-tl,
 .bordered-subsection .section-frame .corner-tr,
 .bordered-subsection .section-frame .corner-bl,
 .bordered-subsection .section-frame .corner-br {
-  width: 25px;
-  height: 25px;
+  width: var(--corner-subsection-size);
+  height: var(--corner-subsection-size);
   object-fit: contain;
   object-position: center;
+  max-width: 10vw;
+  max-height: 10vh;
 }
 
-/* ===== BORDES HORIZONTALES MEJORADOS ===== */
+/* ===== BORDES HORIZONTALES RESPONSIVE ===== */
 .bordered-horizontal {
   position: relative;
-  margin: 2rem 0;
-  padding: 50px 30px 50px 30px;
-  min-height: 120px;
+  margin: clamp(1rem, 3vw, 2rem) 0;
+  padding: clamp(25px, 5vw, 50px) var(--section-padding);
+  min-height: clamp(60px, 12vw, 120px);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .horizontal-borders {
@@ -125,24 +168,27 @@
   position: absolute;
   left: 0;
   width: 100%;
-  height: 60px;
+  height: var(--border-height);
   object-fit: contain;
   object-position: center;
+  max-height: 10vh;
 }
 
 .border-top {
-  top: 10px;
+  top: var(--border-spacing);
 }
 
 .border-bottom {
-  bottom: 10px;
+  bottom: var(--border-spacing);
 }
 
 .bordered-horizontal-pattern {
   position: relative;
-  margin: 2rem 0;
-  padding: 60px 30px;
-  min-height: 120px;
+  margin: clamp(1rem, 3vw, 2rem) 0;
+  padding: clamp(30px, 6vw, 60px) var(--section-padding);
+  min-height: clamp(60px, 12vw, 120px);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .bordered-horizontal-pattern::before,
@@ -151,7 +197,7 @@
   position: absolute;
   left: 0;
   width: 100%;
-  height: 50px;
+  height: clamp(25px, 5vw, 50px);
   background-size: auto 100%;
   background-repeat: repeat-x;
   background-position: center;
@@ -160,11 +206,11 @@
 }
 
 .bordered-horizontal-pattern::before {
-  top: 5px;
+  top: var(--border-spacing);
 }
 
 .bordered-horizontal-pattern::after {
-  bottom: 5px;
+  bottom: var(--border-spacing);
 }
 
 .bordered-horizontal > *:not(.horizontal-borders) {
@@ -175,43 +221,170 @@
 
 .bordered-horizontal h3 {
   margin-top: 0;
-  margin-bottom: 20px;
-  padding-top: 10px;
+  margin-bottom: clamp(10px, 2vw, 20px);
+  padding-top: clamp(5px, 1vw, 10px);
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
 }
 
 .bordered-horizontal div,
 .bordered-horizontal ul {
   margin: 0;
   line-height: 1.6;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
 }
 
 .bordered-horizontal p {
-  margin-bottom: 15px;
+  margin-bottom: clamp(8px, 2vw, 15px);
   line-height: 1.6;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
 }
 
 .bordered-horizontal p:last-child {
   margin-bottom: 0;
 }
 
-/* ===== NAVEGACIÓN CON FLECHAS ===== */
+/* ===== NAVEGACIÓN CON FLECHAS RESPONSIVE ===== */
 .flecha {
-  width: 90px;
-  height: 140px;
+  width: var(--arrow-width);
+  height: var(--arrow-height);
   cursor: pointer;
   transition: all 0.3s ease;
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+  filter: drop-shadow(0 0 clamp(5px, 1vw, 10px) rgba(255, 255, 255, 0.3));
   object-fit: contain;
   object-position: center;
+  max-width: 20vw;
+  max-height: 30vh;
 }
 
 .flecha:hover {
   transform: scale(1.1);
-  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.6));
+  filter: drop-shadow(0 0 clamp(8px, 1.5vw, 15px) rgba(255, 255, 255, 0.6));
 }
 
 .flecha:active {
   transform: scale(0.95);
+}
+
+/* ===== TÍTULO RESPONSIVE ===== */
+.titulo-container {
+  position: relative;
+  margin: clamp(1rem, 3vw, 2rem) auto;
+  padding: clamp(10px, 2vw, 20px) clamp(3px, 1vw, 5px) clamp(1px, 0.2vw, 1px);
+  object-fit: cover;
+  min-height: auto;
+  max-width: fit-content;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.titulo-container .horizontal-borders {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.titulo-container .border-horizontal {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: clamp(25px, 5vw, 50px);
+  object-fit: fill;
+  object-position: center;
+  display: block;
+  max-height: 8vh;
+}
+
+.titulo-container .border-top {
+  top: 0;
+}
+
+.titulo-container .border-bottom {
+  bottom: 0;
+}
+
+.titulo-container h2 {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  padding: var(--title-padding) 0;
+  white-space: nowrap;
+  font-size: var(--title-font-size);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: clamp(0.05em, 0.5vw, 0.1em);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ===== MEDIA QUERIES PARA AJUSTES ESPECÍFICOS ===== */
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .titulo-container h2 {
+    white-space: normal;
+    word-break: break-word;
+    hyphens: auto;
+  }
+  
+  .bordered-horizontal {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .page-frame {
+    padding: 15px;
+  }
+}
+
+/* Tabletas */
+@media (min-width: 481px) and (max-width: 768px) {
+  .titulo-container h2 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1200px) {
+  :root {
+    --corner-page-size: 120px;
+    --corner-section-size: 40px;
+    --corner-subsection-size: 25px;
+    --border-height: 60px;
+    --arrow-width: 90px;
+    --arrow-height: 140px;
+  }
+}
+
+/* Pantallas ultra anchas */
+@media (min-width: 1600px) {
+  .page-frame {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+/* ===== ORIENTACIÓN ===== */
+@media (orientation: landscape) and (max-height: 600px) {
+  .corner {
+    max-height: 20vh;
+  }
+  
+  .flecha {
+    max-height: 25vh;
+  }
+  
+  .border-horizontal {
+    max-height: 8vh;
+  }
 }
 
 /* ===== Z-INDEX MANAGEMENT ===== */
@@ -232,61 +405,6 @@
   z-index: 3;
 }
 
-/* ===== AJUSTES ESPECÍFICOS PARA EL TÍTULO CON BORDES MEJORADOS ===== */
-.titulo-container {
-  position: relative;
-  margin: 2rem auto;
-  padding: 20px 5px 1px 5px;
-  object-fit: cover;
-  min-height: auto;
-  max-width: fit-content;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.titulo-container .horizontal-borders {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.titulo-container .border-horizontal {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  object-fit: fill;
-  object-position: center;
-  display: block;
-}
-
-.titulo-container .border-top {
-  top: 0;
-}
-
-.titulo-container .border-bottom {
-  bottom: 0;
-}
-
-.titulo-container h2 {
-  position: relative;
-  z-index: 2;
-  margin: 0;
-  padding: 15px 0;
-  white-space: nowrap;
-  font-size: 2.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
 /* ===== CLASE AUXILIAR PARA DEBUGGING ===== */
 .debug-borders .border-horizontal {
   border: 2px solid rgba(255, 0, 0, 0.5);
@@ -296,4 +414,34 @@
 .debug-borders .corner {
   border: 2px solid rgba(0, 255, 0, 0.5);
   background-color: rgba(0, 255, 255, 0.1);
+}
+
+/* ===== MEJORAS DE ACCESIBILIDAD ===== */
+@media (prefers-reduced-motion: reduce) {
+  .flecha {
+    transition: none;
+  }
+  
+  .flecha:hover {
+    transform: none;
+  }
+  
+  .flecha:active {
+    transform: none;
+  }
+}
+
+/* ===== CONTENIDO FLEXIBLE ===== */
+.bordered-section,
+.bordered-horizontal,
+.bordered-subsection {
+  display: flex;
+  flex-direction: column;
+}
+
+.bordered-section > *:not(.section-frame),
+.bordered-horizontal > *:not(.horizontal-borders),
+.bordered-subsection > *:not(.section-frame) {
+  flex: 1;
+  min-width: 0;
 }
