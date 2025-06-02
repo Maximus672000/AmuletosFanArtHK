@@ -4,8 +4,6 @@
   flex-direction: row;
   padding: 2rem;
   gap: 2rem;
-  max-width: 100%;
-  box-sizing: border-box;
 }
 
 /* Parte izquierda: nombre, imagen, rareza */
@@ -14,7 +12,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 0; /* Previene overflow en flex items */
 }
 
 /* Parte derecha: historia y efectos */
@@ -23,22 +20,18 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-width: 0; /* Previene overflow en flex items */
 }
 
 /* Imagen del amuleto */
 #amulet-image {
   max-width: 70%;
-  width: 100%;
   height: auto;
   margin: 1rem 0;
-  object-fit: contain;
 }
 
 /* Historia separada por párrafos */
 #amulet-history p {
   margin-bottom: 0.75rem;
-  line-height: 1.6;
 }
 
 /* Lista de efectos */
@@ -49,7 +42,6 @@
 
 #amulet-effects li {
   margin-bottom: 0.5rem;
-  line-height: 1.4;
 }
 
 /* ---- Sinergias (Imagen derecha, texto izquierda) ---- */
@@ -58,21 +50,16 @@
   align-items: center;
   gap: 1rem;
   margin: 1rem 0;
-  flex-wrap: wrap;
 }
 
 .sinergia-texto {
   width: 80%;
-  min-width: 200px;
-  flex: 1;
 }
 
 .sinergia-img {
   width: 20%;
   max-width: 100px;
-  min-width: 60px;
   height: auto;
-  flex-shrink: 0;
 }
 
 /* ---- Recomendaciones (Imagen izquierda, texto derecha) ---- */
@@ -81,21 +68,16 @@
   align-items: center;
   gap: 1rem;
   margin: 1rem 0;
-  flex-wrap: wrap;
 }
 
 .recomendacion-img {
   width: 20%;
   max-width: 100px;
-  min-width: 60px;
   height: auto;
-  flex-shrink: 0;
 }
 
 .recomendacion-texto {
   width: 80%;
-  min-width: 200px;
-  flex: 1;
 }
 
 /* Estilo de navegación con flechas */
@@ -124,190 +106,4 @@
 
 .arrow-container.arrow-right {
   right: 0;
-}
-
-/* =============== MEDIA QUERIES PARA RESPONSIVIDAD =============== */
-
-/* Tablets y pantallas medianas (768px - 1024px) */
-@media screen and (max-width: 1024px) {
-  .ficha-amuletos {
-    padding: 1.5rem;
-    gap: 1.5rem;
-  }
-  
-  #amulet-image {
-    max-width: 80%;
-  }
-  
-  .sinergia-img,
-  .recomendacion-img {
-    max-width: 80px;
-    min-width: 50px;
-  }
-}
-
-/* Tablets pequeñas (481px - 768px) */
-@media screen and (max-width: 768px) {
-  .ficha-amuletos {
-    flex-direction: column;
-    padding: 1rem;
-    gap: 1rem;
-  }
-  
-  .ficha-izquierda,
-  .ficha-derecha {
-    width: 100%;
-  }
-  
-  #amulet-image {
-    max-width: 60%;
-  }
-  
-  .sinergia,
-  .recomendacion {
-    gap: 0.75rem;
-    margin: 0.75rem 0;
-  }
-  
-  .sinergia-texto,
-  .recomendacion-texto {
-    width: 75%;
-    min-width: 150px;
-  }
-  
-  .sinergia-img,
-  .recomendacion-img {
-    width: 25%;
-    max-width: 70px;
-    min-width: 40px;
-  }
-  
-  #amulet-effects {
-    padding-left: 1rem;
-  }
-}
-
-/* Móviles (320px - 480px) */
-@media screen and (max-width: 480px) {
-  .ficha-amuletos {
-    padding: 0.75rem;
-    gap: 0.75rem;
-  }
-  
-  #amulet-image {
-    max-width: 80%;
-  }
-  
-  #amulet-history p {
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
-  }
-  
-  #amulet-effects {
-    margin-top: 0.75rem;
-    padding-left: 0.75rem;
-  }
-  
-  #amulet-effects li {
-    margin-bottom: 0.4rem;
-    font-size: 0.9rem;
-  }
-  
-  .sinergia,
-  .recomendacion {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-    margin: 0.5rem 0;
-  }
-  
-  .sinergia-texto,
-  .recomendacion-texto {
-    width: 100%;
-    min-width: auto;
-  }
-  
-  .sinergia-img,
-  .recomendacion-img {
-    width: 60px;
-    max-width: 60px;
-    min-width: 40px;
-    align-self: center;
-  }
-  
-  /* Ajustar flechas de navegación en móviles */
-  .arrow-container.arrow-left {
-    left: 5px;
-  }
-  
-  .arrow-container.arrow-right {
-    right: 5px;
-  }
-}
-
-/* Móviles muy pequeños (hasta 320px) */
-@media screen and (max-width: 320px) {
-  .ficha-amuletos {
-    padding: 0.5rem;
-    gap: 0.5rem;
-  }
-  
-  #amulet-image {
-    max-width: 90%;
-  }
-  
-  #amulet-history p,
-  #amulet-effects li {
-    font-size: 0.85rem;
-  }
-  
-  .sinergia-img,
-  .recomendacion-img {
-    width: 50px;
-    max-width: 50px;
-  }
-}
-
-/* Pantallas muy grandes (1440px+) */
-@media screen and (min-width: 1440px) {
-  .ficha-amuletos {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2.5rem;
-    gap: 2.5rem;
-  }
-  
-  #amulet-image {
-    max-width: 60%;
-  }
-  
-  .sinergia-img,
-  .recomendacion-img {
-    max-width: 120px;
-  }
-}
-
-/* Mejoras para accesibilidad y usabilidad */
-@media (prefers-reduced-motion: reduce) {
-  .arrow-container {
-    transition: none;
-  }
-}
-
-/* Ajustes para modo paisaje en móviles */
-@media screen and (max-height: 500px) and (orientation: landscape) {
-  .ficha-amuletos {
-    flex-direction: row;
-    padding: 0.5rem;
-  }
-  
-  .ficha-izquierda,
-  .ficha-derecha {
-    width: 50%;
-  }
-  
-  #amulet-image {
-    max-width: 50%;
-    margin: 0.5rem 0;
-  }
 }
