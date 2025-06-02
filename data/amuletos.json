@@ -1,0 +1,235 @@
+[
+  {
+    "id": "manto-fantasma",
+    "nombre": "Manto Fantasma",
+    "imagen": "images/amuletos/MantoFantasma.png",
+    "muescas": 2,
+    "rareza": "Vacío",
+    "historia": "Al ser confiscado junto con 'Botas de silencio' los orígenes de este encanto son igual de inciertos que el ya antes mencionado.\n\nTeorizando que podría pertenecer a un tipo de culto de insectos, muy similar a la compañía Grimm.",
+    "efectos": [
+      "El usuario se camufla con el entorno volviéndolo semitranslúcido.",
+      "Mientras el usuario esté camuflado, su fuerza aumentará levemente. (+10% a ataques cuerpo a cuerpo).",
+      "Si el usuario recibe un golpe directo este perderá el camuflaje, recuperándolo después de 1 minuto."
+    ],
+    "sinergias": [
+      {
+        "nombre": "Botas de silencio",
+        "descripcion": "Reduce a la mitad el tiempo necesario para recuperar el camuflaje tras ser golpeado.",
+        "imagen": "img/amuletos/botas-de-silencio.png"
+      }
+    ],
+    "recomendaciones": [
+      {
+        "personaje": "assets/personaje-maximus.png",
+        "texto": "Este amuleto es perfecto para cazadores pacientes que prefieren atacar desde las sombras. Aprovéchalo en zonas oscuras o contra enemigos lentos."
+      }
+    ]
+  },
+  {
+    "id": "remanente-codicioso",
+    "nombre": "Remanente codicioso",
+    "imagen": "images/amuletos/RemanenteCodicioso.png",
+    "muescas": 3,
+    "rareza": "Pálida",
+    "historia": "Este amuleto, el primero creado por Maximus, fue forjado utilizando un método descubierto por un maestro del alma, el mismo que permitió la creación del amuleto 'Alma Voraz'. Este encanto alberga la esencia de una peculiar variante del Engullecortos, especializada en devorar a los insectos más ávidos y codiciosos.",
+    "efectos": [
+      "Capa viviente: Otorga al portador una capa orgánica que extiende sus raíces para atacar a enemigos cercanos, con un alcance máximo de 5 metros.",
+      "Detección de Geo: La capa viviente alerta al portador de la presencia de depósitos de geo cercanos, facilitando su localización."
+    ],
+    "sinergias": [
+      {
+        "nombre": "Alma Voraz",
+        "descripcion": "Aumenta el alcance de la capa viviente y mejora la detección de geo.",
+        "imagen": "images/amuletos/AlmaVoraz.png"
+      },
+      {
+        "nombre": "Corazón pálida",
+        "descripcion": "La capa viviente se fortalece y puede drenar vida de los enemigos.",
+        "imagen": "images/amuletos/CorazonPalida.png"
+      },
+      {
+        "nombre": "Ojos de cazador",
+        "descripcion": "Combina la detección de geo con visión nocturna mejorada.",
+        "imagen": "images/amuletos/OjosDeCazador.png"
+      }
+    ],
+    "recomendaciones": [
+      {
+        "personaje": "assets/personaje-maximus.png",
+        "texto": "Ideal para exploradores y recolectores. La capa viviente te dará ventaja en combate mientras buscas tesoros."
+      }
+    ]
+  },
+  {
+    "id": "mirada-penetrante",
+    "nombre": "Mirada penetrante",
+    "imagen": "images/amuletos/MiradaPenetrante.png",
+    "muescas": 2,
+    "rareza": "Radiante",
+    "historia": "Este amuleto se originó a partir de las acciones desesperadas de una viajera que se encontraba en Hallownest durante el inicio de la infección de Radiance. Al borde de sucumbir a la infección, en un último esfuerzo por mantener su conciencia, lanzó un hechizo que provocó la pérdida de su cuerpo y encapsuló su alma en un encanto creado por la propia magia del conjuro.",
+    "efectos": [
+      "Los hechizos o habilidades basadas en luz ahora infligirán daño.",
+      "Aumenta el poder de los hechizos lanzados en un 25%.",
+      "Cuando el usuario recibe un ataque, el amuleto desatará una pequeña explosión radial, empujando a los enemigos cercanos y causando daño moderado."
+    ],
+    "sinergias": [
+      {
+        "nombre": "Corazón radiante",
+        "descripcion": "Incrementa el daño de la explosión radial y permite curación con luz.",
+        "imagen": "images/amuletos/CorazonRadiante.png"
+      },
+      {
+        "nombre": "Alma pura",
+        "descripcion": "Reduce el costo de alma de los hechizos potenciados.",
+        "imagen": "images/amuletos/AlmaPura.png"
+      },
+      {
+        "nombre": "Remanente codicioso",
+        "descripcion": "La capa viviente se alimenta de la energía radiante para fortalecerse.",
+        "imagen": "images/amuletos/RemanenteCodicioso.png"
+      },
+      {
+        "nombre": "Espiral de caracol",
+        "descripcion": "Los proyectiles envenenados ahora también brillan y causan daño radiante.",
+        "imagen": "images/amuletos/EspiralDeCaracol.png"
+      }
+    ],
+    "recomendaciones": [
+      {
+        "personaje": "assets/personaje-maximus.png",
+        "texto": "Perfecto para magos que buscan potenciar sus hechizos. La explosión defensiva te salvará en situaciones difíciles."
+      }
+    ]
+  },
+  {
+    "id": "pacto-sabiavida",
+    "nombre": "Pacto de sabiavida",
+    "imagen": "images/amuletos/PactoDeSabiavida.png",
+    "muescas": 3,
+    "rareza": "Radiante",
+    "historia": "Un amuleto formado por el deseo conjunto de dos insectos al morir. Concebido por un dúo compuesto por un caballero y un sanador, ambos adoradores de la Sabiavida, quienes fueron superados en una batalla donde su anhelo final era permanecer con vida.",
+    "efectos": [
+      "Cada vez que el usuario realiza 5 golpes efectivos, obtiene o regenera una Máscara de Saviavida. Puede acumular hasta un máximo de 5 máscaras adicionales por encima del límite normal de máscaras del usuario.",
+      "Otorga cierto grado de control de la sabiavida al usuario."
+    ],
+    "sinergias": [
+      {
+        "nombre": "Corazón fragante",
+        "descripcion": "Las máscaras de Sabiavida se regeneran más rápidamente.",
+        "imagen": "images/amuletos/CorazonFragrante.png"
+      },
+      {
+        "nombre": "Forma de Unn",
+        "descripcion": "Permite moverse mientras se regeneran las máscaras de Sabiavida.",
+        "imagen": "images/amuletos/FormaDeUnn.png"
+      }
+    ],
+    "recomendaciones": [
+      {
+        "personaje": "assets/personaje-maximus.png",
+        "texto": "Ideal para guerreros agresivos. Mantén el combate activo para acumular máscaras extra y dominar la batalla."
+      }
+    ]
+  },
+  {
+    "id": "coraza-palida",
+    "nombre": "Coraza pálida",
+    "imagen": "images/amuletos/CorazaPalida.png",
+    "muescas": 3,
+    "rareza": "Pálida",
+    "historia": "Los restos de un fiel caballero del rey pálido. El amuleto refleja la noble naturaleza de este insecto cuando se encontraba en vida.",
+    "efectos": [
+      "Cuando la vida del usuario desciende por debajo del 50%, un escudo aparecerá automáticamente para protegerlo de cualquier daño durante unos segundos, justo antes de recibir el impacto. Este efecto puede activarse hasta tres veces antes de agotarse.",
+      "Las tres cargas del amuleto se restauran completamente al descansar.",
+      "Si el usuario utiliza concentración o un hechizo de curación, podrá recuperar cargas del amuleto, en función del número de máscaras restauradas."
+    ],
+    "sinergias": [
+      {
+        "nombre": "Mirada penetrante",
+        "descripcion": "El escudo refleja parte del daño recibido como energía radiante.",
+        "imagen": "images/amuletos/MiradaPenetrante.png"
+      },
+      {
+        "nombre": "Corazón fragante",
+        "descripcion": "Acelera la regeneración de cargas del escudo.",
+        "imagen": "images/amuletos/CorazonFragrante.png"
+      },
+      {
+        "nombre": "Ojos de cazador",
+        "descripcion": "El escudo otorga visión mejorada mientras está activo.",
+        "imagen": "images/amuletos/OjosDeCazador.png"
+      }
+    ],
+    "recomendaciones": [
+      {
+        "personaje": "assets/personaje-maximus.png",
+        "texto": "Un amuleto defensivo confiable para situaciones peligrosas. Planifica tus curaciones para maximizar las cargas del escudo."
+      }
+    ]
+  },
+  {
+    "id": "espiral-caracol",
+    "nombre": "Espiral de caracol",
+    "imagen": "images/amuletos/EspiralDeCaracol.png",
+    "muescas": 1,
+    "rareza": "Vacío",
+    "historia": "Nacido en el momento final de un caracol a las afueras del reino; este amuleto posee un veneno sumamente peligroso. Su peligrosidad es tan elevada que, incluso para aquellas especies que han desarrollado este mismo mecanismo de defensa, resulta fatal, llevándolas a la muerte en cuestión de minutos.",
+    "efectos": [
+      "Los proyectiles no mágicos lanzados por el usuario están impregnados con una pequeña dosis de veneno, que daña al enemigo con el tiempo. Para remover el veneno de un objetivo afectado, el usuario del amuleto solo debe tocarlo, deteniendo así el envenenamiento.",
+      "(2 de daño por segundo al envenenar a un objetivo, pudiéndose acumular este efecto hasta 4 veces)."
+    ],
+    "sinergias": [
+      {
+        "nombre": "Mirada penetrante",
+        "descripcion": "Los proyectiles envenenados ahora también causan daño radiante.",
+        "imagen": "images/amuletos/MiradaPenetrante.png"
+      },
+      {
+        "nombre": "Marca del orgullo",
+        "descripcion": "Los ataques cuerpo a cuerpo también aplican el veneno.",
+        "imagen": "images/amuletos/MarcaDelOrgullo.png"
+      },
+      {
+        "nombre": "Remanente codicioso",
+        "descripcion": "La capa viviente puede esparcir el veneno a múltiples enemigos.",
+        "imagen": "images/amuletos/RemanenteCodicioso.png"
+      },
+      {
+        "nombre": "Ojos de cazador",
+        "descripcion": "Permite ver el estado de envenenamiento de los enemigos.",
+        "imagen": "images/amuletos/OjosDeCazador.png"
+      }
+    ],
+    "recomendaciones": [
+      {
+        "personaje": "assets/personaje-maximus.png",
+        "texto": "Excelente para arqueros y usuarios de proyectiles. El bajo costo en muescas lo hace ideal para cualquier build."
+      }
+    ]
+  },
+  {
+    "id": "ojos-cazador",
+    "nombre": "Ojos de cazador",
+    "imagen": "images/amuletos/OjosDeCazador.png",
+    "muescas": 1,
+    "rareza": "Vacío",
+    "historia": "Perteneciente a un antiguo desertor mantis que fue exiliado a Nido Profundo, este insecto, a pesar de su gran habilidad en combate, no pudo sobrevivir más de un par de años. La falta de luz en ese lugar resultó fatal, y murió con el anhelo de haber tenido las capacidades necesarias para sobrevivir en este lugar.",
+    "efectos": [
+      "Otorga visión nocturna al portador.",
+      "Si el portador es una mantis sus reflejos se verán incrementados al doble."
+    ],
+    "sinergias": [
+      {
+        "nombre": "Remanente codicioso",
+        "descripcion": "Combina la detección de geo con visión nocturna mejorada.",
+        "imagen": "images/amuletos/RemanenteCodicioso.png"
+      }
+    ],
+    "recomendaciones": [
+      {
+        "personaje": "assets/personaje-maximus.png",
+        "texto": "Fundamental para explorar áreas oscuras. Si eres una mantis, este amuleto te convertirá en un guerrero letal."
+      }
+    ]
+  }
+]

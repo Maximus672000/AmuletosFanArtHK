@@ -1,0 +1,331 @@
+/* ===== MARCO GENERAL DE LA PÁGINA ===== */
+.page-frame {
+  position: relative;
+  min-height: 100vh;
+  padding: 60px 40px;
+  box-sizing: border-box;
+}
+
+/* Contenedores de bordes de página */
+.page-border {
+  position: fixed;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.page-border-corners {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* ===== ESTILOS GENERALES PARA BORDES ===== */
+.corner {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  flex-shrink: 0;
+  position: absolute;
+}
+
+/* Posicionamiento de esquinas de página */
+.page-border-corners .corner-tl {
+  top: 0;
+  left: 0;
+}
+
+.page-border-corners .corner-tr {
+  top: 0;
+  right: 0;
+}
+
+.page-border-corners .corner-bl {
+  bottom: 0;
+  left: 0;
+}
+
+.page-border-corners .corner-br {
+  bottom: 0;
+  right: 0;
+}
+
+/* ===== MARCOS DE SECCIONES ===== */
+.bordered-section {
+  position: relative;
+  margin: 2rem 0;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.section-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Posicionamiento de esquinas en marcos de sección */
+.section-frame .corner-tl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.section-frame .corner-tr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.section-frame .corner-bl {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.section-frame .corner-br {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+}
+
+/* Marcos más pequeños para historia y efectos */
+.bordered-subsection {
+  position: relative;
+  margin: 1rem 0;
+  padding: 20px;
+}
+
+.bordered-subsection .section-frame .corner-tl,
+.bordered-subsection .section-frame .corner-tr,
+.bordered-subsection .section-frame .corner-bl,
+.bordered-subsection .section-frame .corner-br {
+  width: 25px;
+  height: 25px;
+}
+
+/* ===== BORDES HORIZONTALES PARA HISTORIA Y EFECTOS ===== */
+.bordered-horizontal {
+  position: relative;
+  margin: 2rem 0;
+  padding: 60px 30px 55px 30px; /* Aumentamos el padding vertical */
+  min-height: 120px; /* Aseguramos altura mínima */
+}
+
+.horizontal-borders {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.border-horizontal {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50px; /* Aumentamos la altura del borde */
+  object-fit: contain; /* Cambiamos a contain para evitar cortes */
+  object-position: center;
+}
+
+.border-top {
+  top: 0;
+}
+
+.border-bottom {
+  bottom: 0;
+}
+
+/* Contenido dentro de bordes horizontales */
+.bordered-horizontal > *:not(.horizontal-borders) {
+  position: relative;
+  z-index: 2;
+  margin: 0; /* Eliminamos márgenes para evitar problemas de espaciado */
+}
+
+/* Ajustes específicos para el contenido */
+.bordered-horizontal h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-top: 10px; /* Agregamos padding en lugar de margin */
+}
+
+.bordered-horizontal div,
+.bordered-horizontal ul {
+  margin: 0;
+  line-height: 1.6; /* Mejoramos el espaciado entre líneas */
+}
+
+.bordered-horizontal p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.bordered-horizontal p:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+/* Tablets */
+@media (max-width: 768px) {
+  .border-horizontal {
+    height: 40px;
+  }
+  
+  .bordered-horizontal {
+    padding: 50px 20px 45px 20px;
+    min-height: 100px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  .border-horizontal {
+    height: 35px;
+  }
+  
+  .bordered-horizontal {
+    padding: 45px 15px 40px 15px;
+    min-height: 80px;
+  }
+}
+
+/* ===== NAVEGACIÓN CON FLECHAS ===== */
+.navegacion {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+  z-index: 100;
+}
+
+.arrow-container {
+  position: relative;
+  padding: 10px;
+}
+
+.flecha {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+}
+
+.flecha:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.6));
+}
+
+.flecha:active {
+  transform: scale(0.95);
+}
+
+/* ===== Z-INDEX MANAGEMENT ===== */
+.page-border {
+  z-index: 1000;
+}
+
+.navegacion {
+  z-index: 100;
+}
+
+.section-frame {
+  z-index: 2;
+}
+
+.bordered-section > *:not(.section-frame) {
+  position: relative;
+  z-index: 3;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+/* Tablets */
+@media (max-width: 768px) {
+  .page-frame {
+    padding: 40px 20px;
+  }
+ 
+  .corner {
+    width: 40px;
+    height: 40px;
+  }
+ 
+  .section-frame .corner-tl,
+  .section-frame .corner-tr,
+  .section-frame .corner-bl,
+  .section-frame .corner-br {
+    width: 30px;
+    height: 30px;
+  }
+ 
+  .flecha {
+    width: 50px;
+    height: 50px;
+  }
+
+  .border-horizontal {
+    height: 30px;
+  }
+  
+  .bordered-horizontal {
+    padding: 35px 15px 30px 15px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  .page-frame {
+    padding: 30px 15px;
+  }
+ 
+  .corner {
+    width: 30px;
+    height: 30px;
+  }
+ 
+  .section-frame .corner-tl,
+  .section-frame .corner-tr,
+  .section-frame .corner-bl,
+  .section-frame .corner-br {
+    width: 20px;
+    height: 20px;
+  }
+ 
+  .bordered-subsection .section-frame .corner-tl,
+  .bordered-subsection .section-frame .corner-tr,
+  .bordered-subsection .section-frame .corner-bl,
+  .bordered-subsection .section-frame .corner-br {
+    width: 15px;
+    height: 15px;
+  }
+ 
+  .flecha {
+    width: 40px;
+    height: 40px;
+  }
+
+  .border-horizontal {
+    height: 25px;
+  }
+  
+  .bordered-horizontal {
+    padding: 30px 10px 25px 10px;
+  }
+}
