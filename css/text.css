@@ -1,305 +1,144 @@
 /* Importamos fuentes más similares a Hollow Knight */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Trajan+Pro:wght@400;700&display=swap');
 
-/* Variables CSS para mejor mantenimiento */
-:root {
-  --primary-color: #f5f5f5;
-  --secondary-color: #e8e8e8;
-  --text-color: #d8d8d8;
-  --bg-color: #0a0a0a;
-  --border-color: #333;
-  --shadow-light: rgba(255, 255, 255, 0.3);
-  --shadow-medium: rgba(255, 255, 255, 0.2);
-  --shadow-dark: rgba(0, 0, 0, 0.8);
-  
-  /* Tamaños base fluidos */
-  --font-base: clamp(1rem, 2.5vw, 1.1rem);
-  --font-h3: clamp(1.2rem, 4vw, 1.6rem);
-  --font-h2: clamp(1.5rem, 5vw, 2rem);
-  --font-h1: clamp(2rem, 8vw, 3.2rem);
-  --font-amulet: clamp(1.8rem, 6vw, 2.4rem);
-  
-  /* Espaciado fluido */
-  --spacing-xs: clamp(0.5rem, 2vw, 1rem);
-  --spacing-sm: clamp(1rem, 3vw, 1.5rem);
-  --spacing-md: clamp(1.5rem, 4vw, 2rem);
-  --spacing-lg: clamp(2rem, 6vw, 3rem);
-}
-
 /* Fuente principal estilo Hollow Knight con brillo tenue */
 body {
-  font-family: 'Cinzel', 'Trajan Pro', serif;
-  background-color: var(--bg-color);
-  color: var(--secondary-color);
-  margin: 0;
-  padding: clamp(0.5rem, 2vw, 1rem);
-  line-height: 1.6;
-  font-weight: 400;
-  font-size: var(--font-base);
-  /* Mejorar legibilidad en pantallas pequeñas */
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
-/* Container responsivo */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 var(--spacing-xs);
-  width: 100%;
-  box-sizing: border-box;
+  font-family: 'Cinzel', 'Trajan Pro', serif;
+  background-color: #0a0a0a;
+  color: #e8e8e8;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
 /* Encabezado principal con brillo característico */
-header {
-  text-align: center;
-  margin-bottom: var(--spacing-md);
-}
-
 header h1 {
-  font-family: 'Cinzel', serif;
-  font-size: var(--font-h1);
-  font-weight: 600;
-  margin: var(--spacing-md) 0;
-  color: var(--primary-color);
-  text-shadow:
-    0 0 5px var(--shadow-light),
-    0 0 10px var(--shadow-medium),
-    0 0 15px rgba(255, 255, 255, 0.1),
-    2px 2px 8px var(--shadow-dark);
-  letter-spacing: clamp(1px, 0.5vw, 3px);
-  text-transform: uppercase;
-  word-wrap: break-word;
-  hyphens: auto;
+  font-family: 'Cinzel', serif;
+  font-size: 3.2rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 2rem 0;
+  color: #f5f5f5;
+  text-shadow: 
+    0 0 5px rgba(255, 255, 255, 0.3),
+    0 0 10px rgba(255, 255, 255, 0.2),
+    0 0 15px rgba(255, 255, 255, 0.1),
+    2px 2px 8px rgba(0, 0, 0, 0.8);
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 /* Nombres de secciones con brillo sutil */
 h2 {
-  font-family: 'Cinzel', serif;
-  font-size: var(--font-h2);
-  font-weight: 500;
-  margin-top: var(--spacing-md);
-  margin-bottom: var(--spacing-sm);
-  color: #f0f0f0;
-  text-shadow:
-    0 0 3px rgba(255, 255, 255, 0.4),
-    0 0 6px var(--shadow-medium),
-    1px 1px 6px rgba(0, 0, 0, 0.7);
-  letter-spacing: clamp(0.5px, 0.3vw, 1.5px);
-  text-transform: capitalize;
-  word-wrap: break-word;
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #f0f0f0;
+  text-shadow: 
+    0 0 3px rgba(255, 255, 255, 0.4),
+    0 0 6px rgba(255, 255, 255, 0.2),
+    1px 1px 6px rgba(0, 0, 0, 0.7);
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
 }
 
 h3 {
-  font-family: 'Cinzel', serif;
-  font-size: var(--font-h3);
-  font-weight: 500;
-  margin-top: var(--spacing-sm);
-  margin-bottom: var(--spacing-xs);
-  color: var(--secondary-color);
-  text-shadow:
-    0 0 2px var(--shadow-light),
-    0 0 4px rgba(255, 255, 255, 0.15),
-    1px 1px 4px rgba(0, 0, 0, 0.6);
-  letter-spacing: clamp(0.3px, 0.2vw, 1px);
-  word-wrap: break-word;
+  font-family: 'Cinzel', serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  color: #e8e8e8;
+  text-shadow: 
+    0 0 2px rgba(255, 255, 255, 0.3),
+    0 0 4px rgba(255, 255, 255, 0.15),
+    1px 1px 4px rgba(0, 0, 0, 0.6);
+  letter-spacing: 1px;
 }
 
 /* Texto general con brillo muy sutil */
 p, li, span {
-  font-family: 'Cinzel', serif;
-  font-size: var(--font-base);
-  font-weight: 400;
-  color: var(--text-color);
-  text-shadow:
-    0 0 1px var(--shadow-medium),
-    0 0 2px rgba(255, 255, 255, 0.1),
-    1px 1px 3px rgba(0, 0, 0, 0.5);
-  letter-spacing: clamp(0.2px, 0.1vw, 0.5px);
-  margin-bottom: var(--spacing-xs);
-  word-wrap: break-word;
-  hyphens: auto;
-}
-
-/* Listas responsivas */
-ul, ol {
-  padding-left: var(--spacing-sm);
-  margin: var(--spacing-xs) 0;
-}
-
-li {
-  margin-bottom: calc(var(--spacing-xs) * 0.5);
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #d8d8d8;
+  text-shadow: 
+    0 0 1px rgba(255, 255, 255, 0.2),
+    0 0 2px rgba(255, 255, 255, 0.1),
+    1px 1px 3px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.5px;
 }
 
 /* Nombre del amuleto con brillo intenso */
 #amulet-name {
-  font-family: 'Cinzel', serif;
-  font-size: var(--font-amulet);
-  font-weight: 600;
-  color: #ffffff;
-  text-align: center;
-  margin-bottom: var(--spacing-sm);
-  text-shadow:
-    0 0 8px rgba(255, 255, 255, 0.5),
-    0 0 12px var(--shadow-light),
-    0 0 20px rgba(255, 255, 255, 0.15),
-    2px 2px 10px var(--shadow-dark);
-  letter-spacing: clamp(1px, 0.4vw, 2px);
-  text-transform: uppercase;
-  word-wrap: break-word;
-  hyphens: auto;
+  font-family: 'Cinzel', serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-shadow: 
+    0 0 8px rgba(255, 255, 255, 0.5),
+    0 0 12px rgba(255, 255, 255, 0.3),
+    0 0 20px rgba(255, 255, 255, 0.15),
+    2px 2px 10px rgba(0, 0, 0, 0.8);
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 /* Efectos especiales para elementos interactivos */
 .charm-effect {
-  font-style: italic;
-  color: #f8f8f8;
-  text-shadow:
-    0 0 2px rgba(255, 255, 255, 0.4),
-    0 0 4px var(--shadow-medium);
-  word-wrap: break-word;
+  font-style: italic;
+  color: #f8f8f8;
+  text-shadow: 
+    0 0 2px rgba(255, 255, 255, 0.4),
+    0 0 4px rgba(255, 255, 255, 0.2);
 }
 
 .rarity-text {
-  font-weight: 500;
-  color: #e0e0e0;
-  text-shadow:
-    0 0 3px var(--shadow-light),
-    0 0 6px rgba(255, 255, 255, 0.15);
-  word-wrap: break-word;
+  font-weight: 500;
+  color: #e0e0e0;
+  text-shadow: 
+    0 0 3px rgba(255, 255, 255, 0.3),
+    0 0 6px rgba(255, 255, 255, 0.15);
 }
 
 /* Footer con brillo mínimo */
 footer {
-  font-family: 'Cinzel', serif;
-  text-align: center;
-  font-size: clamp(0.85rem, 2vw, 0.95rem);
-  font-weight: 400;
-  padding: var(--spacing-md);
-  color: #b8b8b8;
-  text-shadow:
-    0 0 1px rgba(255, 255, 255, 0.15),
-    1px 1px 2px rgba(0, 0, 0, 0.4);
-  border-top: 1px solid var(--border-color);
-  margin-top: var(--spacing-lg);
-  letter-spacing: clamp(0.2px, 0.1vw, 0.5px);
-  word-wrap: break-word;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 400;
+  padding: 2rem;
+  color: #b8b8b8;
+  text-shadow: 
+    0 0 1px rgba(255, 255, 255, 0.15),
+    1px 1px 2px rgba(0, 0, 0, 0.4);
+  border-top: 1px solid #333;
+  margin-top: 3rem;
+  letter-spacing: 0.5px;
 }
 
 /* Animación sutil de brillo para elementos importantes */
 @keyframes gentle-glow {
-  0%, 100% {
-    text-shadow:
-      0 0 5px var(--shadow-light),
-      0 0 10px var(--shadow-medium),
-      0 0 15px rgba(255, 255, 255, 0.1);
-  }
-  50% {
-    text-shadow:
-      0 0 8px rgba(255, 255, 255, 0.4),
-      0 0 15px rgba(255, 255, 255, 0.25),
-      0 0 20px rgba(255, 255, 255, 0.15);
-  }
+  0%, 100% {
+    text-shadow: 
+      0 0 5px rgba(255, 255, 255, 0.3),
+      0 0 10px rgba(255, 255, 255, 0.2),
+      0 0 15px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    text-shadow: 
+      0 0 8px rgba(255, 255, 255, 0.4),
+      0 0 15px rgba(255, 255, 255, 0.25),
+      0 0 20px rgba(255, 255, 255, 0.15);
+  }
 }
 
-/* Aplicar animación a elementos especiales con mejor rendimiento */
-header h1,
-#amulet-name {
-  transition: text-shadow 0.3s ease;
-}
-
+/* Aplicar animación a elementos especiales */
 header h1:hover,
 #amulet-name:hover {
-  animation: gentle-glow 2s ease-in-out infinite;
-}
-
-/* Media queries para ajustes específicos */
-@media (max-width: 768px) {
-  body {
-    padding: var(--spacing-xs);
-  }
-  
-  header h1 {
-    line-height: 1.2;
-    margin: var(--spacing-sm) 0;
-  }
-  
-  #amulet-name {
-    line-height: 1.3;
-  }
-  
-  /* Reducir efectos de sombra en dispositivos móviles para mejor rendimiento */
-  header h1,
-  #amulet-name,
-  h2, h3 {
-    text-shadow:
-      0 0 3px var(--shadow-light),
-      1px 1px 4px var(--shadow-dark);
-  }
-}
-
-@media (max-width: 480px) {
-  :root {
-    --font-h1: clamp(1.8rem, 10vw, 2.5rem);
-    --font-amulet: clamp(1.5rem, 8vw, 2rem);
-  }
-  
-  body {
-    line-height: 1.5;
-  }
-  
-  header h1,
-  #amulet-name {
-    letter-spacing: 1px;
-  }
-  
-  /* Simplificar efectos en pantallas muy pequeñas */
-  * {
-    text-shadow: 1px 1px 2px var(--shadow-dark) !important;
-  }
-}
-
-@media (max-width: 320px) {
-  body {
-    padding: 0.5rem;
-  }
-  
-  header h1 {
-    word-break: break-word;
-  }
-}
-
-/* Para pantallas grandes */
-@media (min-width: 1200px) {
-  .container {
-    padding: 0 var(--spacing-md);
-  }
-}
-
-/* Mejoras de accesibilidad */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-}
-
-/* Mejoras para impresión */
-@media print {
-  body {
-    background: white;
-    color: black;
-  }
-  
-  * {
-    text-shadow: none !important;
-    animation: none !important;
-  }
-  
-  header h1,
-  h2, h3,
-  #amulet-name {
-    color: black;
-  }
+  animation: gentle-glow 2s ease-in-out infinite;
 }
