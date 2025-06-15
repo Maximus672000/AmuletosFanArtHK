@@ -1,11 +1,96 @@
 let amuletos = [];
 let indexActual = 0;
 
+// ——— Funciones para detección de móvil y aviso ———
+function detectarMovil() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+function mostrarAvisoEscritorio() {
+  if (detectarMovil()) {
+    // Crear el aviso
+    const aviso = document.createElement('div');
+    aviso.id = 'aviso-escritorio';
+    aviso.innerHTML = `
+      <div style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        color: white;
+        font-family: 'Segoe UI', Arial, sans-serif;
+      ">
+        <div style="
+          background: linear-gradient(145deg, #2c1810, #1a0f08);
+          padding: 25px;
+          border-radius: 15px;
+          text-align: center;
+          max-width: 85%;
+          border: 3px solid #8b6914;
+          box-shadow: 0 0 20px rgba(139, 105, 20, 0.3);
+        ">
+          <div style="font-size: 24px; margin-bottom: 10px;">🕷️</div>
+          <h3 style="margin: 10px 0; color: #d4af37;">Amuletos del Arácnido</h3>
+          <p style="margin: 15px 0; font-size: 16px;">Para una experiencia óptima, activa la</p>
+          <p style="margin: 10px 0; font-size: 18px; color: #d4af37;"><strong>"Vista de Escritorio"</strong></p>
+          <div style="
+            background: rgba(139, 105, 20, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-size: 14px;
+            line-height: 1.4;
+          ">
+            <p style="margin: 5px 0;"><strong>Chrome/Edge:</strong> Menú ⋮ → ☑️ "Sitio de escritorio"</p>
+            <p style="margin: 5px 0;"><strong>Safari:</strong> Botón AA → "Solicitar sitio de escritorio"</p>
+            <p style="margin: 5px 0;"><strong>Firefox:</strong> Menú → ☑️ "Sitio de escritorio"</p>
+          </div>
+          <button onclick="cerrarAviso()" style="
+            background: linear-gradient(145deg, #8b6914, #a67c1a);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 10px 5px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: all 0.3s;
+          " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            Continuar de todas formas
+          </button>
+        </div>
+      </div>
+    `;
+    
+    document.body.appendChild(aviso);
+  }
+}
+
+function cerrarAviso() {
+  const aviso = document.getElementById('aviso-escritorio');
+  if (aviso) {
+    aviso.style.opacity = '0';
+    aviso.style.transition = 'opacity 0.3s';
+    setTimeout(() => aviso.remove(), 300);
+  }
+}
+
+// ——— Funciones originales ———
 async function cargarAmuletos() {
   try {
     const res = await fetch("data/amuletos.json");
     amuletos = await res.json();
     mostrarAmuleto(indexActual);
+    
+    // Mostrar aviso después de cargar los datos
+    setTimeout(mostrarAvisoEscritorio, 500);
   } catch (error) {
     console.error("Error al cargar los datos de los amuletos:", error);
   }
@@ -83,7 +168,6 @@ function mostrarAmuleto(index) {
   }
 }
 
-
 // Navegación entre amuletos
 document.getElementById("prev-btn").addEventListener("click", () => {
   indexActual = (indexActual - 1 + amuletos.length) % amuletos.length;
@@ -97,5 +181,3 @@ document.getElementById("next-btn").addEventListener("click", () => {
 
 // Inicializar
 cargarAmuletos();
-
-
