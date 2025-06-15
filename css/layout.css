@@ -1,0 +1,517 @@
+/* Layout general de la ficha de amuleto */
+.ficha-amuletos {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* Parte izquierda: nombre, imagen, rareza */
+.ficha-izquierda {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Parte derecha: historia y efectos */
+.ficha-derecha {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Imagen del amuleto */
+#amulet-image {
+  max-width: 70%;
+  height: auto;
+  margin: 1rem 0;
+}
+
+/* Historia separada por párrafos */
+#amulet-history p {
+  margin-bottom: 0.75rem;
+}
+
+/* Lista de efectos */
+#amulet-effects {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+#amulet-effects li {
+  margin-bottom: 0.5rem;
+}
+
+/* ---- Sinergias (Imagen derecha, texto izquierda) ---- */
+.sinergia {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.sinergia-texto {
+  width: 80%;
+}
+
+.sinergia-img {
+  width: 20%;
+  max-width: 100px;
+  height: auto;
+}
+
+/* ---- Recomendaciones (Imagen izquierda, texto derecha) ---- */
+.recomendacion {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.recomendacion-img {
+  width: 20%;
+  max-width: 100px;
+  height: auto;
+}
+
+.recomendacion-texto {
+  width: 80%;
+}
+
+/* Estilo de navegación con flechas */
+.navegacion {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2000;
+}
+
+.arrow-container.arrow-left,
+.arrow-container.arrow-right {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2000;
+  pointer-events: auto;
+}
+
+.arrow-container.arrow-left {
+  left: 0;
+}
+
+.arrow-container.arrow-right {
+  right: 0;
+}
+/* Layout general de la ficha de amuleto */
+.ficha-amuletos {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* Parte izquierda: nombre, imagen, rareza */
+.ficha-izquierda {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Parte derecha: historia y efectos */
+.ficha-derecha {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Imagen del amuleto */
+#amulet-image {
+  max-width: 70%;
+  height: auto;
+  margin: 1rem 0;
+}
+
+/* Historia separada por párrafos */
+#amulet-history p {
+  margin-bottom: 0.75rem;
+}
+
+/* Lista de efectos */
+#amulet-effects {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+#amulet-effects li {
+  margin-bottom: 0.5rem;
+}
+
+/* ---- Sinergias (Imagen derecha, texto izquierda) ---- */
+.sinergia {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.sinergia-texto {
+  width: 80%;
+}
+
+.sinergia-img {
+  width: 20%;
+  max-width: 100px;
+  height: auto;
+}
+
+/* ---- Recomendaciones (Imagen izquierda, texto derecha) ---- */
+.recomendacion {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.recomendacion-img {
+  width: 20%;
+  max-width: 100px;
+  height: auto;
+}
+
+.recomendacion-texto {
+  width: 80%;
+}
+
+/* Estilo de navegación con flechas */
+.navegacion {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2000;
+}
+
+.arrow-container.arrow-left,
+.arrow-container.arrow-right {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2000;
+  pointer-events: auto;
+}
+
+.arrow-container.arrow-left {
+  left: 0;
+}
+
+.arrow-container.arrow-right {
+  right: 0;
+}
+
+/* ================================ */
+/* ESTILOS PARA MÓVIL - FICHA AMULETOS */
+/* ================================ */
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  
+  /* Layout principal cambia a columna en móvil */
+  .ficha-amuletos {
+    flex-direction: column;
+    padding: 0.5rem;
+    gap: 1rem;
+    background: #ff0000;
+    color: #ffffff;
+    min-height: 100vh;
+  }
+
+  /* Ambas partes ocupan 100% del ancho */
+  .ficha-izquierda,
+  .ficha-derecha {
+    width: 100%;
+  }
+
+  /* Sección izquierda en móvil */
+  .ficha-izquierda {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+ 
+
+  /* Imagen del amuleto más compacta */
+  #amulet-image {
+    max-width: 45%;
+    height: auto;
+    margin: 0.8rem auto;
+    border-radius: 8px;
+    /* Removido box-shadow naranjado */
+  }
+
+  /* Rareza del amuleto */
+  .rareza {
+    font-size: 0.85rem;
+    color: #ddd;
+    margin-top: 0.3rem;
+    font-style: italic;
+  }
+
+  /* Sección derecha reorganizada */
+  .ficha-derecha {
+    padding: 0 0.3rem;
+  }
+
+ 
+
+  /* Historia del amuleto más compacta */
+  #amulet-history {
+    margin-bottom: 1rem;
+  }
+
+  #amulet-history p {
+    font-size: 0.85rem !important;
+    line-height: 1.4;
+    margin-bottom: 0.6rem;
+    color: #e0e0e0;
+    text-align: justify;
+  }
+
+  /* Lista de efectos más compacta */
+  #amulet-effects {
+    margin: 0.5rem 0;
+    padding-left: 0.8rem;
+  }
+
+  #amulet-effects li {
+    font-size: 0.85rem !important;
+    line-height: 1.3;
+    margin-bottom: 0.4rem;
+    color: #e0e0e0;
+    list-style-type: none;
+    position: relative;
+  }
+
+  #amulet-effects li::before {
+    content: "•";
+    color: #888;
+    font-weight: bold;
+    position: absolute;
+    left: -12px;
+  }
+
+  /* Sinergias más compactas */
+  .sinergia {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 0.6rem;
+    border-radius: 6px;
+    margin: 0.8rem 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    gap: 0.8rem;
+  }
+
+  .sinergia-img {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 4px;
+    /* Removido box-shadow naranjado */
+  }
+
+  .sinergia-texto {
+    width: calc(100% - 50px);
+    font-size: 0.8rem !important;
+    color: #e0e0e0;
+    line-height: 1.3;
+  }
+
+  /* Recomendaciones más compactas */
+  .recomendacion {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 0.6rem;
+    border-radius: 6px;
+    margin: 0.8rem 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    gap: 0.8rem;
+  }
+
+  .recomendacion-img {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 4px;
+    /* Removido box-shadow naranjado */
+  }
+
+  .recomendacion-texto {
+    width: calc(100% - 50px);
+    font-size: 0.8rem !important;
+    color: #e0e0e0;
+    line-height: 1.3;
+  }
+
+  /* Navegación centrada en los laterales como en PC */
+  .navegacion {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2000;
+  }
+
+  .arrow-container.arrow-left,
+  .arrow-container.arrow-right {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2000;
+    pointer-events: auto;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .arrow-container.arrow-left:hover,
+  .arrow-container.arrow-right:hover {
+    /* Removidos efectos hover naranjados */
+    transform: translateY(-50%) scale(1.05);
+    transition: all 0.2s ease;
+  }
+
+
+  .flecha:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
+  }
+
+  /* Flechas muy pequeñas para móvil - con mayor especificidad */
+  .navegacion .flecha {
+    width: 50px !important;
+    height: 55px !important;
+  }
+
+  /* Ajustes para bordes de página más discretos */
+  .page-frame {
+    padding: 20px 15px;
+  }
+
+    .page-border-corners .corner {
+    width: 60px;
+    height: 60px;
+    opacity: 0.7;
+    /* Restauramos el glow (brillo blanco) */
+
+       filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
+    
+  }
+
+  /* Bordes de secciones más pequeños */
+  .section-frame .corner-tl,
+  .section-frame .corner-tr,
+  .section-frame .corner-bl,
+  .section-frame .corner-br {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+    /* Glow más sutil para esquinas de sección */
+   
+       filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.5));
+    
+  }
+
+  .bordered-subsection .section-frame .corner-tl,
+  .bordered-subsection .section-frame .corner-tr,
+  .bordered-subsection .section-frame .corner-bl,
+  .bordered-subsection .section-frame .corner-br {
+    width: 15px;
+    height: 15px;
+    opacity: 0.5;
+    /* Glow muy sutil para esquinas de subsección */
+    
+       filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.4));
+    */
+  }
+
+  /* Márgenes y padding más compactos para secciones con bordes */
+  .bordered-section {
+    margin: 1rem 0;
+    padding: 15px;
+  }
+
+  .bordered-subsection {
+    margin: 0.5rem 0;
+    padding: 10px;
+  }
+
+  .bordered-horizontal {
+    margin: 1rem 0;
+    padding: 25px 15px;
+    min-height: 60px;
+  }
+
+  /* Ajustes adicionales para pantallas muy pequeñas */
+  @media screen and (max-width: 480px) {
+    .ficha-amuletos {
+      padding: 0.3rem;
+    }
+    
+    .ficha-izquierda h1,
+    #amulet-name {
+      font-size: 1.2rem;
+    }
+    
+    #amulet-image {
+      max-width: 50%;
+    }
+    
+    .seccion-titulo, h2, h3 {
+      font-size: 1rem !important;
+    }
+
+    #amulet-history p,
+    #amulet-effects li,
+    .sinergia-texto,
+    .recomendacion-texto {
+      font-size: 0.8rem !important;
+    }
+
+    .page-border-corners .corner {
+      width: 40px;
+      height: 40px;
+    }
+
+    /* Flechas aún más pequeñas en pantallas muy pequeñas - con mayor especificidad */
+    .navegacion .flecha {
+      width: 30px !important;
+      height: 35px !important;
+    }
+  }
+}
+
+/* Estilos base que funcionan tanto en desktop como móvil */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  background: #1a1a1a;
+  color: #ffffff;
+}

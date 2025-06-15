@@ -1,0 +1,81 @@
+/* ————————————————————————————
+   CSS para corregir los bordes del encabezado
+   ———————————————————————————— */
+
+/* Contenedor principal del título - solo para el header */
+header .titulo-container {
+  position: relative;
+  padding: 55px; /* Padding normal, no afecta otros elementos */
+  min-height: auto; /* Altura automática */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenedor de los bordes horizontales - solo para el header */
+header .horizontal-borders {
+  position: absolute;
+  top: -60px; /* Expande hacia arriba */
+  left: 0;
+  right: 0;
+  bottom: -60px; /* Expande hacia abajo */
+  pointer-events: none; /* Para que no interfiera con el texto */
+}
+
+/* Borde superior - solo para el header */
+header .horizontal-borders .border-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 140px; /* Altura fija más grande */
+  object-fit: contain; /* Mantiene la proporción sin deformar */
+  z-index: 1;
+}
+
+/* Borde inferior - solo para el header */
+header .horizontal-borders .border-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 140px; /* Altura fija más grande */
+  object-fit: contain; /* Mantiene la proporción sin deformar */
+  z-index: 1;
+}
+
+/* Título principal - solo para el header */
+header .titulo-container h1 {
+  position: relative;
+  z-index: 2; /* Asegura que el texto esté por encima de los bordes */
+  margin: 0;
+  text-align: center;
+  padding: 40px 20px; /* El padding del texto, no del contenedor */
+}
+
+/* Ajuste específico para el header si es necesario */
+header {
+  margin-top: 20px; /* Ajusta según necesites */
+  margin-bottom: 20px;
+}
+
+/* Responsivo - para pantallas más pequeñas - solo para el header */
+@media (max-width: 768px) {
+  header .titulo-container {
+    padding: 15px;
+  }
+  
+  header .horizontal-borders {
+    top: -40px;
+    bottom: -40px;
+  }
+  
+  header .horizontal-borders .border-top,
+  header .horizontal-borders .border-bottom {
+    height: 80px;
+  }
+  
+  header .titulo-container h1 {
+    padding: 30px 15px;
+  }
+}
