@@ -5,7 +5,8 @@
   <meta http-equiv="Cache-Control" content="no-store" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">  <title>Amuletos del Arácnido</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>Amuletos del Arácnido</title>
   <link rel="stylesheet" href="css/text.css" />
   <link rel="stylesheet" href="css/effects.css" />
   <link rel="stylesheet" href="css/borders.css" />
@@ -15,7 +16,7 @@
   <link rel="stylesheet" href="css/layout.css" />
   <link rel="stylesheet" href="css/particles.css" />
 
-
+  <link rel="stylesheet" href="css/pantalladecarga.css" />
 </head>
 <body>
   <!-- 🔁 Flechas de navegación fijadas al borde de la pantalla -->
@@ -27,6 +28,7 @@
       <img src="images/arrows/arrow-right.png" alt="Siguiente" id="next-btn" class="flecha" />
     </div>
   </div>
+
   <!-- Marco general de la página -->
   <div class="page-frame">
     <!-- Esquinas de la página -->
@@ -36,15 +38,16 @@
       <img src="images/borders/corner-bottom-left.png" alt="" class="corner corner-bl" />
       <img src="images/borders/corner-bottom-right.png" alt="" class="corner corner-br" />
     </div>
-   <header>
-  <div class="titulo-container">
-    <div class="horizontal-borders">
-      <img src="images/borders/Top-Enca.png" alt="" class="border-horizontal border-top" />
-      <img src="images/borders/Bottom-Enca.png" alt="" class="border-horizontal border-bottom" />
-    </div>
-    <h1>Amuletos del Arácnido</h1>
-  </div>
-</header>
+    
+    <header>
+      <div class="titulo-container">
+        <div class="horizontal-borders">
+          <img src="images/borders/Top-Enca.png" alt="" class="border-horizontal border-top" />
+          <img src="images/borders/Bottom-Enca.png" alt="" class="border-horizontal border-bottom" />
+        </div>
+        <h1>Amuletos del Arácnido</h1>
+      </div>
+    </header>
 
     <main id="amulet-container">
       <!-- Contenido principal del amuleto -->
@@ -87,11 +90,16 @@
         <!-- JS insertará contenido -->
       </section>
     </main>
+    
     <footer>
       <p>Un pequeño proyecto fan art de Hollow Knight, hecho con cariño🤍🤍🤍.</p>
     </footer>
   </div>
+
+  
+  <!-- Scripts -->
   <script src="js/main.js"></script>
   <script src="js/particles.js"></script>
+  <script src="js/audio.js"></script>
 </body>
 </html>

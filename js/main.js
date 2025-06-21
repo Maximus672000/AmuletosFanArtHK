@@ -1,6 +1,49 @@
 let amuletos = [];
 let indexActual = 0;
 
+// ================================
+// FUNCIONES DE PANTALLA DE CARGA
+// ================================
+
+function showLoadingScreen() {
+  const overlay = document.getElementById('loadingOverlay');
+  if (overlay) {
+    overlay.classList.remove('hidden');
+  }
+}
+
+function hideLoadingScreen() {
+  const overlay = document.getElementById('loadingOverlay');
+  if (overlay) {
+    overlay.classList.add('hidden');
+  }
+}
+
+// Función para crear la pantalla de carga dinámicamente
+function createLoadingScreen() {
+  const loadingHTML = `
+    <div class="loading-overlay hidden" id="loadingOverlay">
+      <div class="loading-content">
+        <div class="loading-circle">
+          <div class="loading-particle"></div>
+          <div class="loading-particle"></div>
+          <div class="loading-particle"></div>
+          <div class="loading-particle"></div>
+        </div>
+        <div class="loading-text">CARGANDO AMULETO</div>
+        <div class="loading-subtext">Explorando las profundidades...</div>
+      </div>
+    </div>
+  `;
+  
+  // Insertar al final del body
+  document.body.insertAdjacentHTML('beforeend', loadingHTML);
+}
+
+// ================================
+// FUNCIONES PRINCIPALES
+// ================================
+
 async function cargarAmuletos() {
   try {
     const res = await fetch("data/amuletos.json");
@@ -11,91 +54,209 @@ async function cargarAmuletos() {
   }
 }
 
-function mostrarAmuleto(index) {
+async function mostrarAmuleto(index) {
+  // Mostrar pantalla de carga
+  showLoadingScreen();
+  
+  // Simular pequeño delay para mostrar la carga (opcional)
+  await new Promise(resolve => setTimeout(resolve, 300));
+  
   const amuleto = amuletos[index];
 
-  // ——— Datos principales ———
-  document.getElementById("amulet-name").textContent = amuleto.nombre;
-  document.getElementById("amulet-image").src = amuleto.imagen;
-  document.getElementById("amulet-notches").textContent = amuleto.muescas;
-  document.getElementById("amulet-rarity").textContent = amuleto.rareza;
+  try {
+    // ——— Datos principales ———
+    document.getElementById("amulet-name").textContent = amuleto.nombre;
+    
+    // Cargar imagen de forma asíncrona
+    const imagen = document.getElementById("amulet-image");
+    await cargarImagen(imagen, amuleto.imagen);
+    
+    document.getElementById("amulet-notches").textContent = amuleto.muescas;
+    document.getElementById("amulet-rarity").textContent = amuleto.rareza;
 
-  // ——— Historia con saltos de línea ———
-  const historiaHTML = amuleto.historia
-    .split("\n")
-    .map(parrafo => `<p>${parrafo}</p>`)
-    .join("");
-  document.getElementById("amulet-history").innerHTML = historiaHTML;
+    // ——— Historia con saltos de línea ———
+    const historiaHTML = amuleto.historia
+      .split("\n")
+      .map(parrafo => `<p>${parrafo}</p>`)
+      .join("");
+    document.getElementById("amulet-history").innerHTML = historiaHTML;
 
-  // ——— Efectos ———
-  const efectosLista = document.getElementById("amulet-effects");
-  efectosLista.innerHTML = "";
-  if (Array.isArray(amuleto.efectos)) {
-    amuleto.efectos.forEach(efecto => {
-      const li = document.createElement("li");
-      li.textContent = efecto;
-      efectosLista.appendChild(li);
-    });
-  }
+    // ——— Efectos ———
+    const efectosLista = document.getElementById("amulet-effects");
+    efectosLista.innerHTML = "";
+    if (Array.isArray(amuleto.efectos)) {
+      amuleto.efectos.forEach(efecto => {
+        const li = document.createElement("li");
+        li.textContent = efecto;
+        efectosLista.appendChild(li);
+      });
+    }
 
-  // ——— Sinergias ———
-  const sinergiasCont = document.getElementById("amulet-synergies");
-  if (Array.isArray(amuleto.sinergias) && amuleto.sinergias.length > 0) {
-    sinergiasCont.innerHTML = "<h3>Sinergias:</h3>";
-    amuleto.sinergias.forEach(sin => {
-      const contenedor = document.createElement("div");
-      contenedor.className = "sinergia";
-      contenedor.innerHTML = `
-        <div class="sinergia-texto">
-          <h4>${sin.nombre}</h4>
-          <p>${sin.descripcion}</p>
-        </div>
-        <img src="${sin.imagen}" alt="${sin.nombre}" class="sinergia-img" />
-      `;
-      sinergiasCont.appendChild(contenedor);
-    });
-  } else {
-    // No hay sinergias: vaciamos el contenido (o lo ocultamos)
-    sinergiasCont.innerHTML = "";
-    // Ejemplo de ocultar la sección completa:
-    // sinergiasCont.style.display = "none";
-  }
+    // ——— Sinergias ———
+    const sinergiasCont = document.getElementById("amulet-synergies");
+    if (Array.isArray(amuleto.sinergias) && amuleto.sinergias.length > 0) {
+      sinergiasCont.innerHTML = "<h3>Sinergias:</h3>";
+      
+      // Cargar sinergias con sus imágenes
+      for (const sin of amuleto.sinergias) {
+        const contenedor = document.createElement("div");
+        contenedor.className = "sinergia";
+        contenedor.innerHTML = `
+          <div class="sinergia-texto">
+            <h4>${sin.nombre}</h4>
+            <p>${sin.descripcion}</p>
+          </div>
+          <img src="${sin.imagen}" alt="${sin.nombre}" class="sinergia-img" />
+        `;
+        sinergiasCont.appendChild(contenedor);
+        
+        // Cargar imagen de sinergia de forma asíncrona
+        const sinergiaImg = contenedor.querySelector('.sinergia-img');
+        await cargarImagen(sinergiaImg, sin.imagen);
+      }
+    } else {
+      sinergiasCont.innerHTML = "";
+    }
 
-  // ——— Recomendaciones ———
-  const recomendacionesCont = document.getElementById("amulet-recommendations");
-  if (Array.isArray(amuleto.recomendaciones) && amuleto.recomendaciones.length > 0) {
-    recomendacionesCont.innerHTML = "<h3>Recomendaciones:</h3>";
-    amuleto.recomendaciones.forEach(rec => {
-      const contenedor = document.createElement("div");
-      contenedor.className = "recomendacion";
-      contenedor.innerHTML = `
-        <img src="${rec.personaje}" alt="Personaje" class="recomendacion-img" />
-        <div class="recomendacion-texto">
-          <p>${rec.texto}</p>
-        </div>
-      `;
-      recomendacionesCont.appendChild(contenedor);
-    });
-  } else {
-    // No hay recomendaciones: vaciamos el contenido (o lo ocultamos)
-    recomendacionesCont.innerHTML = "";
-    // recomendacionesCont.style.display = "none";
+    // ——— Recomendaciones ———
+    const recomendacionesCont = document.getElementById("amulet-recommendations");
+    if (Array.isArray(amuleto.recomendaciones) && amuleto.recomendaciones.length > 0) {
+      recomendacionesCont.innerHTML = "<h3>Recomendaciones:</h3>";
+      
+      // Cargar recomendaciones con sus imágenes
+      for (const rec of amuleto.recomendaciones) {
+        const contenedor = document.createElement("div");
+        contenedor.className = "recomendacion";
+        contenedor.innerHTML = `
+          <img src="${rec.personaje}" alt="Personaje" class="recomendacion-img" />
+          <div class="recomendacion-texto">
+            <p>${rec.texto}</p>
+          </div>
+        `;
+        recomendacionesCont.appendChild(contenedor);
+        
+        // Cargar imagen de recomendación de forma asíncrona
+        const recImg = contenedor.querySelector('.recomendacion-img');
+        await cargarImagen(recImg, rec.personaje);
+      }
+    } else {
+      recomendacionesCont.innerHTML = "";
+    }
+
+    // Pequeño delay adicional para asegurar que todo esté renderizado
+    await new Promise(resolve => setTimeout(resolve, 200));
+    
+    // Ocultar pantalla de carga
+    hideLoadingScreen();
+    
+  } catch (error) {
+    console.error("Error al mostrar el amuleto:", error);
+    hideLoadingScreen(); // Asegurar que se oculte incluso si hay error
   }
 }
 
+// Función auxiliar para cargar imágenes de forma asíncrona
+function cargarImagen(imgElement, src) {
+  return new Promise((resolve, reject) => {
+    if (!imgElement || !src) {
+      resolve();
+      return;
+    }
+    
+    const img = new Image();
+    img.onload = () => {
+      imgElement.src = src;
+      resolve();
+    };
+    img.onerror = () => {
+      console.warn(`Error cargando imagen: ${src}`);
+      resolve(); // Resolver de todos modos para no bloquear
+    };
+    
+    // Establecer timeout para evitar carga infinita
+    setTimeout(() => {
+      if (!imgElement.src || imgElement.src === '') {
+        imgElement.src = src; // Cargar de todos modos
+      }
+      resolve();
+    }, 2000);
+    
+    img.src = src;
+  });
+}
 
-// Navegación entre amuletos
-document.getElementById("prev-btn").addEventListener("click", () => {
+// ================================
+// NAVEGACIÓN MEJORADA
+// ================================
+
+async function navegarAnterior() {
+  // Deshabilitar botones durante la navegación
+  const prevBtn = document.getElementById("prev-btn");
+  const nextBtn = document.getElementById("next-btn");
+  prevBtn.style.pointerEvents = 'none';
+  nextBtn.style.pointerEvents = 'none';
+  
   indexActual = (indexActual - 1 + amuletos.length) % amuletos.length;
-  mostrarAmuleto(indexActual);
-});
+  await mostrarAmuleto(indexActual);
+  
+  // Rehabilitar botones
+  prevBtn.style.pointerEvents = 'auto';
+  nextBtn.style.pointerEvents = 'auto';
+}
 
-document.getElementById("next-btn").addEventListener("click", () => {
+async function navegarSiguiente() {
+  // Deshabilitar botones durante la navegación
+  const prevBtn = document.getElementById("prev-btn");
+  const nextBtn = document.getElementById("next-btn");
+  prevBtn.style.pointerEvents = 'none';
+  nextBtn.style.pointerEvents = 'none';
+  
   indexActual = (indexActual + 1) % amuletos.length;
-  mostrarAmuleto(indexActual);
+  await mostrarAmuleto(indexActual);
+  
+  // Rehabilitar botones
+  prevBtn.style.pointerEvents = 'auto';
+  nextBtn.style.pointerEvents = 'auto';
+}
+
+// ================================
+// INICIALIZACIÓN
+// ================================
+
+// Inicializar cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', async () => {
+  // Crear pantalla de carga
+  createLoadingScreen();
+  
+  // Configurar navegación
+  document.getElementById("prev-btn").addEventListener("click", navegarAnterior);
+  document.getElementById("next-btn").addEventListener("click", navegarSiguiente);
+  
+  // Cargar datos iniciales
+  await cargarAmuletos();
 });
 
-// Inicializar
-cargarAmuletos();
+// También para compatibilidad si el DOM ya está listo
+if (document.readyState === 'loading') {
+  // Ya configurado arriba
+} else {
+  // DOM ya listo
+  setTimeout(async () => {
+    if (!document.getElementById('loadingOverlay')) {
+      createLoadingScreen();
+      document.getElementById("prev-btn").addEventListener("click", navegarAnterior);
+      document.getElementById("next-btn").addEventListener("click", navegarSiguiente);
+      await cargarAmuletos();
+    }
+  }, 100);
+}
 
+// ================================
+// FUNCIONES ADICIONALES
+// ================================
 
+// Función para forzar mostrar/ocultar loading (para debugging)
+window.debugLoading = {
+  show: showLoadingScreen,
+  hide: hideLoadingScreen
+};
