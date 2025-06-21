@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">  <title>Amuletos del Arácnido</title>
+  <link rel="stylesheet" href="css/text.css" />
+  <link rel="stylesheet" href="css/effects.css" />
+  <link rel="stylesheet" href="css/borders.css" />
+  <link rel="stylesheet" href="css/Encabezado.css" />
+  <link rel="stylesheet" href="css/glitterCharm.css" />
+  <link rel="stylesheet" href="css/MejorasExtras.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/particles.css" />
+
+
+</head>
+<body>
+  <!-- 🔁 Flechas de navegación fijadas al borde de la pantalla -->
+  <div class="navegacion">
+    <div class="arrow-container arrow-left">
+      <img src="images/arrows/arrow-left.png" alt="Anterior" id="prev-btn" class="flecha" />
+    </div>
+    <div class="arrow-container arrow-right">
+      <img src="images/arrows/arrow-right.png" alt="Siguiente" id="next-btn" class="flecha" />
+    </div>
+  </div>
+  <!-- Marco general de la página -->
+  <div class="page-frame">
+    <!-- Esquinas de la página -->
+    <div class="page-border page-border-corners">
+      <img src="images/borders/corner-top-left.png" alt="" class="corner corner-tl" />
+      <img src="images/borders/corner-top-right.png" alt="" class="corner corner-tr" />
+      <img src="images/borders/corner-bottom-left.png" alt="" class="corner corner-bl" />
+      <img src="images/borders/corner-bottom-right.png" alt="" class="corner corner-br" />
+    </div>
+   <header>
+  <div class="titulo-container">
+    <div class="horizontal-borders">
+      <img src="images/borders/Top-Enca.png" alt="" class="border-horizontal border-top" />
+      <img src="images/borders/Bottom-Enca.png" alt="" class="border-horizontal border-bottom" />
+    </div>
+    <h1>Amuletos del Arácnido</h1>
+  </div>
+</header>
+
+    <main id="amulet-container">
+      <!-- Contenido principal del amuleto -->
+      <section class="ficha-amuletos">
+        <div class="ficha-izquierda">
+          <div class="titulo-container bordered-horizontal">
+            <div class="horizontal-borders">
+              <img src="images/borders/border-top-titulo.png" alt="" class="border-horizontal border-top" />
+              <img src="images/borders/border-bottom-titulo.png" alt="" class="border-horizontal border-bottom" />
+            </div>
+            <h2 id="amulet-name">Nombre del Amuleto</h2>
+          </div>
+          <img id="amulet-image" src="" alt="Imagen del amuleto" />
+          <p><strong>Muescas:</strong> <span id="amulet-notches">-</span></p>
+          <p><strong>Rareza:</strong> <span id="amulet-rarity">-</span></p>
+        </div>
+        <div class="ficha-derecha">
+          <div class="historia-container bordered-horizontal">
+            <div class="horizontal-borders">
+              <img src="images/borders/border-top.png" alt="" class="border-horizontal border-top" />
+              <img src="images/borders/border-bottom.png" alt="" class="border-horizontal border-bottom" />
+            </div>
+            <h3>Historia:</h3>
+            <div id="amulet-history"></div>
+          </div>
+          <div class="efectos-container bordered-horizontal">
+            <div class="horizontal-borders">
+              <img src="images/borders/border-top.png" alt="" class="border-horizontal border-top" />
+              <img src="images/borders/border-bottom.png" alt="" class="border-horizontal border-bottom" />
+            </div>
+            <h3>Efectos:</h3>
+            <ul id="amulet-effects"></ul>
+          </div>
+        </div>
+      </section>
+      <section class="amulet-synergies" id="amulet-synergies">
+        <!-- JS insertará contenido -->
+      </section>
+      <section class="amulet-recommendations" id="amulet-recommendations">
+        <!-- JS insertará contenido -->
+      </section>
+    </main>
+    <footer>
+      <p>Un pequeño proyecto fan art de Hollow Knight, hecho con cariño🤍🤍🤍.</p>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+  <script src="js/particles.js"></script>
+</body>
+</html>

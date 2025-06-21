@@ -1,0 +1,98 @@
+/* ===== Mejoras para el efecto de brillo del amuleto con pulsación (palpitar) y tonos blancos ===== */
+
+#amulet-image {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  /* Filtro de sombra difusa inicial en blanco */
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
+}
+
+#amulet-image::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: inherit;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.5)
+  );
+  z-index: -1;
+  opacity: 0;
+  animation: pulsarBrillo 3s ease-in-out infinite alternate;
+}
+
+/* Al pasar el cursor: aumenta levemente la escala y el brillo */
+#amulet-image:hover {
+  transform: scale(1.02);
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.7));
+}
+
+#amulet-image:hover::before {
+  opacity: 0.8;
+  animation-duration: 2s;
+}
+
+/* Keyframes para pulsación suave del glow en blanco */
+@keyframes pulsarBrillo {
+  0% {
+    opacity: 0.15;
+    transform: scale(1);
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.008);
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
+  }
+  100% {
+    opacity: 0.25;
+    transform: scale(1.004);
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.65));
+  }
+}
+
+/* ----- Variante para amuletos raros (brillo blanco más intenso) ----- */
+#amulet-image.raro {
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
+  animation: brillarRaro 4s ease-in-out infinite alternate;
+}
+
+#amulet-image.raro:hover {
+  filter: drop-shadow(0 0 22px rgba(255, 255, 255, 1));
+  transform: scale(1.03);
+}
+
+@keyframes brillarRaro {
+  0%, 100% {
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
+  }
+  50% {
+    filter: drop-shadow(0 0 28px rgba(255, 255, 255, 0.95));
+  }
+}
+
+/* ----- Variante para amuletos legendarios (brillo blanco con pulsación) ----- */
+#amulet-image.legendario {
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.7));
+  animation: brillarLegendario 4s ease-in-out infinite alternate;
+}
+
+#amulet-image.legendario:hover {
+  filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.9));
+  transform: scale(1.03);
+}
+
+@keyframes brillarLegendario {
+  0%, 100% {
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.7));
+  }
+  50% {
+    filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.9));
+  }
+}
