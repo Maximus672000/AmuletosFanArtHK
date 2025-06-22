@@ -10,8 +10,7 @@
       "El usuario se funde con el entorno, volviéndose parcialmente translúcido.",
       "Mientras el usuario esté camuflado, su fuerza aumentará levemente. (+10% a ataques cuerpo a cuerpo).",
       "Si el usuario recibe un golpe directo este perderá el camuflaje, recuperándolo después de 1 minuto."
-    ]
-    
+    ] 
   },
   {
     "id": "mirada-penetrante",
@@ -28,29 +27,29 @@
     "sinergias": [
       {
         "nombre": "Espinas de agonia",
-        "descripcion": "Incrementa el daño de la explosión radial y permite curación con luz.",
+        "descripcion": "Las explosiones de luz generadas al recibir daño provocan que las espinas surjan con mayor violencia y alcance, brotando en un patrón radial que cubre más terreno.",
         "imagen": "images/amuletosC/EspinasDeAgonia.webp"
       },
       {
-        "nombre": "Alma pura",
-        "descripcion": "Reduce el costo de alma de los hechizos potenciados.",
+        "nombre": "Danza de cristal",
+        "descripcion": "Los cristales generados por Danza de Cristal ven su daño y defensa aumentados significativamente. Los hechizos de ataque mejoran un 60% y los escudos creados al usar concentración pueden resistir hasta dos golpes antes de romperse.",
         "imagen": "images/amuletos/AlmaPura.png"
       },
       {
-        "nombre": "Remanente codicioso",
-        "descripcion": "La capa viviente se alimenta de la energía radiante para fortalecerse.",
+        "nombre": "Aflicción de Ooma",
+        "descripcion": "La descarga eléctrica es reemplazada por un rayo de luz que se dispara automáticamente hacia el agresor. Aunque menos preciso, este rayo inflige un daño considerablemente mayor que la descarga original.",
         "imagen": "images/amuletos/RemanenteCodicioso.png"
       },
       {
-        "nombre": "Espiral de caracol",
-        "descripcion": "Los proyectiles envenenados ahora también brillan y causan daño radiante.",
-        "imagen": "images/amuletos/EspiralDeCaracol.png"
+        "nombre": "Enjambre vengativo",
+        "descripcion": "Las tres crías invocadas por el enjambre ahora son pequeñas luciérnagas que se lanzan hacia los enemigos cercanos. Al impactar, detonan en una explosión de luz similar a la de mirada penetrante.",
+        "imagen": "images/amuletosC/VengefulSwarm.webp"
       }
     ],
     "recomendaciones": [
       {
         "personaje": "assets/personaje-maximus.png",
-        "texto": "Perfecto para magos que buscan potenciar sus hechizos. La explosión defensiva te salvará en situaciones difíciles."
+        "texto": "Aunque la voz de este amuleto puede ser un poco intensa al principio... se siente como si alguien te estuviera cuidando desde adentro.La luciérnaga atrapada tiene carácter, eso sí. A veces habla de más, pero no lo hace con mala intención jeje. Me cae bien, espero poder sacarla de ahí en un futuro."
       }
     ]
   },
@@ -62,21 +61,33 @@
     "rareza": "Pálida",
     "historia": "Este amuleto, el primero creado por Maximus, fue forjado utilizando un método descubierto por un maestro del alma, el mismo que permitió la creación del amuleto 'Alma Voraz'. Este encanto alberga la esencia de una peculiar variante del Engullecortos, especializada en devorar a los insectos más ávidos y codiciosos.",
     "efectos": [
-      "Capa viviente: Otorga al portador una capa orgánica que extiende sus raíces para atacar a enemigos cercanos, con un alcance máximo de 5 metros.",
+      "Capa viviente: Otorga al portador una capa orgánica que extiende sus raíces para atacar a enemigos cercanos, con un alcance máximo de 3 metros.",
       "Detección de Geo: La capa viviente alerta al portador de la presencia de depósitos de geo cercanos, facilitando su localización."
     ],
     "sinergias": [
       {
         "nombre": "Espinas de agonia",
-        "descripcion": "Aumenta el alcance de la capa viviente y mejora la detección de geo.",
+        "descripcion": "Las espinas que emergen tras recibir daño adoptan el aspecto y alcance de las raíces vivientes de la capa.",
         "imagen": "images/amuletosC/EspinasDeAgonia.webp"
+      }
+      ,
+      {
+        "nombre": "Capa de musgo",
+        "descripcion": "La capa adquiere a una forma menos metálica, similar a un Engulletonto, mientras sus raíces atacan con mayor velocidad y agresividad, respondiendo más rápido a los enemigos cercanos.",
+        "imagen": "images/amuletosC/VengefulSwarm.webp"
+      }
+      ,
+      {
+        "nombre": "Porte elegante",
+        "descripcion": "La capa se adapta visualmente a la vestimenta otorgada por el amuleto, pasando más desapercibida. Además, las raíces ya no cuentan con espinas afiladas, sino que cada extremo culmina en una bola de demolición compuesta por geos incrustados de valor 50, causando mayor daño por impacto.",
+        "imagen": "images/amuletosC/VengefulSwarm.webp"
       }
     ],
     "recomendaciones": [
-      {
-        "personaje": "assets/personaje-maximus.png",
-        "texto": "Ideal para exploradores y recolectores. La capa viviente te dará ventaja en combate mientras buscas tesoros."
-      }
+       {
+    "personaje": "assets/personaje-maximus.png",
+    "texto": "Para ser el primer amuleto serio que hice… salió bastante bien, je.\nAunque, bueno… por andar con prisas y querer aprovechar el cadáver del Engullecodicias, me gasté toda mi alma al forjarlo.\nY claro, justo después tuve que ir a cazar otro insecto para reponerme… casi me matan. Je… cosas que pasan.\nPero oye, valió la pena. ¡Mira esa capa viviente!"
+  }
     ]
   },
   {
@@ -92,22 +103,22 @@
     ],
     "sinergias": [
       {
-        "nombre": "Corazón fragante",
-        "descripcion": "Las máscaras de Sabiavida se regeneran más rápidamente.",
-        "imagen": "images/amuletos/CorazonFragrante.png"
+        "nombre": "Sangrecolmena",
+      "descripcion": "El usuario obtiene cierto grado de control sobre la miel.",
+      "imagen": "images/amuletosC/SangreColmena.webp"
       },
       {
-        "nombre": "Forma de Unn",
-        "descripcion": "Permite moverse mientras se regeneran las máscaras de Sabiavida.",
-        "imagen": "images/amuletos/FormaDeUnn.png"
+         "nombre": "Elegía de la Larvamosca",
+      "descripcion": "La onda lanzada por 'Elegía de la Larvamosca' se activa mientras el usuario tenga máscaras de sabiavida y su daño depende del número de máscaras. Comenzando en 0.3 x el daño del aguijón con una máscara, y aumenta +0.1 por cada máscara adicional, pudiendo alcanzar hasta el doble del daño del aguijón si se acumulan suficientes máscaras con otros amuletos.",
+      "imagen": "images/amuletosC/ElegiaDeLaLarvamosca.webp"
       }
     ],
     "recomendaciones": [
-      {
-        "personaje": "assets/personaje-maximus.png",
-        "texto": "Ideal para guerreros agresivos. Mantén el combate activo para acumular máscaras extra y dominar la batalla."
-      }
-    ]
+  {
+    "personaje": "assets/personaje-seabreaz.png",
+    "texto": "No me gusta admitirlo… pero cada golpe con este amuleto me provoca un cosquilleo por dentro. ¡Oye, no me juzgues! ¡Que yo sigo siendo un sanador, eh!"
+  }
+]
   },
   {
     "id": "coraza-palida",
@@ -121,28 +132,28 @@
       "Las tres cargas del amuleto se restauran completamente al descansar.",
       "Si el usuario utiliza concentración o un hechizo de curación, podrá recuperar cargas del amuleto, en función del número de máscaras restauradas."
     ],
-    "sinergias": [
-      {
-        "nombre": "Mirada penetrante",
-        "descripcion": "El escudo refleja parte del daño recibido como energía radiante.",
-        "imagen": "images/amuletos/MiradaPenetrante.png"
-      },
-      {
-        "nombre": "Corazón fragante",
-        "descripcion": "Acelera la regeneración de cargas del escudo.",
-        "imagen": "images/amuletos/CorazonFragrante.png"
-      },
-      {
-        "nombre": "Ojos de cazador",
-        "descripcion": "El escudo otorga visión mejorada mientras está activo.",
-        "imagen": "images/amuletos/OjosDeCazador.png"
-      }
-    ],
-    "recomendaciones": [
-      {
-        "personaje": "assets/personaje-maximus.png",
-        "texto": "Un amuleto defensivo confiable para situaciones peligrosas. Planifica tus curaciones para maximizar las cargas del escudo."
-      }
+     "sinergias": [
+    {
+      "nombre": "Coraza de Baldur",
+      "descripcion": "Al gastar una carga de Coraza pálida, se recupera una carga de protección del amuleto Coraza de baldur, aumentando la resistencia del usuario en combate.",
+      "imagen": "images/amuletosC/CorazaDeBaldur.webp"
+    },
+    {
+      "nombre": "Hongo con Esporas",
+      "descripcion": "El escudo adquiere una nueva apariencia y queda recubierto por hongos morados elásticos, similares a los de los páramos fúngicos. Cuando un enemigo o proyectil impacta el escudo, este rebota en la dirección contraria.",
+      "imagen": "images/amuletosC/HongoConEsporas.webp"
+    },
+    {
+      "nombre": "Alma del Monarca",
+      "descripcion": "Al gastar una carga del amuleto, el usuario regenera automáticamente un 66% de su alma del tanque principal. Aunque su coste en muescas es alto, puede ser útil si se usa adecuadamente.",
+      "imagen": "images/amuletosC/AlmaDelMonarca.webp"
+    }
+  ],
+  "recomendaciones": [
+    {
+      "personaje": "assets/personaje-maximus.png",
+      "texto": "A veces me pregunto por qué los insectos adoraban tanto a mi padre...\nTal vez sea una duda que nunca podré resolver.\nCambiando de tema, el amuleto puede llegar a ser útil en situaciones donde sepas que recibirás un golpe sí o sí, pudiendo marcar la diferencia entre la vida y la muerte."
+    }
     ]
   },
   {
