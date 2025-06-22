@@ -10,14 +10,8 @@
       "El usuario se funde con el entorno, volviéndose parcialmente translúcido.",
       "Mientras el usuario esté camuflado, su fuerza aumentará levemente. (+10% a ataques cuerpo a cuerpo).",
       "Si el usuario recibe un golpe directo este perderá el camuflaje, recuperándolo después de 1 minuto."
-    ],
-   
-    "recomendaciones": [
-      {
-        "personaje": "images/Personajes/Cyrille.png",
-        "texto": "Este amuleto es perfecto para cazadores pacientes que prefieren atacar desde las sombras. Aprovéchalo en zonas oscuras o contra enemigos lentos."
-      }
     ]
+    
   },
   {
     "id": "mirada-penetrante",
