@@ -20,23 +20,39 @@ function hideLoadingScreen() {
 }
 
 // Función para crear la pantalla de carga dinámicamente
-function createLoadingScreen() {
+function createLoadingScreenAdvanced() {
+  const particulas = [];
+  const numeroParticulas = 15;
+  
+  for (let i = 0; i < numeroParticulas; i++) {
+    // Calcular posición inicial en círculo
+    const angulo = (i / numeroParticulas) * 360;
+    const radio = 70; // Radio base para posicionamiento
+    
+    // Alternar tamaños y crear variaciones
+    let sizeClass = '';
+    if (i % 4 === 0) sizeClass = 'size-small';
+    else if (i % 4 === 1) sizeClass = 'size-large';
+    
+    particulas.push(`<div class="loading-particle ${sizeClass}" style="
+      left: 50%; 
+      top: 50%;
+      transform: translate(-50%, -50%) translate(${Math.cos(angulo * Math.PI / 180) * radio}px, ${Math.sin(angulo * Math.PI / 180) * radio}px);
+    "></div>`);
+  }
+  
   const loadingHTML = `
     <div class="loading-overlay hidden" id="loadingOverlay">
       <div class="loading-content">
         <div class="loading-circle">
-          <div class="loading-particle"></div>
-          <div class="loading-particle"></div>
-          <div class="loading-particle"></div>
-          <div class="loading-particle"></div>
+          ${particulas.join('')}
         </div>
         <div class="loading-text">CARGANDO AMULETO</div>
-        <div class="loading-subtext">Explorando las profundidades...</div>
+        <div class="loading-subtext">Bienvenido, pequeño fantasma.</div>
       </div>
     </div>
   `;
   
-  // Insertar al final del body
   document.body.insertAdjacentHTML('beforeend', loadingHTML);
 }
 
@@ -226,7 +242,7 @@ async function navegarSiguiente() {
 // Inicializar cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', async () => {
   // Crear pantalla de carga
-  createLoadingScreen();
+  createLoadingScreenAdvanced();
   
   // Configurar navegación
   document.getElementById("prev-btn").addEventListener("click", navegarAnterior);
@@ -243,7 +259,7 @@ if (document.readyState === 'loading') {
   // DOM ya listo
   setTimeout(async () => {
     if (!document.getElementById('loadingOverlay')) {
-      createLoadingScreen();
+      createLoadingScreenAdvanced();
       document.getElementById("prev-btn").addEventListener("click", navegarAnterior);
       document.getElementById("next-btn").addEventListener("click", navegarSiguiente);
       await cargarAmuletos();

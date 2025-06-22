@@ -11,7 +11,7 @@ class AudioSystem {
     
     // Lista de canciones (agrega las rutas de tus archivos de audio)
     this.playlist = [
-      'audio/HollowKnightOST.mp3',
+      'audio/Song1FAnArtAmuletos.mp3',
       'audio/hollow-knight-2.mp3',
       'audio/hollow-knight-3.mp3'
       // Agrega más canciones aquí
@@ -192,33 +192,41 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ================================ */
-/* CONTROLES OPCIONALES */
+/* CONTROLES WASD */
 /* ================================ */
 
-// Controles de teclado (opcional)
+// Controles de teclado usando WASD
 document.addEventListener('keydown', (e) => {
   if (!audioSystem) return;
   
-  switch(e.key) {
+  // Convertir a minúsculas para manejar tanto mayúsculas como minúsculas
+  const key = e.key.toLowerCase();
+  
+  switch(key) {
     case ' ': // Espaciadora para pausar/reproducir
       e.preventDefault();
       audioSystem.toggle();
+      console.log('Audio toggle (Espacio)');
       break;
-    case 'ArrowRight': // Siguiente canción
-      e.preventDefault();
-      audioSystem.playNext();
-      break;
-    case 'ArrowLeft': // Canción anterior
-      e.preventDefault();
-      audioSystem.playPrevious();
-      break;
-    case 'ArrowUp': // Subir volumen
+    case 'w': // W - Subir volumen
       e.preventDefault();
       audioSystem.setVolume(audioSystem.volume + 0.1);
+      console.log(`Volumen subido: ${Math.round(audioSystem.volume * 100)}%`);
       break;
-    case 'ArrowDown': // Bajar volumen
+    case 's': // S - Bajar volumen
       e.preventDefault();
       audioSystem.setVolume(audioSystem.volume - 0.1);
+      console.log(`Volumen bajado: ${Math.round(audioSystem.volume * 100)}%`);
+      break;
+    case 'd': // D - Siguiente canción
+      e.preventDefault();
+      audioSystem.playNext();
+      console.log('Siguiente canción (D)');
+      break;
+    case 'a': // A - Canción anterior
+      e.preventDefault();
+      audioSystem.playPrevious();
+      console.log('Canción anterior (A)');
       break;
   }
 });
@@ -244,8 +252,20 @@ function setAudioVolume(volume) {
   if (audioSystem) audioSystem.setVolume(volume);
 }
 
+// Función para mostrar ayuda de controles
+function showAudioControls() {
+  console.log('=== CONTROLES DE AUDIO ===');
+  console.log('Espacio: Play/Pausa');
+  console.log('W: Subir volumen');
+  console.log('S: Bajar volumen');
+  console.log('D: Siguiente canción');
+  console.log('A: Canción anterior');
+  console.log('========================');
+}
+
 // Hacer disponible globalmente
 window.toggleAudio = toggleAudio;
 window.nextTrack = nextTrack;
 window.previousTrack = previousTrack;
 window.setAudioVolume = setAudioVolume;
+window.showAudioControls = showAudioControls;
