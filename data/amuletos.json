@@ -33,12 +33,12 @@
       {
         "nombre": "Danza de cristal",
         "descripcion": "Los cristales generados por Danza de Cristal ven su daño y defensa aumentados significativamente. Los hechizos de ataque mejoran un 60% y los escudos creados al usar concentración pueden resistir hasta dos golpes antes de romperse.",
-        "imagen": "images/amuletosC/0.png"
+        "imagen": "images/amuletosC/0.webp"
       },
       {
         "nombre": "Aflicción de Ooma",
         "descripcion": "La descarga eléctrica es reemplazada por un rayo de luz que se dispara automáticamente hacia el agresor. Aunque menos preciso, este rayo inflige un daño considerablemente mayor que la descarga original.",
-        "imagen": "images/amuletosC/0.png"
+        "imagen": "images/amuletosC/0.webp"
       },
       {
         "nombre": "Enjambre vengativo",
