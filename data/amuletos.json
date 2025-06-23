@@ -33,12 +33,12 @@
       {
         "nombre": "Danza de cristal",
         "descripcion": "Los cristales generados por Danza de Cristal ven su daño y defensa aumentados significativamente. Los hechizos de ataque mejoran un 60% y los escudos creados al usar concentración pueden resistir hasta dos golpes antes de romperse.",
-        "imagen": "images/amuletos/AlmaPura.png"
+        "imagen": "images/amuletosC/0.png"
       },
       {
         "nombre": "Aflicción de Ooma",
         "descripcion": "La descarga eléctrica es reemplazada por un rayo de luz que se dispara automáticamente hacia el agresor. Aunque menos preciso, este rayo inflige un daño considerablemente mayor que la descarga original.",
-        "imagen": "images/amuletos/RemanenteCodicioso.png"
+        "imagen": "images/amuletosC/0.png"
       },
       {
         "nombre": "Enjambre vengativo",
@@ -74,13 +74,13 @@
       {
         "nombre": "Capa de musgo",
         "descripcion": "La capa adquiere a una forma menos metálica, similar a un Engulletonto, mientras sus raíces atacan con mayor velocidad y agresividad, respondiendo más rápido a los enemigos cercanos.",
-        "imagen": "images/amuletosC/VengefulSwarm.webp"
+        "imagen": "images/amuletosC/0.webp"
       }
       ,
       {
         "nombre": "Porte elegante",
         "descripcion": "La capa se adapta visualmente a la vestimenta otorgada por el amuleto, pasando más desapercibida. Además, las raíces ya no cuentan con espinas afiladas, sino que cada extremo culmina en una bola de demolición compuesta por geos incrustados de valor 50, causando mayor daño por impacto.",
-        "imagen": "images/amuletosC/VengefulSwarm.webp"
+        "imagen": "images/amuletosC/0.webp"
       }
     ],
     "recomendaciones": [
@@ -108,7 +108,7 @@
       "imagen": "images/amuletosC/SangreColmena.webp"
       },
       {
-         "nombre": "Elegía de la Larvamosca",
+         "nombre": "Elegía de la larvamosca",
       "descripcion": "La onda lanzada por 'Elegía de la Larvamosca' se activa mientras el usuario tenga máscaras de sabiavida y su daño depende del número de máscaras. Comenzando en 0.3 x el daño del aguijón con una máscara, y aumenta +0.1 por cada máscara adicional, pudiendo alcanzar hasta el doble del daño del aguijón si se acumulan suficientes máscaras con otros amuletos.",
       "imagen": "images/amuletosC/ElegiaDeLaLarvamosca.webp"
       }
@@ -134,17 +134,17 @@
     ],
      "sinergias": [
     {
-      "nombre": "Coraza de Baldur",
+      "nombre": "Coraza de baldur",
       "descripcion": "Al gastar una carga de Coraza pálida, se recupera una carga de protección del amuleto Coraza de baldur, aumentando la resistencia del usuario en combate.",
       "imagen": "images/amuletosC/CorazaDeBaldur.webp"
     },
     {
-      "nombre": "Hongo con Esporas",
+      "nombre": "Hongo con esporas",
       "descripcion": "El escudo adquiere una nueva apariencia y queda recubierto por hongos morados elásticos, similares a los de los páramos fúngicos. Cuando un enemigo o proyectil impacta el escudo, este rebota en la dirección contraria.",
       "imagen": "images/amuletosC/HongoConEsporas.webp"
     },
     {
-      "nombre": "Alma del Monarca",
+      "nombre": "Alma del monarca",
       "descripcion": "Al gastar una carga del amuleto, el usuario regenera automáticamente un 66% de su alma del tanque principal. Aunque su coste en muescas es alto, puede ser útil si se usa adecuadamente.",
       "imagen": "images/amuletosC/AlmaDelMonarca.webp"
     }
@@ -162,39 +162,28 @@
     "imagen": "images/amuletos/EspiralDeCaracol.png",
     "muescas": 1,
     "rareza": "Vacío",
-    "historia": "Nacido en el momento final de un caracol a las afueras del reino; este amuleto posee un veneno sumamente peligroso. Su peligrosidad es tan elevada que, incluso para aquellas especies que han desarrollado este mismo mecanismo de defensa, resulta fatal, llevándolas a la muerte en cuestión de minutos.",
+    "historia": "Nacido en el momento final de un caracol a las afueras del reino; este amuleto posee un veneno sumamente peligroso. Su peligrosidad es tan elevada que, incluso para aquellas especies que han desarrollado este mismo mecanismo de defensa, resulta fatal, llevándolas a la muerte en cuestión de horas.",
     "efectos": [
-      "Los proyectiles no mágicos lanzados por el usuario están impregnados con una pequeña dosis de veneno, que daña al enemigo con el tiempo. Para remover el veneno de un objetivo afectado, el usuario del amuleto solo debe tocarlo, deteniendo así el envenenamiento.",
+      "Los proyectiles no mágicos lanzados por el usuario están impregnados con una pequeña dosis de veneno, que daña al enemigo con el tiempo. Para eliminar el veneno de un objetivo afectado, el portador del amuleto solo debe tocarlo, deteniendo así el envenenamiento rápidamente; de lo contrario, este persistirá por varias horas y, si el afectado no es lo suficientemente fuerte, morirá.",
       "(2 de daño por segundo al envenenar a un objetivo, pudiéndose acumular este efecto hasta 4 veces)."
     ],
-    "sinergias": [
-      {
-        "nombre": "Mirada penetrante",
-        "descripcion": "Los proyectiles envenenados ahora también causan daño radiante.",
-        "imagen": "images/amuletos/MiradaPenetrante.png"
-      },
-      {
-        "nombre": "Marca del orgullo",
-        "descripcion": "Los ataques cuerpo a cuerpo también aplican el veneno.",
-        "imagen": "images/amuletos/MarcaDelOrgullo.png"
-      },
-      {
-        "nombre": "Remanente codicioso",
-        "descripcion": "La capa viviente puede esparcir el veneno a múltiples enemigos.",
-        "imagen": "images/amuletos/RemanenteCodicioso.png"
-      },
-      {
-        "nombre": "Ojos de cazador",
-        "descripcion": "Permite ver el estado de envenenamiento de los enemigos.",
-        "imagen": "images/amuletos/OjosDeCazador.png"
-      }
-    ],
-    "recomendaciones": [
-      {
-        "personaje": "assets/personaje-maximus.png",
-        "texto": "Excelente para arqueros y usuarios de proyectiles. El bajo costo en muescas lo hace ideal para cualquier build."
-      }
-    ]
+     "sinergias": [
+    {
+      "nombre": "Blasón del defensor",
+      "descripcion": "La nube generada por Blasón del defensor se ve reforzada con el veneno de Espiral de caracol, aumentando su daño de forma considerable.",
+      "imagen": "images/amuletosC/BlasonDelDefensor.webp"
+    },
+    {
+      "nombre": "Canción de larvas",
+      "descripcion": "Al recibir daño, el enemigo que atacó al portador queda infectado con veneno durante 10 segundos.",
+      "imagen": "images/amuletosC/CancionDeLarvas.webp"
+    },
+    {
+      "nombre": "Hongo con esporas",
+      "descripcion": "Las esporas liberadas al curarse ahora aplican veneno adicional. Si un enemigo sale del área de efecto, el veneno persiste por 8 segundos más.",
+      "imagen": "images/amuletosC/HongoConEsporas.webp"
+    }
+  ]
   },
   {
     "id": "ojos-cazador",
@@ -208,17 +197,16 @@
       "Si el portador es una mantis sus reflejos se verán incrementados al doble."
     ],
     "sinergias": [
-      {
-        "nombre": "Remanente codicioso",
-        "descripcion": "Combina la detección de geo con visión nocturna mejorada.",
-        "imagen": "images/amuletos/RemanenteCodicioso.png"
-      }
-    ],
+    {
+      "nombre": "Marca de Orgullo",
+      "descripcion": "Los usuarios ven mejorados sus sentidos al límite, aumentando su evasión y destreza drásticamente. Esta mejora tiene mayor efecto en mantis o híbridos de estos.",
+      "imagen": "images/amuletosC/MarcaDeOrgullo.webp"
+    }
+  ],
     "recomendaciones": [
       {
-        "personaje": "assets/personaje-maximus.png",
-        "texto": "Fundamental para explorar áreas oscuras. Si eres una mantis, este amuleto te convertirá en un guerrero letal."
-      }
+        "personaje": "assets/personaje-iris.png",
+        "texto": "Es bastante divertido de usar si eres una mantis.\nSientes que todos los ataques pasan en cámara lenta.\nAdemás, ayuda bastante en zonas oscuras jeje."      }
     ]
   },
   {
@@ -234,20 +222,14 @@
   ],
   "sinergias": [
     {
-      "nombre": "Manto Fantasma",
-      "descripcion": "Reduce a la mitad el tiempo necesario para recuperar el camuflaje tras ser golpeado.",
-      "imagen": "images/amuletos/MantoFantasma.png"
+      "nombre": "Maestro de las embestidas",
+      "descripcion": "El Avance rápido ya no genera sonido alguno y deja una estela tenue que se desvanece rápidamente. Los enemigos dentro del radio de sigilo no detectarán la embestida, permitiendo desplazamientos ofensivos o de escape.",
+      "imagen": "images/amuletosC/MaestroDeLasEmbestidas.webp"
     },
     {
-      "nombre": "Maestro de las embestidas",
-      "descripcion": "La invisibilidad momentánea al usar habilidades se extiende por 2 segundos adicionales.",
-      "imagen": "images/amuletosC/MaestroDeLasEmbestidas.webp"
-    }
-  ],
-  "recomendaciones": [
-    {
-      "personaje": "images/Personajes/Cyrille.png",
-      "texto": "Muy útil para cazar, la verdad. Si lo combinas con Manto Fantasma, es una maravilla. Me habría venido de lujo en Ciudad de Lágrimas, jeje."
+      "nombre": "Maestro de sprints",
+      "descripcion": "El portador puede correr a gran velocidad sin emitir sonido alguno. Mientras se mantenga corriendo, los enemigos con percepción baja o media no detectarán al usuario, incluso si se encuentra dentro de su campo de visión.",
+      "imagen": "images/amuletosC/MaestroDeSprints.webp"
     }
   ]
 }
