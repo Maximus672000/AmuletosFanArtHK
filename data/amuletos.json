@@ -232,5 +232,30 @@
       "imagen": "images/amuletosC/MaestroDeSprints.webp"
     }
   ]
+},
+{
+  "id": "afiladora",
+  "nombre": "Afiladora",
+  "imagen": "images/amuletos/Afiladora.png",
+  "muescas": 2,
+  "rareza": "Vacío",
+  "historia": "Cuidadosamente forjado por las antiguas tribus cazadoras de Hallownest, este amuleto es mucho más que una simple herramienta. Se trata de un legado antiguo, transmitido de generación en generación, y una pieza valiosa para cualquier insecto que confíe en su arco como su arma más fiable.\n\nSu poder reside en la experiencia de aquellos que lo han utilizado antes, convirtiéndolo en un talismán indispensable para cualquier cazador.",
+  "efectos": [
+    "Incrementa significativamente la puntería del usuario.",
+    "Aumenta el daño de los proyectiles no mágicos.",
+    "Flechas: +50%",
+    "Cuchillos y dagas: +55%",
+    "Proyectiles lanzados por armas mecánicas (granadas caseras, cañones, armas de fuego, etc.): +30%",
+    "Disparos biológicos: +45%",
+    "Otros: +35%"
+  ],
+  "sinergias": [
+    {
+      "nombre": "Elegía de la larvamosca",
+        "descripcion": "Si el usuario tiene toda su vida, al impactar a un enemigo con un proyectil se genera una onda de choque que inflige el mismo daño que la onda de Elegía de la larvamosca.",
+      "imagen": "images/amuletosC/ElegiaDeLaLarvamosca.webp"
+    }
+  ]
 }
+
 ]
