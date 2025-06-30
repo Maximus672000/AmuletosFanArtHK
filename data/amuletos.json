@@ -256,6 +256,341 @@
       "imagen": "images/amuletosC/ElegiaDeLaLarvamosca.webp"
     }
   ]
-}
+},
+  {
+    "id": "brote-guardian",
+    "nombre": "Brote Guardián",
+    "imagen": "images/amuletos/BroteGuardian.png",
+    "muescas": 2,
+    "rareza": "Radiante",
+    "historia": "Este amuleto, que alguna vez perteneció a Isma, una de los cinco caballeros de la Corte Pálida, fue crucial en sus primeros años, antes de que perfeccionara su dominio sobre las plantas.\n\n Tras la desaparición de Isma al inicio del resurgir de la infección, el Rey Pálido recuperó el amuleto y lo colocó bajo custodia junto a los demás de su colección, siendo este el último de aquella enigmática colección.",
+    "efectos": [
+      "Cuando el usuario concentra alma, raíces poderosas brotan del suelo y atacan a los enemigos cercanos.",
+      "Las raíces emergen en un patrón radial alrededor del usuario, cubriendo un área considerable."
+    ],
+    "sinergias": [
+      {
+        "nombre": "Concentración profunda",
+        "descripcion": "Las raíces que emergen durante con concentración profunda son más grandes y persistentes, manteniéndose activas por más tiempo y cubriendo un área mayor.",
+        "imagen": "images/amuletosC/ConcentracionProfunda.webp"
+      },
+         {
+       "nombre": "Lamento de Vasija",
+       "descripcion": "Los enemigos marcados por lamento de vasija al utilizar concentración, en lugar de causar una explosión en su lugar, son atrapados por una prisión de raíces. Esta jaula vegetal inmoviliza brevemente a los enemigos, limitando su movimiento y dejándolos vulnerables a otros ataques.",
+       "imagen": "images/amuletosC/LamentoDeVasija.png"
+      }
+      
+    ],
+    "recomendaciones": [
+      {
+         "personaje": "assets/personaje-lilly.png",
+    "texto": "¿Este amuleto era suyo…? Tiene sentido jeje... cuando lo uso, siento como si alguien caminara a mi lado... como si Isma aún velara por este lugar, por Sendero verde."
+      }
+    ]
+    
+  },
+  {
+    "id": "materializacion-onirica",
+    "nombre": "Materialización onírica",
+    "imagen": "images/amuletos/MaterializacionOnirica.png",
+    "muescas": 2,
+    "rareza": "Pálida",
+    "historia": "Un proyecto conjunto entre las polillas y el Rey Pálido que quedó inconcluso a causa del brote de la infección. Los registros de lo que se había planeado para este amuleto se perdieron con el tiempo, lo que solo permite especular sobre su propósito final a partir de este mismo encanto.",
+    "efectos": [
+      "Permite al usuario crear una plataforma en el lugar que desee durante unos segundos, con un tiempo de recarga de un par de minutos.",
+      "Duración de la plataforma: 30 segundos.",
+      "Tiempo de recarga: 2 minutos.",
+      "La plataforma puede soportar tanto al usuario como a otros seres."
+    ],
+    "sinergias": [
+      {
+         "nombre": "Manto Radiante",
+          "descripcion": "El portador adquiere la capacidad de materializar estructuras oníricas más complejas que simples plataformas. Estas construcciones pueden tener hasta 2 metros de largo y 2 metros de alto, incluyendo muros, rampas, escaleras flotantes e incluso objetos útiles o armas temporales, como lanzas o mecanismos complejos como ballestas, si el usuario comprende su funcionamiento. Prácticamente, el límite es su imaginación. Las estructuras pueden moverse ligeramente antes de fijarse en el espacio, y duran hasta 60 segundos. Sin embargo, cada objeto materializado tiene una durabilidad limitada de 100 puntos y puede ser destruido por ataques enemigos o uso excesivo.",
+         "imagen": "images/amuletos/MantoRadiante.png"
+      },
+      {
+        "nombre": "Portador Onírico",
+        "descripcion": "El usuario puede mantener hasta tres plataformas oníricas activas al mismo tiempo. Además obtiene un control más preciso sobre su tamaño, pudiendo duplicar sus dimensiones estándar si así lo desea. Esto permite crear plataformas más grandes, útiles tanto en combate como en exploración.",
+        "imagen": "images/amuletosC/PortadorOnirico.webp"
+      }
 
+    ],
+    "recomendaciones": [
+  {
+    "personaje": "assets/personaje-maximus.png",
+    "texto": "Sí, funcionan los 3 juntos. Y sí, es tan divertido como suena. ¿Quieres una torre? ¿Un puente viviente? ¿Una catapulta? Ve y hazlo, pequeño insecto jeje."
+  }
+]
+
+  },
+  {
+  "id": "meditacion-activa",
+  "nombre": "Meditación activa",
+  "imagen": "images/amuletos/MeditacionActiva.png",
+  "muescas": 3,
+  "rareza": "Vacío",
+  "historia": "Un experimento 'fallido' del Chamán Caracol, que intentaba desarrollar su propio método para fabricar amuletos, fue finalmente desechado en un lago de almas. Sin embargo, bajo estas circunstancias, con el paso del tiempo, ese objeto se transformó en un amuleto funcional.\n\nEste artefacto, considerado inicialmente como un fracaso, fue rescatado del olvido por Salubra y eventualmente puesto a la venta.",
+  "efectos": [
+    "Si el usuario permanece completamente inmóvil, comenzará a absorber pequeñas cantidades de alma de todas las fuentes disponibles dentro de un rango extremadamente amplio, llenando rápidamente sus reservas de alma.",
+    "Recupera aproximadamente la mitad del tanque principal cada 4 segundos de quietud total, sin moverse ni usar hechizos."
+  ],
+  "sinergias": [
+    {
+      "nombre": "Alma del monarca",
+      "descripcion": "La velocidad de absorción de alma se incrementa significativamente, y el usuario puede absorber alma incluso realizando movimientos lentos y deliberados.",
+      "imagen": "images/amuletosC/AlmaDelMonarca.webp"
+    },
+    {
+      "nombre": "Piedra de Chamán",
+      "descripcion": "Si el usuario alcanza el tanque de alma completo con Meditación activa equipada junto a Piedra de chamán, su siguiente hechizo será lanzado de forma inmediata y sin costo de alma.",
+      "imagen": "images/amuletosC/PiedraDeChaman.webp"
+    }
+  ],
+  "recomendaciones": [
+  {
+    "personaje": "assets/personaje-molly.png",
+    "texto": "Bastante útil si necesitas estar recuperando alma para probar un hechizo, aunque no lo veo factible en combate... a diferencia de cierta araña."
+  }
+]
+
+}
+,
+  {
+    "id": "regalo-monomon",
+    "nombre": "Regalo de monomon",
+    "imagen": "images/amuletos/RegaloDeMonomon.png",
+    "muescas": 1,
+    "rareza": "Vacío",
+    "historia": "Un obsequio de la maestra Monomon al Rey Pálido, entregado cuando él ascendió al trono como gobernante de Hallownest.",
+    "efectos": [
+      "El usuario descenderá lentamente mientras cae.",
+      "Las armas o el equipamiento que posea se volverán más ligeros. Esto le permitirá cargar más peso o manejar armas que antes no habría podido sostener.",
+      "Reduce significativamente el daño por caída."
+    ]
+  },
+  {
+  "id": "impregnador-vacio",
+  "nombre": "Impregnador de vacío",
+  "imagen": "images/amuletos/ImpregnadorDeVacio.png",
+  "muescas": 4,
+  "rareza": "Vacío",
+  "historia": "Antiguo amuleto hallado por el Rey Pálido al descubrir el Abismo, contiene en su interior la belleza del vacío.\n\nNo se sabe con certeza si fue creado o simplemente encontrado tal cual, pero su poder es innegable. El vacío que lo impregna parece reaccionar al alma del portador, moldeándolo sutilmente.\n\nNotas del Rey Pálido:\nSi se usa de manera adecuada, puede ser un buen aditamento para cualquier insecto.\nSi se usa de manera desmedida, podría perder su conciencia.\nEn manos correctas puede ser la salvación, y en las incorrectas su propia destrucción.\nEn mis manos... pues simplemente me permite acceder al laboratorio de manera más sencilla.",
+  "efectos": [
+    "Transforma sutilmente la forma del portador al impregnar su ser con vacío, otorgándole cierto dominio sobre él.",
+    "Aumenta levemente la vitalidad del usuario cada vez que descansa, concediéndole dos máscaras de vacío adicionales."
+  ],
+  "sinergias": [
+    {
+      "nombre": "Flor del Abismo",
+      "descripcion": "Mientras se tengan equipados Impregnador de vacío y Flor del abismo, el usuario accede directamente al poder de la segunda etapa de la flor, incluso con salud completa. Esto otorga un aumento pasivo de velocidad de movimiento del 10% y una mejora en la recuperación del dash. Además, su conexión con el vacío se profundiza drásticamente, haciendo que sus cortes se tornen negros como el vacío  y mejorando su control sobre este.",
+      "imagen": "images/amuletosC/FlorDelAbismo.png"
+    },
+    {
+      "nombre": "Sombra Afilada",
+      "descripcion": "Al usar Avance rápido sombrío y acabar con un enemigo, el usuario obtiene una máscara de vacío adicional, las cuales puede acumular hasta un máximo de 5.",
+      "imagen": "images/amuletosC/SombraAfilada.webp"
+    }
+  ]
+}
+,
+  {
+  "id": "manto-radiante",
+  "nombre": "Manto radiante",
+  "imagen": "images/amuletos/MantoRadiante.png",
+  "muescas": 2,
+  "rareza": "Radiante",
+  "historia": "Creado por la madre ancestral de las polillas, la diosa que llevó a Hallownest a la ruina. Este amuleto encarna la esencia de su divinidad, tal como era antes de la traición de sus propias hijas.",
+  "efectos": [
+    "El portador del amuleto generará un domo protector capaz de detener proyectiles enemigos, con una durabilidad de 100 puntos de vida.",
+    "Al agotarse, el escudo emitirá un destello que cegará temporalmente a los insectos que lo vean. Tras esto, el escudo entrará en reposo. Recuperando 17 puntos de vida cada 10 segundos hasta restaurarse por completo."
+  ],
+  "sinergias": [
+    {
+      "nombre": "Escudo Onírico",
+      "descripcion": "Aumenta la cantidad de escudos oníricos de 1 a 2, proporcionando mayor defensa contra proyectiles enemigos.",
+      "imagen": "images/amuletosC/EscudoOnirico.webp"
+    },
+    {
+      "nombre": "Portador Onírico",
+      "descripcion": "Aumenta drásticamente la cantidad de esencia onírica que recoge el usuario, incrementando un 20% todas las probabilidades de obtención.",
+      "imagen": "images/amuletosC/PortadorOnirico.webp"
+    },
+    {
+      "nombre": "Remanente Onírico",
+      "descripcion": "Aumenta el alcance de los tajos generados por Remanente Onírico, permitiendo afectar a múltiples enemigos con mayor facilidad.",
+      "imagen": "images/amuletos/RemanenteOnirico.png"
+    },
+    {
+      "nombre": "Transmutador Onírico",
+      "descripcion": "En lugar de alterar el arma principal con una forma onírica, Manto Radiante la transmuta en una versión 'Radiante', similar a las dagas de la diosa de la Luz.\n\n Esta arma conserva las ventajas de las forjadas con mineral pálido, incrementando su daño sin sufrir penalizaciones contra enemigos físicos a diferencia de las armas oníricas.",
+      "imagen": "images/amuletosC/TransmutadorOnirico.webp"
+    },
+    {
+     "nombre": "Materialización Onírica",
+     "descripcion": "El portador adquiere la capacidad de materializar estructuras oníricas más complejas que simples plataformas. Estas construcciones pueden tener hasta 2 metros de largo y 2 metros de alto, incluyendo muros, rampas, escaleras flotantes e incluso objetos útiles o armas temporales, como lanzas o mecanismos complejos como ballestas, si el usuario comprende su funcionamiento. Prácticamente, el límite es su imaginación. Las estructuras pueden moverse ligeramente antes de fijarse en el espacio, y duran hasta 60 segundos. Sin embargo, cada objeto materializado tiene una durabilidad limitada de 100 puntos y puede ser destruido por ataques enemigos o uso excesivo.",
+     "imagen": "images/amuletos/MaterializacionOnirica.png"
+    }
+
+  ]
+}
+,
+  {
+  "id": "remanente-onirico",
+  "nombre": "Remanente onírico",
+  "imagen": "images/amuletos/RemanenteOnirico.png",
+  "muescas": 3,
+  "rareza": "Pálida",
+  "historia": "Un presente de las polillas al Rey Pálido, concedido en el momento en que recibió el título de gobernante de Hallownest. Un amuleto singular, destinado a un gran guerrero polilla que jamás pudo recibirlo, pues la infección de Radiance se alzó antes de que el amuleto alcanzara sus manos.",
+  "efectos": [
+    "Cada golpe cuerpo a cuerpo es seguido por una estela onírica que asesta un impacto adicional.",
+    "El daño del segundo impacto será equivalente a un 70% del ataque original (Este efecto no se aplica si el usuario es una polilla)."
+  ],
+  "sinergias": [
+    {
+      "nombre": "Escudo Onírico",
+      "descripcion": "El escudo onírico es reemplazado por una daga flotante que gira alrededor del usuario y puede ser dirigida brevemente para atacar a enemigos dentro de un rango de 20 metros.",
+      "imagen": "images/amuletosC/EscudoOnirico.webp"
+    },
+    {
+      "nombre": "Marca de la Pureza",
+      "descripcion": "Al equipar ambos amuletos, cada tajo genera una tercera estela que sigue a la primera, causando la mitad del daño original.",
+      "imagen": "images/amuletosC/MarcaDeLaPureza.png"
+    },
+    {
+      "nombre": "Manto Radiante",
+      "descripcion": "Aumenta el alcance de los tajos generados por Remanente onírico, permitiendo afectar a múltiples enemigos con mayor facilidad.",
+      "imagen": "images/amuletos/MantoRadiante.png"
+    }
+  ],
+  "recomendaciones": [
+    {
+      "personaje": "assets/personaje-maximus.png",
+      "texto": "Pelear contra alguien con este amuleto es un dolor de cabeza jeje, y más si sus ataques son rápidos y precisos. ¿Eh? ¿Por qué lo sé?... amm, digamos que una caballera protectora de Sendero verde me ayudó a probar el amuleto, je..."
+    }
+  ]
+}
+,
+ {
+  "id": "ira-aspid",
+  "nombre": "Ira de aspid",
+  "imagen": "images/amuletos/IraDeAspid.png",
+  "muescas": 3,
+  "rareza": "Pálida",
+  "historia": "Descubierto en el cadáver de un antiguo aspid, este insecto portaba una mutación que lo hacía mucho más grande que la forma primigenia que conocemos. Fue una criatura formidable, cuyo destino fue sellado por un centenar de insectos, pero no sin antes arrastrar a más de la mitad de sus cazadores al abismo junto a él.",
+  "efectos": [
+    "Todo proyectil lanzado por el usuario, ya sea mágico o no, se triplicará. (Las copias de proyectiles físicos desaparecerán después de unos segundos tras impactar)."
+  ],
+  "sinergias": [
+    {
+      "nombre": "Útero Brillante",
+      "descripcion": "Las crías generadas por Útero brillante ya no son kamikazes, sino que se mantienen cerca del usuario y disparan proyectiles a los enemigos cercanos.",
+      "imagen": "images/amuletosC/UteroBrillante.webp"
+    }
+  ],
+  "recomendaciones": [
+    {
+      "personaje": "assets/personaje-cyrille.png",
+      "texto": "Me encanta usarlo con mis ballestas jsjsjsj, no tienes idea de lo útil que es para abrumar a alguien. ¡Funde los escudos antes de que puedan reaccionar!"
+    }
+  ]
+}
+,
+  {
+    "id": "suministro-maestro",
+    "nombre": "Suministro maestro",
+    "imagen": "images/amuletos/SuministroMaestro.png",
+    "muescas": 4,
+    "rareza": "Pálida",
+    "historia": "En un intento de crear un amuleto para duplicar sus reservas de alma, el Rey Pálido terminó creando este amuleto, catalogándolo como otro más de sus inventos fallidos.\n\n Si bien, para un hechicero, aumentar sus reservas de alma con este amuleto puede ser impresionante, no era más que un mero juguete en las manos del antiguo gobernante de Hallownest.",
+    "efectos": [
+      "El límite de alma máximo que el portador puede almacenar aumenta considerablemente, agregando +5 vasijas de alma a sus reservas de alma."
+    ],
+    "sinergias": [
+      {
+        "nombre": "Saco de sabiavida",
+        "descripcion": "El germen de sabiavida también tendrá porciones reservas de alma en su interior, y al morir recargará 3 vasijas de alma instantáneamente.",
+        "imagen": "images/amuletos/SacoDeSabiavida.png"
+      },
+      {
+        "nombre": "Tuerce hechizos",
+        "descripcion": "Realizar un golpe efectivo con un hechizo le devolverá al usuario el 50% del alma gastada en ese hechizo. (50% del costo original y no de la reducción aplicada por Tuercehechizos).",
+        "imagen": "images/amuletosC/TuerceHechizos.webp"
+      },
+      {
+        "nombre": "Útero brillante",
+        "descripcion": "Las crías generadas por Útero brillante no gastarán alma al ser creadas.",
+        "imagen": "images/amuletosC/UteroBrillante.webp"
+      }
+    ],
+    "recomendaciones": [
+      {
+        "personaje": "assets/personaje-maximus.png",
+        "texto": "Mi padre siempre fue un estupido... Lo que él veía como un 'invento fallido', cualquier hechicero lo consideraría una obra maestra. Tener reservas de alma prácticamente ilimitadas... eso cambia todo en combate."
+      }
+    ]
+  },
+  {
+  "id": "eco-colmena",
+  "nombre": "Eco de la colmena",
+  "imagen": "images/amuletos/EcoDeLaColmena.png",
+  "muescas": 2,
+  "rareza": "Vacío",
+  "historia": "Siendo la segunda obra de Maximus, fue tejido con fragmentos de alma y ADN cedidos por la híbrida Cardo. Este amuleto invoca la voluntad de la colmena, dispuesta a ayudar a su portador en la batalla a toda costa.",
+  "efectos": [
+    "Invoca 3 crías de la colmena que revolotean junto al portador, atacando automáticamente a los enemigos cercanos y causando daño constante.",
+    "(Efecto pasivo para insectos abeja): Si el portador tiene afinidad con la colmena, el número de crías aumenta a 5, y pueden ser dirigidas hacia los enemigos con mayor precisión."
+  ],
+  "sinergias": [
+    {
+      "nombre": "Sangre de Colmena",
+      "descripcion": "Por cada 12 golpes infligidos por las crías, el portador recupera una máscara de miel.",
+      "imagen": "images/amuletosC/SangreColmena.webp"
+    },
+    {
+      "nombre": "Útero Brillante",
+      "descripcion": "Las crías adoptan un comportamiento más agresivo, se lanzan contra los enemigos como proyectiles vivos, causando más daño y regresando al portador tras unos segundos.",
+      "imagen": "images/amuletosC/UteroBrillante.webp"
+    }
+  ]
+},
+  {
+    "id": "adaptacion",
+    "nombre": "Adaptación",
+    "imagen": "images/amuletos/Adaptacion.png",
+    "muescas": 3,
+    "rareza": "Pálida",
+    "historia": "Proveniente de un dúo de altos seres venerados por los Buscadores de Dioses, este amuleto nació tras la caída de uno de ellos. Un escolopendra cuya capacidad de adaptación y coraza no bastaron frente a un enemigo superior.\n\n Sus restos, aún templados por la voluntad de resistir, dieron forma a este fragmento, un eco persistente de su instinto por sobrevivir.",
+    "efectos": [
+      "Registra cada herida, adaptando la coraza del portador.",
+      "El portador desarrolla resistencia progresiva a ataques del mismo tipo, ganando un 32% de aguante por cada golpe recibido de manera consecutiva. Si el tipo de daño cambia, la adaptación se reinicia.",
+      "Distingue entre categorías como tipos de magia (alma u onírica), daño físico por corte, golpes contundentes o explosiones."
+    ],
+    "sinergias": [
+      {
+        "nombre": "Resiliencia",
+        "descripcion": "Al combatir contra el mismo enemigo durante un tiempo prolongado, ambos amuletos crean un efecto de retroalimentación que acelera tanto la adaptación como el aprendizaje de patrones. La resistencia de Adaptación se acumula un 50% más rápido, mientras que los ataques potenciados de Resiliencia ignoran un 50% de las defensas naturales del enemigo.",
+        "imagen": "images/amuletos/Resiliencia.png"
+      }
+    ]
+  },
+  {
+    "id": "resiliencia",
+    "nombre": "Resiliencia",
+    "imagen": "images/amuletos/Resiliencia.png",
+    "muescas": 3,
+    "rareza": "Pálida",
+    "historia": "Fue compañera del alto ser caído, una escarabajo tenaz de mandíbulas afiladas y voluntad implacable.\n Cuando supo del destino de la escolopendra, no dudó en enfrentarse al asesino. Sus ataques, precisos y brutales, buscaban una rendija, una debilidad, cualquier señal de fractura. Pero ni su fuerza ni su determinación bastaron para romper la coraza de aquel ser desconocido. Aun así, no se detuvo. Siguió atacando, aprendiendo, ajustando su ritmo... hasta que el silencio la alcanzó. De su último esfuerzo nace este amuleto, un eco de su furia perseverante.\n\n No es la fuerza bruta lo que hiere, sino la voluntad que nunca cede.",
+    "efectos": [
+      "Reconoce la resistencia, aprende a quebrarla.",
+      "Al combatir contra un enemigo durante un tiempo sostenido (5-10 minutos), los ataques del portador se ajustan lentamente, aumentando su capacidad para romper las defensas de ese enemigo en particular.",
+      "El daño infligido se incrementa de forma progresiva solo contra ese oponente, ignorando parcialmente sus defensas. El efecto se pierde al abandonar el enfrentamiento o cambiar de objetivo."
+    ],
+    "sinergias": [
+      {
+        "nombre": "Adaptación",
+        "descripcion": "Al combatir contra el mismo enemigo durante un tiempo prolongado, ambos amuletos crean un efecto de retroalimentación que acelera tanto la adaptación como el aprendizaje de patrones. La resistencia de Adaptación se acumula un 50% más rápido, mientras que los ataques potenciados de Resiliencia ignoran un 50% de las defensas naturales del enemigo.",
+        "imagen": "images/amuletos/Adaptacion.png"
+      }
+    ]
+  }
 ]
