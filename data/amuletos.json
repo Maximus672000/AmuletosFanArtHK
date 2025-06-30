@@ -105,7 +105,7 @@
       {
         "nombre": "Sangrecolmena",
       "descripcion": "El usuario obtiene cierto grado de control sobre la miel.",
-      "imagen": "images/amuletosC/SangreColmena.webp"
+      "imagen": "images/amuletosC/Sangrecolmena.webp"
       },
       {
          "nombre": "Elegía de la larvamosca",
@@ -514,7 +514,7 @@
       {
         "nombre": "Tuerce hechizos",
         "descripcion": "Realizar un golpe efectivo con un hechizo le devolverá al usuario el 50% del alma gastada en ese hechizo. (50% del costo original y no de la reducción aplicada por Tuercehechizos).",
-        "imagen": "images/amuletosC/TuerceHechizos.webp"
+        "imagen": "images/amuletosC/Tuercehechizos.webp"
       },
       {
         "nombre": "Útero brillante",
