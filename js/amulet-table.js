@@ -118,16 +118,32 @@ function setupEventListeners() {
     console.log('🎯 Event listener del botón de navegación configurado');
   }
   
-  // Botón para cerrar la tabla
+  // CORRECCIÓN: Botón para cerrar la tabla con stopPropagation
   const closeButton = document.getElementById('amulet-table-close');
   if (closeButton) {
-    closeButton.addEventListener('click', hideAmuletTable);
+    // Usar capture para que se ejecute antes que otros listeners
+    closeButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      e.stopImmediatePropagation();
+      hideAmuletTable();
+    }, { capture: true });
+    
+    // Listener adicional para asegurar que siempre funcione
+    closeButton.addEventListener('mousedown', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      e.stopImmediatePropagation();
+    }, { capture: true });
+    
+    console.log('🎯 Event listener del botón de cerrar configurado con prioridad');
   }
   
   // Cerrar al hacer click en el overlay (fuera de la tabla)
   const overlay = document.getElementById('amulet-table-overlay');
   if (overlay) {
     overlay.addEventListener('click', (e) => {
+      // Solo cerrar si el click es exactamente en el overlay, no en sus hijos
       if (e.target === overlay) {
         hideAmuletTable();
       }
@@ -137,7 +153,10 @@ function setupEventListeners() {
   // Cerrar con la tecla Escape
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
-      hideAmuletTable();
+      const overlay = document.getElementById('amulet-table-overlay');
+      if (overlay && overlay.classList.contains('active')) {
+        hideAmuletTable();
+      }
     }
   });
   
@@ -288,9 +307,17 @@ function renderAmuletTable() {
       <p class="amulet-item-name">${amuleto.nombre}</p>
     `;
     
-    // Event listener para navegación con feedback visual
+    // CORRECCIÓN: Event listener mejorado para navegación
     item.addEventListener('click', (e) => {
       e.preventDefault();
+      e.stopPropagation();
+      
+      // Verificar que no estamos clickeando el botón de cerrar
+      const closeButton = document.getElementById('amulet-table-close');
+      if (closeButton && (e.target === closeButton || closeButton.contains(e.target))) {
+        return; // No navegar si se clickeó el botón de cerrar
+      }
+      
       navigateToAmulet(index);
     });
     

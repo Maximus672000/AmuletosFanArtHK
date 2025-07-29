@@ -11,10 +11,15 @@ class AudioSystem {
     
     // Lista de canciones (agrega las rutas de tus archivos de audio)
     this.playlist = [
-      'audio/Song1FAnArtAmuletos.mp3',
-      'audio/hollow-knight-2.mp3',
-      'audio/hollow-knight-3.mp3'
-      // Agrega más canciones aquí
+  'audio/Song1FAnArtAmuletos.mp3',
+  'audio/HollowKnightOSTGreenpath.mp3',
+  'audio/HollowKnightOSTWhitePalace.mp3',
+  'audio/HollowKnightOSTKingdomsEdge.mp3',
+  'audio/HollowKnightOSTQueensGardens.mp3',
+  'audio/HollowKnightOSTEnterHallownest.mp3',
+  'audio/HollowKnightOSTHollowKnight.mp3',
+  'audio/HollowKnightOSTRestingGrounds.mp3',
+  'audio/HollowKnightOSTCityofTears.mp3'
     ];
     
     this.init();

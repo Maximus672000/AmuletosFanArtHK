@@ -33,12 +33,12 @@
       {
         "nombre": "Danza de cristal",
         "descripcion": "Los cristales generados por Danza de Cristal ven su daño y defensa aumentados significativamente. Los hechizos de ataque mejoran un 60% y los escudos creados al usar concentración pueden resistir hasta dos golpes antes de romperse.",
-        "imagen": "images/amuletosC/0.webp"
+        "imagen": "images/amuletos/DanzaDeCristal.png"
       },
       {
         "nombre": "Aflicción de Ooma",
         "descripcion": "La descarga eléctrica es reemplazada por un rayo de luz que se dispara automáticamente hacia el agresor. Aunque menos preciso, este rayo inflige un daño considerablemente mayor que la descarga original.",
-        "imagen": "images/amuletosC/0.webp"
+        "imagen": "images/amuletos/AfliccionDeOoma.png"
       },
       {
         "nombre": "Enjambre vengativo",
@@ -344,7 +344,13 @@
       "nombre": "Piedra de Chamán",
       "descripcion": "Si el usuario alcanza el tanque de alma completo con Meditación activa equipada junto a Piedra de chamán, su siguiente hechizo será lanzado de forma inmediata y sin costo de alma.",
       "imagen": "images/amuletosC/PiedraDeChaman.webp"
-    }
+    },
+    {
+  "nombre": "Danza de Cristal",
+  "descripcion": "Por cada cristal presente en el campo generado por hechizos del usuario, Meditación Activa absorberá alma un 20% más rápido. Este efecto se acumula hasta 5 veces.",
+  "imagen": "images/amuletos/DanzaDeCristal.png"
+}
+
   ],
   "recomendaciones": [
   {
@@ -592,5 +598,57 @@
         "imagen": "images/amuletos/Adaptacion.png"
       }
     ]
-  }
+  },
+  {
+  "id": "danza-cristal",
+  "nombre": "Danza de Cristal",
+  "imagen": "images/amuletos/DanzaDeCristal.png",
+  "muescas": 4,
+  "rareza": "Pálida",
+  "historia": "Un chamán de la cumbre de cristal, obsesionado con replicar el mítico Corazón de Cristal creado por el Rey Pálido, dedicó su vida al estudio de la resonancia y la canalización mágica a través de minerales puros.\n\nSu experimento final, sin embargo, no dio como resultado un nuevo corazón, sino la formación inesperada de un amuleto. Aunque incompleto según su visión original, el objeto cristalizó parte de su alma y adoptó propiedades mágicas únicas. Fue bautizado como “Danza de Cristal” por su forma cambiante para mejorar hechizos.",
+  "efectos": [
+    "Los hechizos de curación generan una cúpula de cristal que rodea al portador, bloqueando un impacto leve o proyectil mientras se concentra.",
+    "Los hechizos ofensivos hacen que cristales se manifiesten en la zona de colisión, infligiendo daño en área a enemigos cercanos.",
+    "Los hechizos canalizados, como los de concentración o aquellos que requieren tiempo para activarse, no pueden ser interrumpidos por daño durante 1 segundo."
+  ],
+  "sinergias": [
+    {
+      "nombre": "Mirada Penetrante",
+      "descripcion": "Los cristales generados por Danza de cristal ven su daño y defensa aumentados significativamente. Los hechizos ofensivos infligen 60% más daño y las cúpulas protectoras pueden resistir hasta dos golpes antes de romperse.",
+      "imagen": "images/amuletos/MiradaPenetrante.png"
+    },
+    {
+  "nombre": "Meditación Activa",
+  "descripcion": "Por cada cristal presente en el campo generado por hechizos del usuario, meditación activa absorberá alma un 20% más rápido. Este efecto se acumula hasta 5 veces.",
+  "imagen": "images/amuletos/MeditacionActiva.png"
+}
+
+  ]
+},
+{
+  "id": "AfliccionDeOoma",
+  "nombre": "Aflicción de Ooma",
+  "imagen": "images/amuletos/AfliccionDeOoma.png",
+  "muescas": 2,
+  "rareza": "Vacío",
+  "historia": "Impulsada por una mezcla de orgullo, terquedad y genialidad, Molly emprendió una serie de experimentos no del todo ortodoxos. Cada intento fallido la acercaba más a su objetivo, el cual era crear un amuleto capaz de contener y canalizar las almas de Oomas y Uomas, sin utilizar el método de creación de amuletos de Max.\n\nEl resultado, aunque nacido de un método rudimentario, superó toda expectativa. Al verlo brillar por primera vez, Molly murmuró con satisfacción... \n\n\"Te dije que podía hacerlo, arañita.\"",
+  "efectos": [
+    "Cuando el portador del amuleto sufre daño directo, refleja automáticamente un 75% del daño total de su arma equipada como una descarga eléctrica de represalia, que impacta al agresor sin importar la distancia. Sin embargo, no atraviesa obstáculos sólidos ni paredes extremadamente densas, y su daño no puede superar los 25 puntos bajo circunstancias normales.",
+    "Como medida de seguridad mágica, Oomas y Uomas no pueden recibir daño del portador del amuleto, y viceversa."
+  ],
+  "sinergias": [
+    {
+      "nombre": "Mirada Penetrante",
+      "descripcion": "La descarga eléctrica es reemplazada por un rayo de luz que se dispara automáticamente hacia el agresor. Aunque menos preciso, este rayo inflige un daño considerablemente mayor que la descarga original.",
+      "imagen": "images/amuletos/MiradaPenetrante.png"
+    },
+    {
+      "nombre": "Espinas de Agonía",
+      "descripcion": "Si la descarga del amuleto impacta de forma efectiva al enemigo, se generan abrazaderas cubiertas de espinas eléctricas que se aferran al cuerpo del agresor. Estas espinas se mantienen activas durante 5 segundos, causando 3 puntos de daño por segundo.",
+      "imagen": "images/amuletosC/EspinasDeAgonia.webp"
+    }
+  ]
+}
+
+
 ]
