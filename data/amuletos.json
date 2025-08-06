@@ -2,7 +2,7 @@
   {
     "id": "manto-fantasma",
     "nombre": "Manto Fantasma",
-    "imagen": "images/amuletos/MantoFantasma.png",
+    "imagen": "images/amuletos/MantoFantasma.webp",
     "muescas": 2,
     "rareza": "Vacío",
     "historia": "Confiscado junto a las Botas de silencio, el origen de este encanto permanece igual de incierto. Algunos teorizan que pudo haber pertenecido a un culto de insectos, tal vez no tan distinto a la enigmática Compañía Grimm.",
@@ -15,7 +15,7 @@
   {
     "id": "mirada-penetrante",
     "nombre": "Mirada penetrante",
-    "imagen": "images/amuletos/MiradaPenetrante.png",
+    "imagen": "images/amuletos/MiradaPenetrante.webp",
     "muescas": 2,
     "rareza": "Radiante",
     "historia": "Este amuleto se originó a partir de las acciones desesperadas de una viajera que se encontraba en Hallownest durante el inicio de la infección de Radiance. Al borde de sucumbir a la infección, en un último esfuerzo por mantener su conciencia, lanzó un hechizo que provocó la pérdida de su cuerpo y encapsuló su alma en un encanto creado por la propia magia del conjuro.",
@@ -33,12 +33,12 @@
       {
         "nombre": "Danza de cristal",
         "descripcion": "Los cristales generados por Danza de Cristal ven su daño y defensa aumentados significativamente. Los hechizos de ataque mejoran un 60% y los escudos creados al usar concentración pueden resistir hasta dos golpes antes de romperse.",
-        "imagen": "images/amuletos/DanzaDeCristal.png"
+        "imagen": "images/amuletos/DanzaDeCristal.webp"
       },
       {
         "nombre": "Aflicción de Ooma",
         "descripcion": "La descarga eléctrica es reemplazada por un rayo de luz que se dispara automáticamente hacia el agresor. Aunque menos preciso, este rayo inflige un daño considerablemente mayor que la descarga original.",
-        "imagen": "images/amuletos/AfliccionDeOoma.png"
+        "imagen": "images/amuletos/AfliccionDeOoma.webp"
       },
       {
         "nombre": "Enjambre vengativo",
@@ -56,7 +56,7 @@
   {
     "id": "remanente-codicioso",
     "nombre": "Remanente codicioso",
-    "imagen": "images/amuletos/RemanenteCodicioso.png",
+    "imagen": "images/amuletos/RemanenteCodicioso.webp",
     "muescas": 3,
     "rareza": "Pálida",
     "historia": "Este amuleto, el primero creado por Maximus, fue forjado utilizando un método descubierto por un maestro del alma, el mismo que permitió la creación del amuleto 'Alma Voraz'. Este encanto alberga la esencia de una peculiar variante del Engullecortos, especializada en devorar a los insectos más ávidos y codiciosos.",
@@ -74,13 +74,13 @@
       {
         "nombre": "Capa de musgo",
         "descripcion": "La capa adquiere a una forma menos metálica, similar a un Engulletonto, mientras sus raíces atacan con mayor velocidad y agresividad, respondiendo más rápido a los enemigos cercanos.",
-        "imagen": "images/amuletos/CapaDeMusgo.png"
+        "imagen": "images/amuletos/CapaDeMusgo.webp"
       }
       ,
       {
         "nombre": "Porte elegante",
         "descripcion": "La capa se adapta visualmente a la vestimenta otorgada por el amuleto, pasando más desapercibida. Además, las raíces ya no cuentan con espinas afiladas, sino que cada extremo culmina en una bola de demolición compuesta por geos incrustados de valor 50, causando mayor daño por impacto.",
-        "imagen": "images/amuletos/PorteElegante.png"
+        "imagen": "images/amuletos/PorteElegante.webp"
       }
     ],
     "recomendaciones": [
@@ -93,7 +93,7 @@
   {
     "id": "pacto-sabiavida",
     "nombre": "Pacto de sabiavida",
-    "imagen": "images/amuletos/PactoDeSabiavida.png",
+    "imagen": "images/amuletos/PactoDeSabiavida.webp",
     "muescas": 3,
     "rareza": "Radiante",
     "historia": "Un amuleto formado por el deseo conjunto de dos insectos al morir. Concebido por un dúo compuesto por un caballero y un sanador, ambos adoradores de la Sabiavida, quienes fueron superados en una batalla donde su anhelo final era permanecer con vida.",
@@ -123,7 +123,7 @@
   {
     "id": "coraza-palida",
     "nombre": "Coraza pálida",
-    "imagen": "images/amuletos/CorazaPalida.png",
+    "imagen": "images/amuletos/CorazaPalida.webp",
     "muescas": 3,
     "rareza": "Pálida",
     "historia": "Los restos de un fiel caballero del rey pálido. El amuleto refleja la noble naturaleza de este insecto cuando se encontraba en vida.",
@@ -159,7 +159,7 @@
   {
     "id": "espiral-caracol",
     "nombre": "Espiral de caracol",
-    "imagen": "images/amuletos/EspiralDeCaracol.png",
+    "imagen": "images/amuletos/EspiralDeCaracol.webp",
     "muescas": 1,
     "rareza": "Vacío",
     "historia": "Nacido en el momento final de un caracol a las afueras del reino; este amuleto posee un veneno sumamente peligroso. Su peligrosidad es tan elevada que, incluso para aquellas especies que han desarrollado este mismo mecanismo de defensa, resulta fatal, llevándolas a la muerte en cuestión de horas.",
@@ -188,7 +188,7 @@
   {
     "id": "ojos-cazador",
     "nombre": "Ojos de cazador",
-    "imagen": "images/amuletos/OjosDeCazador.png",
+    "imagen": "images/amuletos/OjosDeCazador.webp",
     "muescas": 1,
     "rareza": "Vacío",
     "historia": "Perteneciente a un antiguo desertor mantis que fue exiliado a Nido Profundo, este insecto, a pesar de su gran habilidad en combate, no pudo sobrevivir más de un par de años. La falta de luz en ese lugar resultó fatal, y murió con el anhelo de haber tenido las capacidades necesarias para sobrevivir en este lugar.",
@@ -212,7 +212,7 @@
   {
   "id": "BotasDeSilencio",
   "nombre": "Botas de silencio",
-  "imagen": "images/amuletos/BotasDeSilencio.png",
+  "imagen": "images/amuletos/BotasDeSilencio.webp",
   "muescas": 1,
   "rareza": "Vacío",
   "historia": "Confiscado a un ferviente seguidor de Unn, quien, consumido por la desesperación, intentó asesinar al Rey Pálido como último acto de rebelión.",
@@ -236,7 +236,7 @@
 {
   "id": "afiladora",
   "nombre": "Afiladora",
-  "imagen": "images/amuletos/Afiladora.png",
+  "imagen": "images/amuletos/Afiladora.webp",
   "muescas": 2,
   "rareza": "Vacío",
   "historia": "Cuidadosamente forjado por las antiguas tribus cazadoras de Hallownest, este amuleto es mucho más que una simple herramienta. Se trata de un legado antiguo, transmitido de generación en generación, y una pieza valiosa para cualquier insecto que confíe en su arco como su arma más fiable.\n\nSu poder reside en la experiencia de aquellos que lo han utilizado antes, convirtiéndolo en un talismán indispensable para cualquier cazador.",
@@ -260,7 +260,7 @@
   {
     "id": "brote-guardian",
     "nombre": "Brote Guardián",
-    "imagen": "images/amuletos/BroteGuardian.png",
+    "imagen": "images/amuletos/BroteGuardian.webp",
     "muescas": 2,
     "rareza": "Radiante",
     "historia": "Este amuleto, que alguna vez perteneció a Isma, una de los cinco caballeros de la Corte Pálida, fue crucial en sus primeros años, antes de que perfeccionara su dominio sobre las plantas.\n\n Tras la desaparición de Isma al inicio del resurgir de la infección, el Rey Pálido recuperó el amuleto y lo colocó bajo custodia junto a los demás de su colección, siendo este el último de aquella enigmática colección.",
@@ -292,7 +292,7 @@
   {
     "id": "materializacion-onirica",
     "nombre": "Materialización onírica",
-    "imagen": "images/amuletos/MaterializacionOnirica.png",
+    "imagen": "images/amuletos/MaterializacionOnirica.webp",
     "muescas": 2,
     "rareza": "Pálida",
     "historia": "Un proyecto conjunto entre las polillas y el Rey Pálido que quedó inconcluso a causa del brote de la infección. Los registros de lo que se había planeado para este amuleto se perdieron con el tiempo, lo que solo permite especular sobre su propósito final a partir de este mismo encanto.",
@@ -306,7 +306,7 @@
       {
          "nombre": "Manto Radiante",
           "descripcion": "El portador adquiere la capacidad de materializar estructuras oníricas más complejas que simples plataformas. Estas construcciones pueden tener hasta 2 metros de largo y 2 metros de alto, incluyendo muros, rampas, escaleras flotantes e incluso objetos útiles o armas temporales, como lanzas o mecanismos complejos como ballestas, si el usuario comprende su funcionamiento. Prácticamente, el límite es su imaginación. Las estructuras pueden moverse ligeramente antes de fijarse en el espacio, y duran hasta 60 segundos. Sin embargo, cada objeto materializado tiene una durabilidad limitada de 100 puntos y puede ser destruido por ataques enemigos o uso excesivo.",
-         "imagen": "images/amuletos/MantoRadiante.png"
+         "imagen": "images/amuletos/MantoRadiante.webp"
       },
       {
         "nombre": "Portador Onírico",
@@ -326,7 +326,7 @@
   {
   "id": "meditacion-activa",
   "nombre": "Meditación activa",
-  "imagen": "images/amuletos/MeditacionActiva.png",
+  "imagen": "images/amuletos/MeditacionActiva.webp",
   "muescas": 3,
   "rareza": "Vacío",
   "historia": "Un experimento 'fallido' del Chamán Caracol, que intentaba desarrollar su propio método para fabricar amuletos, fue finalmente desechado en un lago de almas. Sin embargo, bajo estas circunstancias, con el paso del tiempo, ese objeto se transformó en un amuleto funcional.\n\nEste artefacto, considerado inicialmente como un fracaso, fue rescatado del olvido por Salubra y eventualmente puesto a la venta.",
@@ -348,7 +348,7 @@
     {
   "nombre": "Danza de Cristal",
   "descripcion": "Por cada cristal presente en el campo generado por hechizos del usuario, Meditación Activa absorberá alma un 20% más rápido. Este efecto se acumula hasta 5 veces.",
-  "imagen": "images/amuletos/DanzaDeCristal.png"
+  "imagen": "images/amuletos/DanzaDeCristal.webp"
 }
 
   ],
@@ -364,7 +364,7 @@
   {
     "id": "regalo-monomon",
     "nombre": "Regalo de monomon",
-    "imagen": "images/amuletos/RegaloDeMonomon.png",
+    "imagen": "images/amuletos/RegaloDeMonomon.webp",
     "muescas": 1,
     "rareza": "Vacío",
     "historia": "Un obsequio de la maestra Monomon al Rey Pálido, entregado cuando él ascendió al trono como gobernante de Hallownest.",
@@ -377,7 +377,7 @@
   {
   "id": "impregnador-vacio",
   "nombre": "Impregnador de vacío",
-  "imagen": "images/amuletos/ImpregnadorDeVacio.png",
+  "imagen": "images/amuletos/ImpregnadorDeVacio.webp",
   "muescas": 4,
   "rareza": "Vacío",
   "historia": "Antiguo amuleto hallado por el Rey Pálido al descubrir el Abismo, contiene en su interior la belleza del vacío.\n\nNo se sabe con certeza si fue creado o simplemente encontrado tal cual, pero su poder es innegable. El vacío que lo impregna parece reaccionar al alma del portador, moldeándolo sutilmente.\n\nNotas del Rey Pálido:\nSi se usa de manera adecuada, puede ser un buen aditamento para cualquier insecto.\nSi se usa de manera desmedida, podría perder su conciencia.\nEn manos correctas puede ser la salvación, y en las incorrectas su propia destrucción.\nEn mis manos... pues simplemente me permite acceder al laboratorio de manera más sencilla.",
@@ -389,7 +389,7 @@
     {
       "nombre": "Flor del Abismo",
       "descripcion": "Mientras se tengan equipados Impregnador de vacío y Flor del abismo, el usuario accede directamente al poder de la segunda etapa de la flor, incluso con salud completa. Esto otorga un aumento pasivo de velocidad de movimiento del 10% y una mejora en la recuperación del dash. Además, su conexión con el vacío se profundiza drásticamente, haciendo que sus cortes se tornen negros como el vacío  y mejorando su control sobre este.",
-      "imagen": "images/amuletosC/FlorDelAbismo.png"
+      "imagen": "images/amuletosC/FlorDelAbismo.png" 
     },
     {
       "nombre": "Sombra Afilada",
@@ -402,7 +402,7 @@
   {
   "id": "manto-radiante",
   "nombre": "Manto radiante",
-  "imagen": "images/amuletos/MantoRadiante.png",
+  "imagen": "images/amuletos/MantoRadiante.webp",
   "muescas": 2,
   "rareza": "Radiante",
   "historia": "Creado por la madre ancestral de las polillas, la diosa que llevó a Hallownest a la ruina. Este amuleto encarna la esencia de su divinidad, tal como era antes de la traición de sus propias hijas.",
@@ -424,17 +424,17 @@
     {
       "nombre": "Remanente Onírico",
       "descripcion": "Aumenta el alcance de los tajos generados por Remanente Onírico, permitiendo afectar a múltiples enemigos con mayor facilidad.",
-      "imagen": "images/amuletos/RemanenteOnirico.png"
+      "imagen": "images/amuletos/RemanenteOnirico.webp"
     },
     {
       "nombre": "Transmutador Onírico",
       "descripcion": "En lugar de alterar el arma principal con una forma onírica, Manto Radiante la transmuta en una versión 'Radiante', similar a las dagas de la diosa de la Luz.\n\n Esta arma conserva las ventajas de las forjadas con mineral pálido, incrementando su daño sin sufrir penalizaciones contra enemigos físicos a diferencia de las armas oníricas.",
-      "imagen": "images/amuletos/TransmutadorOnirico.png"
+      "imagen": "images/amuletos/TransmutadorOnirico.webp"
     },
     {
      "nombre": "Materialización Onírica",
      "descripcion": "El portador adquiere la capacidad de materializar estructuras oníricas más complejas que simples plataformas. Estas construcciones pueden tener hasta 2 metros de largo y 2 metros de alto, incluyendo muros, rampas, escaleras flotantes e incluso objetos útiles o armas temporales, como lanzas o mecanismos complejos como ballestas, si el usuario comprende su funcionamiento. Prácticamente, el límite es su imaginación. Las estructuras pueden moverse ligeramente antes de fijarse en el espacio, y duran hasta 60 segundos. Sin embargo, cada objeto materializado tiene una durabilidad limitada de 100 puntos y puede ser destruido por ataques enemigos o uso excesivo.",
-     "imagen": "images/amuletos/MaterializacionOnirica.png"
+     "imagen": "images/amuletos/MaterializacionOnirica.webp"
     }
 
   ]
@@ -443,7 +443,7 @@
   {
   "id": "remanente-onirico",
   "nombre": "Remanente onírico",
-  "imagen": "images/amuletos/RemanenteOnirico.png",
+  "imagen": "images/amuletos/RemanenteOnirico.webp",
   "muescas": 3,
   "rareza": "Pálida",
   "historia": "Un presente de las polillas al Rey Pálido, concedido en el momento en que recibió el título de gobernante de Hallownest. Un amuleto singular, destinado a un gran guerrero polilla que jamás pudo recibirlo, pues la infección de Radiance se alzó antes de que el amuleto alcanzara sus manos.",
@@ -460,12 +460,12 @@
     {
       "nombre": "Marca de la Pureza",
       "descripcion": "Al equipar ambos amuletos, cada tajo genera una tercera estela que sigue a la primera, causando la mitad del daño original.",
-      "imagen": "images/amuletosC/MarcaDeLaPureza.png"
+      "imagen": "images/amuletosC/MarcaDeLaPureza.png" 
     },
     {
       "nombre": "Manto Radiante",
       "descripcion": "Aumenta el alcance de los tajos generados por Remanente onírico, permitiendo afectar a múltiples enemigos con mayor facilidad.",
-      "imagen": "images/amuletos/MantoRadiante.png"
+      "imagen": "images/amuletos/MantoRadiante.webp"
     }
   ],
   "recomendaciones": [
@@ -479,7 +479,7 @@
  {
   "id": "ira-aspid",
   "nombre": "Ira de aspid",
-  "imagen": "images/amuletos/IraDeAspid.png",
+  "imagen": "images/amuletos/IraDeAspid.webp",
   "muescas": 3,
   "rareza": "Pálida",
   "historia": "Descubierto en el cadáver de un antiguo aspid, este insecto portaba una mutación que lo hacía mucho más grande que la forma primigenia que conocemos. Fue una criatura formidable, cuyo destino fue sellado por un centenar de insectos, pero no sin antes arrastrar a más de la mitad de sus cazadores al abismo junto a él.",
@@ -504,7 +504,7 @@
   {
     "id": "suministro-maestro",
     "nombre": "Suministro maestro",
-    "imagen": "images/amuletos/SuministroMaestro.png",
+    "imagen": "images/amuletos/SuministroMaestro.webp",
     "muescas": 4,
     "rareza": "Pálida",
     "historia": "En un intento de crear un amuleto para duplicar sus reservas de alma, el Rey Pálido terminó creando este amuleto, catalogándolo como otro más de sus inventos fallidos.\n\n Si bien, para un hechicero, aumentar sus reservas de alma con este amuleto puede ser impresionante, no era más que un mero juguete en las manos del antiguo gobernante de Hallownest.",
@@ -538,7 +538,7 @@
   {
   "id": "eco-colmena",
   "nombre": "Eco de la colmena",
-  "imagen": "images/amuletos/EcoDeLaColmena.png",
+  "imagen": "images/amuletos/EcoDeLaColmena.webp",
   "muescas": 2,
   "rareza": "Vacío",
   "historia": "Siendo la segunda obra de Maximus, fue tejido con fragmentos de alma y ADN cedidos por la híbrida Cardo. Este amuleto invoca la voluntad de la colmena, dispuesta a ayudar a su portador en la batalla a toda costa.",
@@ -562,7 +562,7 @@
   {
     "id": "adaptacion",
     "nombre": "Adaptación",
-    "imagen": "images/amuletos/Adaptacion.png",
+    "imagen": "images/amuletos/Adaptacion.webp",
     "muescas": 3,
     "rareza": "Pálida",
     "historia": "Proveniente de un dúo de altos seres venerados por los Buscadores de Dioses, este amuleto nació tras la caída de uno de ellos. Un escolopendra cuya capacidad de adaptación y coraza no bastaron frente a un enemigo superior.\n\n Sus restos, aún templados por la voluntad de resistir, dieron forma a este fragmento, un eco persistente de su instinto por sobrevivir.",
@@ -582,7 +582,7 @@
   {
     "id": "resiliencia",
     "nombre": "Resiliencia",
-    "imagen": "images/amuletos/Resiliencia.png",
+    "imagen": "images/amuletos/Resiliencia.webp",
     "muescas": 3,
     "rareza": "Pálida",
     "historia": "Fue compañera del alto ser caído, una escarabajo tenaz de mandíbulas afiladas y voluntad implacable.\n Cuando supo del destino de la escolopendra, no dudó en enfrentarse al asesino. Sus ataques, precisos y brutales, buscaban una rendija, una debilidad, cualquier señal de fractura. Pero ni su fuerza ni su determinación bastaron para romper la coraza de aquel ser desconocido. Aun así, no se detuvo. Siguió atacando, aprendiendo, ajustando su ritmo... hasta que el silencio la alcanzó. De su último esfuerzo nace este amuleto, un eco de su furia perseverante.\n\n No es la fuerza bruta lo que hiere, sino la voluntad que nunca cede.",
@@ -602,7 +602,7 @@
   {
   "id": "danza-cristal",
   "nombre": "Danza de Cristal",
-  "imagen": "images/amuletos/DanzaDeCristal.png",
+  "imagen": "images/amuletos/DanzaDeCristal.webp",
   "muescas": 4,
   "rareza": "Pálida",
   "historia": "Un chamán de la cumbre de cristal, obsesionado con replicar el mítico Corazón de Cristal creado por el Rey Pálido, dedicó su vida al estudio de la resonancia y la canalización mágica a través de minerales puros.\n\nSu experimento final, sin embargo, no dio como resultado un nuevo corazón, sino la formación inesperada de un amuleto. Aunque incompleto según su visión original, el objeto cristalizó parte de su alma y adoptó propiedades mágicas únicas. Fue bautizado como “Danza de Cristal” por su forma cambiante para mejorar hechizos.",
@@ -628,7 +628,7 @@
 {
   "id": "AfliccionDeOoma",
   "nombre": "Aflicción de Ooma",
-  "imagen": "images/amuletos/AfliccionDeOoma.png",
+  "imagen": "images/amuletos/AfliccionDeOoma.webp",
   "muescas": 2,
   "rareza": "Vacío",
   "historia": "Impulsada por una mezcla de orgullo, terquedad y genialidad, Molly emprendió una serie de experimentos no del todo ortodoxos. Cada intento fallido la acercaba más a su objetivo, el cual era crear un amuleto capaz de contener y canalizar las almas de Oomas y Uomas, sin utilizar el método de creación de amuletos de Max.\n\nEl resultado, aunque nacido de un método rudimentario, superó toda expectativa. Al verlo brillar por primera vez, Molly murmuró con satisfacción... \n\n\"Te dije que podía hacerlo, arañita.\"",
@@ -658,19 +658,19 @@
 {
   "id": "Berserker",
   "nombre": "Berserker",
-  "imagen": "images/amuletos/Berserker.png",
+  "imagen": "images/amuletos/Berserker.webp",
   "muescas": 4,
   "rareza": "Pálida",
   "historia": "Hallado en el cuerpo sin vida de un antiguo guerrero del coliseo de los insensatos, perdura el último aliento cristalizado de un caballero que sacrificó todo para asegurar la huida de sus camaradas. Luchó incansablemente durante horas, ofreciendo su valentía en pos de otorgar una oportunidad de escape.",
   "efectos": [
-    "Duplica el daño físico actual del portador después de acabar con la vida de un enemigo. Este aumento de daño durará 20 segundos y se anulará si el portador es golpeado.",
+    "Duplica el daño físico currente del portador después de acabar con la vida de un enemigo. Este aumento de daño durará 20 segundos y se anulará si el portador es golpeado.",
     "Agrega una máscara de sangre después de abatir a un enemigo hasta un máximo de 3."
   ]
 },
 {
   "id": "GuardianCambiante",
   "nombre": "Guardián Cambiante",
-  "imagen": "images/amuletos/GuardianCambiante.png",
+  "imagen": "images/amuletos/GuardianCambiante.webp",
   "muescas": 2,
   "rareza": "Radiante",
   "historia": "En un antiguo reino lejano a Hallownest, se alzaba un alto ser, venerado por su pueblo como protector frente a amenazas que los habitantes comunes no podían enfrentar. Aquel ser amaba profundamente el reino y a los insectos que lo habitaban, y, a su vez, era amado con devoción por todos ellos.\n\nSin embargo, un día, una amenaza sin precedentes surgió más allá de sus fronteras. Otro ser, igual de poderoso, puso en peligro la integridad de aquel reino. Nuestro guardián, sabiendo que no podía permitir la destrucción de su gente, lo enfrentó directamente. A costa de su vida, logrando repeler la amenaza, sellando su voluntad en lo que ahora es este amuleto.\n\nDesde entonces, el artefacto ha pasado de reino en reino, cruzando eras, conflictos y leyendas, hasta llegar finalmente a Hallownest… donde su guardián aún está dispuesto a levantarse una vez más.",
@@ -697,7 +697,7 @@
 {
   "id": "transmutador-onirico",
   "nombre": "Transmutador Onírico",
-  "imagen": "images/amuletos/TransmutadorOnirico.png",
+  "imagen": "images/amuletos/TransmutadorOnirico.webp",
   "muescas": 3,
   "rareza": "Pálida",
   "historia": "Un antiguo amuleto engendrado por la tribu de las polillas que canaliza la energía onírica del portador a su arma, antiguamente otorgada a guerreros y eruditos con poder onírico afiliados al Rey Pálido.\n\nFunciona como un catalizador que transfigura las armas convencionales en proyecciones oníricas, capaces de interactuar con planos no visibles para los insectos comunes, además de mantener cierta presencia aún en el mundo material.\n\nAunque muchos intentaron replicarlo, su forja requiere la intervención directa de las guardianas de los sueños, es decir, la tribu de las polillas.",
@@ -711,7 +711,7 @@
     {
       "nombre": "Manto Radiante",
       "descripcion": "Al ser usados en conjunto, el Transmutador Onírico convierte el arma del portador en una versión 'Radiante', inspirada en las antiguas dagas de luz de la diosa ancestral. Esta versión mantiene las propiedades de las armas físicas, pero con un incremento de daño y sin las debilidades de las armas puramente oníricas.",
-      "imagen": "images/amuletos/MantoRadiante.png"
+      "imagen": "images/amuletos/MantoRadiante.webp"
     },
     {
       "nombre": "Portador Onírico",
@@ -733,7 +733,7 @@
 {
   "id": "clonador-celestial",
   "nombre": "Clonador Celestial",
-  "imagen": "images/amuletos/ClonadorCelestial.png",
+  "imagen": "images/amuletos/ClonadorCelestial.webp",
   "muescas": "¿?",
   "rareza": "Pálida",
   "historia": "Otorgados a seres con un poder similar al de una deidad, antiguos encantos que se perdieron o destruyeron con el pasar de milenios, en la actualidad son extremadamente difíciles de encontrar debido a su escasez y que se camuflan con otros encantos, para unos un mito, para otros un vestigio de la época dorada de los buscadores de dioses.",
@@ -746,7 +746,7 @@
 {
   "id": "porte-elegante",
   "nombre": "Porte Elegante",
-  "imagen": "images/amuletos/PorteElegante.png",
+  "imagen": "images/amuletos/PorteElegante.webp",
   "muescas": 1,
   "rareza": "Vacío",
   "historia": "Encontrado en el cadáver de un insecto de alta sociedad en Ciudad de Lágrimas, un amuleto inútil para el combate pero útil para estar siempre presentable.",
@@ -773,7 +773,7 @@
 {
   "id": "lamento-de-eligos",
   "nombre": "Lamento de Eligos",
-  "imagen": "images/amuletos/LamentoDeEligos.png",
+  "imagen": "images/amuletos/LamentoDeEligos.webp",
   "muescas": 3,
   "rareza": "Vacío",
   "historia": "En una era antigua, un insecto llamado Eligos lideró a su especie en el dominio del territorio, gracias a su excepcional habilidad en combate y el control del alma, que le permitía manipular el magma. Bajo su gobierno, el reino Thermobia prosperó, pero todo se desmoronó con su muerte.\n\nTras múltiples intentos por traerlo de vuelta, varios habitantes fueron sacrificados en un ritual sobre su tumba. Aunque nació un amuleto que podía ayudarlos, las ofrendas corrompieron su esencia… hasta dar forma a esta versión profana del artefacto.",
@@ -792,7 +792,7 @@
   },
   {
     "nombre": "Bendición de Joni",
-    "descripcion": "La recuperación de lamento de Eligos se activará en cuanto el usuario pierda una máscara de sabiavida, y la recuperación de vida no se reiniciará si se pierda otra máscara en el proceso.",
+    "descripcion": "La recuperación de lamento de Eligos se activará en cuanto el usuario pierda una máscara de sabiavida, y la recuperación de vida no se reiniciará si se pierde otra máscara en el proceso.",
     "imagen": "images/amuletosC/BendicionDeJoni.webp"
   }
 ]
@@ -801,7 +801,7 @@
 {
   "id": "bendicion-de-jade",
   "nombre": "Bendición de Jade",
-  "imagen": "images/amuletos/BendicionDeJade.png",
+  "imagen": "images/amuletos/BendicionDeJade.webp",
   "muescas": 2,
   "rareza": "Radiante",
   "historia": "Fragmento de alma de quien pudo haber sido la mejor sanadora de Hallownest.\n\nJade, una de las hijas del Rey Pálido, fue considerada una vasija imperfecta por su amabilidad e igual que otras fue desechada junto a cinco de sus hermanos por el monarca de Hallownest. A pesar de todo, siempre buscó el lado bueno de la vida y veló por el bienestar de sus hermanos, manteniéndolos vivos durante varios años en cuenca antigua. Sus habilidades de curación eran asombrosas, capaces de regenerar miembros amputados en minutos, gracias a la simbiosis perfecta entre el vacío y la sabivida en su cuerpo.\n\nA pesar de su don, encontró su fin cuando su pequeño grupo de hermanos fue acorralado por los Mawleks. Vio a sus hermanos caer uno a uno, hasta que ella fue la última, muriendo con el deseo de proteger a su familia.\n\n\"Perdónenme... por no tener el poder necesario... para salvarlos, mis queridos hermanos... perdon Cyrille...\"\n\n– Últimas palabras de Jade",
@@ -834,7 +834,7 @@
 {
   "id": "cleptomania",
   "nombre": "Cleptomanía",
-  "imagen": "images/amuletos/Cleptomania.png",
+  "imagen": "images/amuletos/Cleptomania.webp",
   "muescas": 2,
   "rareza": "Vacío",
   "historia": "Encanto obtenido de un ladrón ejecutado en la Ciudad de Lágrimas. Confiera la sabiduría para discernir la veracidad y el valor de ciertos objetos, diferenciando lo valioso de lo que no lo es.",
@@ -858,7 +858,7 @@
 {
   "id": "capa_de_musgo",
   "nombre": "Capa de musgo",
-  "imagen": "images/amuletos/CapaDeMusgo.png",
+  "imagen": "images/amuletos/CapaDeMusgo.webp",
   "muescas": 2,
   "rareza": "Vacío",
   "historia": "Sus orígenes son inciertos, pero se especula que el amuleto surgió del trágico fin de un cuidador de Sendero Verde, caído ante los musgoagresores al inicio de la infección de Radiance.",
@@ -888,7 +888,7 @@
 {
   "id": "guardian_de_unn",
   "nombre": "Guardián de Unn",
-  "imagen": "images/amuletos/GuardianDeUnn.png",
+  "imagen": "images/amuletos/GuardianDeUnn.webp",
   "muescas": 4,
   "rareza": "Vacío",
   "historia": "Este amuleto fue encontrado en los restos de un antiguo guerrero de Sendero Verde, aunque su procedencia es difícil de precisar, se sospecha con gran certeza que fue forjado por el propio dios de ese lugar. En los inicios de la creación de los primeros musgo caballeros, Unn les otorgó estos amuletos con el objeto de cumplir con la noble misión de proteger el páramo.\n\nAl pasar el tiempo, los caballeros de musgo evolucionaron y desarrollaron la capacidad de generar sus propias esferas de musgo de manera biológica. Así el amuleto quedó obsoleto y eventualmente se perdió en las brumas del tiempo.",
@@ -897,7 +897,7 @@
     "- Fase 1: 3 puntos de daño",
     "- Fase 2: 5 puntos de daño",
     "- Fase 3: 10 puntos de daño",
-    "El proyectil comienza del tamaño de un germen de sabiavida y, en su fase final, es ligeramente más grande que un trepamusgo.",
+    "El proyectil comienza del tamaño de un germen de saviavida y, en su fase final, es ligeramente más grande que un trepamusgo.",
     "Para alcanzar su tamaño máximo, el usuario debe cargar el proyectil durante 3 segundos completos."
   ],
   "sinergias": [
@@ -916,7 +916,7 @@
 {
   "id": "saco_de_saviavida",
   "nombre": "Saco de Saviavida",
-  "imagen": "images/amuletos/SacoDeSaviavida.png",
+  "imagen": "images/amuletos/SacoDeSaviavida.webp",
   "muescas": 3,
   "rareza": "Pálida",
   "historia": "Decomisado a inicios de la creación del reino de Hallownest, cuando el Rey Pálido hizo que la saviavida se viera como un tabú para los habitantes del reino, este amuleto pertenecía a los ocultistas y adoradores de este antiguo dios de la saviavida. Aunque sus orígenes son inciertos, se teoriza que este encanto nació tras la muerte de un germen de saviavida que creció más de lo normal, tratando de proteger a su amo.",
@@ -938,7 +938,7 @@
 {
   "id": "alas-de-hada",
   "nombre": "Alas de hada",
-  "imagen": "images/amuletos/AlasDeHada.png",
+  "imagen": "images/amuletos/AlasDeHada.webp",
   "muescas": 3,
   "rareza": "Radiante",
   "historia": "Proveniente de tierras lejanas, un hermoso amuleto con delicados grabados en su superficie irradia un aura de misticismo. Su origen se encuentra envuelto en un enigma profundo, permaneciendo en misterio hasta el día de hoy.",
@@ -955,21 +955,21 @@
     {
       "nombre": "Capa de musgo",
       "descripcion": "Si el usuario realiza un avance rápido e impacta con un enemigo en pleno vuelo, el radio de la onda de impacto se verá extremadamente aumentada (+1.25).",
-      "imagen": "images/amuletos/CapaDeMusgo.png"
+      "imagen": "images/amuletos/CapaDeMusgo.webp"
     }
   ]
 },
-{
-  "id": "alma-voraz",
-  "nombre": "Alma Voraz",
-  "imagen": "images/amuletos/AlmaVoraz.png",
-  "muescas": 3,
-  "rareza": "Pálida",
-  "historia": "Creado por un erudito en el santuario de almas, este amuleto surgió como una innovación del amuleto de Atrapalmas, con el fin de entregárselo a los sabios del santuario del más alto rango.\n\nTodo iba bien hasta que las acciones del Maestro de Alma y sus múltiples secuaces salieron a la luz, lo que hizo que el Rey Pálido clausurara el lugar, decomisando una gran cantidad de objetos mágicos.\n\nAunque la técnica para la creación de amuletos fue recuperada, además del amuleto en cuestión, los pasos necesarios para crear este amuleto en específico se perdieron con el tiempo, haciendo imposible recrearlo nuevamente por el momento.",
-  "efectos": [
-    "Otorga la capacidad de reponer el doble de alma de todas las fuentes posibles."
-  ],
-  "sinergias": [
+  {
+    "id": "alma-voraz",
+    "nombre": "Alma Voraz",
+    "imagen": "images/amuletos/AlmaVoraz.webp",
+    "muescas": 3,
+    "rareza": "Pálida",
+    "historia": "Creado por un erudito en el santuario de almas, este amuleto surgió como una innovación del amuleto de Atrapalmas, con el fin de entregárselo a los sabios del santuario del más alto rango.\n\nTodo iba bien hasta que las acciones del Maestro de Alma y sus múltiples secuaces salieron a la luz, lo que hizo que el Rey Pálido clausurara el lugar, decomisando una gran cantidad de objetos mágicos.\n\nAunque la técnica para la creación de amuletos fue recuperada, además del amuleto en cuestión, los pasos necesarios para crear este amuleto en específico se perdieron con el tiempo, haciendo imposible recrearlo nuevamente por el momento.",
+    "efectos": [
+      "Otorga la capacidad de reponer el doble de alma de todas las fuentes posibles."
+    ],
+    "sinergias": [
   {
     "nombre": "Tuercehechizos",
     "descripcion": "Al impactar con éxito un hechizo ofensivo, el usuario recupera automáticamente la cantidad de alma que fue reducida gracias al efecto de Tuercehechizos. Esta recuperación es inmediata y proporcional al coste reducido.",
@@ -980,7 +980,7 @@
 {
   "id": "polaridad",
   "nombre": "Polaridad",
-  "imagen": "images/amuletos/Polaridad.png",
+  "imagen": "images/amuletos/Polaridad.webp",
   "muescas": 2,
   "rareza": "Vacío",
   "historia": "El origen de este amuleto se remonta a un lejano reino habitado por una tribu de mantis.\n\nComo es sabido, las hembras mantis son más grandes y fuertes que los machos. Por esta razón, durante épocas de guerra, la tribu forjó unos amuletos especiales que eran entregados a los varones con el propósito de potenciar sus habilidades físicas. Gracias a estos artefactos, los machos se volvieron igual de formidables que sus contrapartes femeninas, permitiendo que la tribu conquistara vastas regiones del reino y se consolidara como una de las más poderosas y avanzadas hasta el día de hoy.",
@@ -992,14 +992,14 @@
     {
       "nombre": "Dúo Transmutador",
       "descripcion": "Al tocar a otro insecto, además de copiar su especie, el usuario también adoptará su sexo, si este posee uno definido.",
-      "imagen": "images/amuletos/DuoTransmutador.png"
+      "imagen": "images/amuletos/DuoTransmutador.webp"
     }
   ]
 },
 {
   "id": "duo-transmutador",
   "nombre": "Dúo Transmutador",
-  "imagen": "images/amuletos/DuoTransmutador.png",
+  "imagen": "images/amuletos/DuoTransmutador.webp",
   "muescas": 2,
   "rareza": "Vacío",
   "historia": "Forjado con el propósito de estrechar la comprensión entre especies, este amuleto posee el poder de intercambiar las especies de sus portadores cuando lo usan simultáneamente.\n\nAunque al principio fue un bonito invento, un trágico accidente empañó su propósito. Al morir uno de los portadores mientras usaba su mitad, el sobreviviente no solo conservó su forma, sino que también heredó la especie y los años de vida del fallecido.\n\nEste suceso distorsionó su uso, transformando al amuleto en un objeto codiciado por motivos egoístas y oscuros, muy lejos de su propósito original.",
