@@ -515,7 +515,7 @@
       {
         "nombre": "Saco de sabiavida",
         "descripcion": "El germen de sabiavida también tendrá porciones reservas de alma en su interior, y al morir recargará 3 vasijas de alma instantáneamente.",
-        "imagen": "images/amuletos/SacoDeSaviavida.png"
+        "imagen": "images/amuletos/SacoDeSaviavida.webp"
       },
       {
         "nombre": "Tuerce hechizos",
@@ -575,7 +575,7 @@
       {
         "nombre": "Resiliencia",
         "descripcion": "Al combatir contra el mismo enemigo durante un tiempo prolongado, ambos amuletos crean un efecto de retroalimentación que acelera tanto la adaptación como el aprendizaje de patrones. La resistencia de Adaptación se acumula un 50% más rápido, mientras que los ataques potenciados de Resiliencia ignoran un 50% de las defensas naturales del enemigo.",
-        "imagen": "images/amuletos/Resiliencia.png"
+        "imagen": "images/amuletos/Resiliencia.webp"
       }
     ]
   },
@@ -595,7 +595,7 @@
       {
         "nombre": "Adaptación",
         "descripcion": "Al combatir contra el mismo enemigo durante un tiempo prolongado, ambos amuletos crean un efecto de retroalimentación que acelera tanto la adaptación como el aprendizaje de patrones. La resistencia de Adaptación se acumula un 50% más rápido, mientras que los ataques potenciados de Resiliencia ignoran un 50% de las defensas naturales del enemigo.",
-        "imagen": "images/amuletos/Adaptacion.png"
+        "imagen": "images/amuletos/Adaptacion.webp"
       }
     ]
   },
@@ -615,12 +615,12 @@
     {
       "nombre": "Mirada Penetrante",
       "descripcion": "Los cristales generados por Danza de cristal ven su daño y defensa aumentados significativamente. Los hechizos ofensivos infligen 60% más daño y las cúpulas protectoras pueden resistir hasta dos golpes antes de romperse.",
-      "imagen": "images/amuletos/MiradaPenetrante.png"
+      "imagen": "images/amuletos/MiradaPenetrante.webp"
     },
     {
   "nombre": "Meditación Activa",
   "descripcion": "Por cada cristal presente en el campo generado por hechizos del usuario, meditación activa absorberá alma un 20% más rápido. Este efecto se acumula hasta 5 veces.",
-  "imagen": "images/amuletos/MeditacionActiva.png"
+  "imagen": "images/amuletos/MeditacionActiva.webp"
 }
 
   ]
@@ -640,7 +640,7 @@
     {
       "nombre": "Mirada Penetrante",
       "descripcion": "La descarga eléctrica es reemplazada por un rayo de luz que se dispara automáticamente hacia el agresor. Aunque menos preciso, este rayo inflige un daño considerablemente mayor que la descarga original.",
-      "imagen": "images/amuletos/MiradaPenetrante.png"
+      "imagen": "images/amuletos/MiradaPenetrante.webp"
     },
     {
       "nombre": "Espinas de Agonía",
@@ -1011,7 +1011,7 @@
     {
       "nombre": "Polaridad",
       "descripcion": "Además de copiar la especie de otro insecto, el portador también asumirá su sexo si este posee uno definido. Este cambio ocurre al tocar al objetivo mientras se porta ambas mitades del Dúo Transmutador.",
-      "imagen": "images/amuletos/Polaridad.png"
+      "imagen": "images/amuletos/Polaridad.webp"
     }
   ]
 }
