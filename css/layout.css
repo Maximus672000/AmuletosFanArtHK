@@ -1,96 +1,7 @@
+/* ================================ */
+/* LAYOUT GENERAL DE LA FICHA DE AMULETO */
+/* ================================ */
 
-/* Parte izquierda: nombre, imagen, rareza */
-.ficha-izquierda {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Parte derecha: historia y efectos */
-.ficha-derecha {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* Imagen del amuleto */
-#amulet-image {
-  max-width: 70%;
-  height: auto;
-  margin: 1rem 0;
-}
-
-
-
-
-
-
-/* ---- Sinergias (Imagen derecha, texto izquierda) ---- */
-.sinergia {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin: 1rem 0;
-}
-
-.sinergia-texto {
-  width: 80%;
-}
-
-.sinergia-img {
-  width: 20%;
-  max-width: 100px;
-  height: auto;
-}
-
-/* ---- Recomendaciones (Imagen izquierda, texto derecha) ---- */
-.recomendacion {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin: 1rem 0;
-}
-
-.recomendacion-img {
-  width: 20%;
-  max-width: 100px;
-  height: auto;
-}
-
-.recomendacion-texto {
-  width: 80%;
-}
-
-/* Estilo de navegación con flechas */
-.navegacion {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 2000;
-}
-
-.arrow-container.arrow-left,
-.arrow-container.arrow-right {
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2000;
-  pointer-events: auto;
-}
-
-.arrow-container.arrow-left {
-  left: 0;
-}
-
-.arrow-container.arrow-right {
-  right: 0;
-}
-/* Layout general de la ficha de amuleto */
 .ficha-amuletos {
   display: flex;
   flex-direction: row;
@@ -136,7 +47,11 @@
   margin-bottom: 0.5rem;
 }
 
-/* ---- Sinergias (Imagen derecha, texto izquierda) ---- */
+/* ================================ */
+/* SINERGIAS Y RECOMENDACIONES */
+/* ================================ */
+
+/* Sinergias (Imagen derecha, texto izquierda) */
 .sinergia {
   display: flex;
   align-items: center;
@@ -154,7 +69,7 @@
   height: auto;
 }
 
-/* ---- Recomendaciones (Imagen izquierda, texto derecha) ---- */
+/* Recomendaciones (Imagen izquierda, texto derecha) */
 .recomendacion {
   display: flex;
   align-items: center;
@@ -172,7 +87,10 @@
   width: 80%;
 }
 
-/* Estilo de navegación con flechas */
+/* ================================ */
+/* NAVEGACIÓN CON FLECHAS */
+/* ================================ */
+
 .navegacion {
   position: fixed;
   top: 0;
@@ -201,13 +119,11 @@
 }
 
 /* ================================ */
-/* ESTILOS PARA MÓVIL - FICHA AMULETOS */
+/* MEDIA QUERIES: ESTILOS PARA MÓVIL */
 /* ================================ */
 
-/* Media query para dispositivos móviles */
 @media screen and (max-width: 768px) {
-  
-  /* Layout principal cambia a columna en móvil */
+
   .ficha-amuletos {
     flex-direction: column;
     padding: 0.5rem;
@@ -217,30 +133,23 @@
     min-height: 100vh;
   }
 
-  /* Ambas partes ocupan 100% del ancho */
   .ficha-izquierda,
   .ficha-derecha {
     width: 100%;
   }
 
-  /* Sección izquierda en móvil */
   .ficha-izquierda {
     text-align: center;
     margin-bottom: 0.5rem;
   }
 
- 
-
-  /* Imagen del amuleto más compacta */
   #amulet-image {
     max-width: 45%;
     height: auto;
     margin: 0.8rem auto;
     border-radius: 8px;
-    /* Removido box-shadow naranjado */
   }
 
-  /* Rareza del amuleto */
   .rareza {
     font-size: 0.85rem;
     color: #ddd;
@@ -248,14 +157,10 @@
     font-style: italic;
   }
 
-  /* Sección derecha reorganizada */
   .ficha-derecha {
     padding: 0 0.3rem;
   }
 
- 
-
-  /* Historia del amuleto más compacta */
   #amulet-history {
     margin-bottom: 1rem;
   }
@@ -268,7 +173,6 @@
     text-align: justify;
   }
 
-  /* Lista de efectos más compacta */
   #amulet-effects {
     margin: 0.5rem 0;
     padding-left: 0.8rem;
@@ -291,35 +195,7 @@
     left: -12px;
   }
 
-  /* Sinergias más compactas */
-  .sinergia {
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-    background: rgba(255, 255, 255, 0.02);
-    padding: 0.6rem;
-    border-radius: 6px;
-    margin: 0.8rem 0;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    gap: 0.8rem;
-  }
-
-  .sinergia-img {
-    width: 40px;
-    height: 40px;
-    min-width: 40px;
-    border-radius: 4px;
-    /* Removido box-shadow naranjado */
-  }
-
-  .sinergia-texto {
-    width: calc(100% - 50px);
-    font-size: 0.8rem !important;
-    color: #e0e0e0;
-    line-height: 1.3;
-  }
-
-  /* Recomendaciones más compactas */
+  .sinergia,
   .recomendacion {
     flex-direction: row;
     align-items: center;
@@ -332,6 +208,7 @@
     gap: 0.8rem;
   }
 
+  .sinergia-img,
   .recomendacion-img {
     width: 40px;
     height: 40px;
@@ -339,6 +216,7 @@
     border-radius: 4px;
   }
 
+  .sinergia-texto,
   .recomendacion-texto {
     width: calc(100% - 50px);
     font-size: 0.8rem !important;
@@ -346,7 +224,6 @@
     line-height: 1.3;
   }
 
-  /* Navegación centrada en los laterales como en PC */
   .navegacion {
     position: fixed;
     top: 0;
@@ -371,42 +248,33 @@
     justify-content: center;
   }
 
-
   .arrow-container.arrow-left:hover,
   .arrow-container.arrow-right:hover {
-    /* Removidos efectos hover naranjados */
     transform: translateY(-50%) scale(1.05);
     transition: all 0.2s ease;
   }
-
 
   .flecha:hover {
     transform: scale(1.1);
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
   }
 
-  /* Flechas muy pequeñas para móvil - con mayor especificidad */
   .navegacion .flecha {
     width: 50px !important;
     height: 55px !important;
   }
 
-  /* Ajustes para bordes de página más discretos */
   .page-frame {
     padding: 20px 15px;
   }
 
-    .page-border-corners .corner {
+  .page-border-corners .corner {
     width: 60px;
     height: 60px;
     opacity: 0.7;
-    /* Restauramos el glow (brillo blanco) */
-
-       filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
-    
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
   }
 
-  /* Bordes de secciones más pequeños */
   .section-frame .corner-tl,
   .section-frame .corner-tr,
   .section-frame .corner-bl,
@@ -414,10 +282,7 @@
     width: 20px;
     height: 20px;
     opacity: 0.6;
-    /* Glow más sutil para esquinas de sección */
-   
-       filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.5));
-    
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.5));
   }
 
   .bordered-subsection .section-frame .corner-tl,
@@ -427,13 +292,9 @@
     width: 15px;
     height: 15px;
     opacity: 0.5;
-    /* Glow muy sutil para esquinas de subsección */
-    
-       filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.4));
-    
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.4));
   }
 
-  /* Márgenes y padding más compactos para secciones con bordes */
   .bordered-section {
     margin: 1rem 0;
     padding: 15px;
@@ -441,7 +302,8 @@
 
   .bordered-subsection {
     margin: 0.5rem 0;
-    padding: 10px 10px 25px 10px; /* Aumentar padding-bottom de 10px a 25px */  }
+    padding: 10px 10px 25px 10px;
+  }
 
   .bordered-horizontal {
     margin: 1rem 0;
@@ -449,26 +311,19 @@
     min-height: 60px;
   }
 
-
-
-
-
-  /* Ajustes adicionales para pantallas muy pequeñas */
   @media screen and (max-width: 480px) {
     .ficha-amuletos {
       padding: 0.3rem;
     }
-    
+
     .ficha-izquierda h1,
     #amulet-name {
       font-size: 1.2rem;
     }
-    
+
     #amulet-image {
       max-width: 50%;
     }
-    
-   
 
     #amulet-history p,
     #amulet-effects li,
@@ -482,7 +337,6 @@
       height: 40px;
     }
 
-    /* Flechas aún más pequeñas en pantallas muy pequeñas - con mayor especificidad */
     .navegacion .flecha {
       width: 30px !important;
       height: 35px !important;
@@ -494,7 +348,6 @@
 /* FONDO MEJORADO ESTILO HOLLOW KNIGHT */
 /* ================================ */
 
-/* Fondo base del body con múltiples capas */
 body {
   margin: 0;
   padding: 0;
@@ -503,10 +356,7 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   position: relative;
-  
-  /* Gradiente base mejorado con más transiciones */
   background: 
-    /* Capa 1: Gradiente principal oscuro */
     linear-gradient(135deg, 
       rgba(18, 15, 25, 0.95) 0%,
       rgba(25, 20, 35, 0.9) 25%,
@@ -514,28 +364,23 @@ body {
       rgba(8, 5, 15, 0.98) 75%,
       rgba(0, 0, 0, 1) 100%
     ),
-    /* Capa 2: Gradiente radial sutil */
     radial-gradient(ellipse at 30% 20%, 
       rgba(45, 35, 60, 0.3) 0%,
       rgba(25, 20, 35, 0.2) 40%,
       transparent 70%
     ),
-    /* Capa 3: Gradiente radial en otra posición */
     radial-gradient(ellipse at 70% 80%, 
       rgba(35, 25, 45, 0.25) 0%,
       rgba(20, 15, 30, 0.15) 50%,
       transparent 80%
     ),
-    /* Color de fondo sólido como respaldo */
     #0a0812;
-  
   background-size: 100% 100%, 80% 60%, 90% 70%, 100% 100%;
   background-position: center, 30% 20%, 70% 80%, center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-/* Overlay sutil con textura para simular la atmósfera de las cavernas */
 body::before {
   content: '';
   position: fixed;
@@ -545,22 +390,15 @@ body::before {
   height: 100%;
   pointer-events: none;
   z-index: -1;
-  
-  /* Patrón de ruido sutil */
   background: 
-    /* Patrón de puntos muy sutil */
     radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
     radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
     radial-gradient(circle at 40% 90%, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
-  
   background-size: 300px 300px, 250px 250px, 400px 400px;
   background-position: 0 0, 150px 125px, 200px 200px;
-  
-  /* Animación muy sutil de movimiento */
   animation: subtleMove 60s ease-in-out infinite alternate;
 }
 
-/* Capa adicional para efectos atmosféricos */
 body::after {
   content: '';
   position: fixed;
@@ -570,10 +408,7 @@ body::after {
   height: 100%;
   pointer-events: none;
   z-index: -2;
-  
-  /* Gradientes adicionales para profundidad */
   background: 
-    /* Sombras direccionales */
     linear-gradient(45deg, 
       transparent 0%, 
       rgba(0, 0, 0, 0.1) 20%, 
@@ -581,19 +416,16 @@ body::after {
       rgba(0, 0, 0, 0.05) 60%,
       transparent 80%
     ),
-    /* Luz sutil desde arriba */
     linear-gradient(to bottom,
       rgba(60, 45, 80, 0.08) 0%,
       transparent 30%,
       transparent 70%,
       rgba(0, 0, 0, 0.2) 100%
     );
-  
   background-size: 200% 200%, 100% 100%;
   animation: atmosphericShift 45s ease-in-out infinite alternate;
 }
 
-/* Animaciones sutiles para el fondo */
 @keyframes subtleMove {
   0% { 
     transform: translateY(0px) translateX(0px);
@@ -609,10 +441,6 @@ body::after {
   }
 }
 
-
-
-
-
 /* Efecto de vignette sutil en los bordes */
 .page-frame::before {
   content: '';
@@ -623,7 +451,6 @@ body::after {
   height: 100%;
   pointer-events: none;
   z-index: -1;
-  
   background: radial-gradient(ellipse at center,
     transparent 20%,
     rgba(0, 0, 0, 0.1) 70%,
@@ -631,54 +458,49 @@ body::after {
   );
 }
 
-/* Optimizaciones para móvil */
+/* ================================ */
+/* OPTIMIZACIONES Y ACCESIBILIDAD */
+/* ================================ */
+
 @media screen and (max-width: 768px) {
   body {
-    background-attachment: scroll; /* Mejor rendimiento en móvil */
+    background-attachment: scroll;
     background-size: 100% 100%, 120% 80%, 110% 90%, 100% 100%;
   }
-  
   body::before,
   body::after {
-    animation-duration: 30s; /* Animaciones más rápidas en móvil */
+    animation-duration: 30s;
   }
 }
 
-/* Mejoras para pantallas muy pequeñas */
 @media screen and (max-width: 480px) {
   body::before {
     background-size: 200px 200px, 150px 150px, 250px 250px;
   }
-  
   body::after {
     background-size: 150% 150%, 100% 100%;
   }
 }
 
-/* Ajustes para pantallas de alta resolución */
 @media screen and (min-width: 1920px) {
   body {
     background-size: 100% 100%, 60% 40%, 70% 50%, 100% 100%;
   }
-  
   body::before {
     background-size: 400px 400px, 350px 350px, 500px 500px;
   }
 }
 
-/* Modo de alto contraste si es necesario */
 @media (prefers-contrast: high) {
   body {
     background: linear-gradient(to bottom, #1a1a1a, #000000);
   }
-  
   body::before,
   body::after {
     display: none;
   }
 }
 
-/* Reducir movimiento si el usuario lo prefiere */
 @media (prefers-reduced-motion: reduce) {
   body::before,
   body::after {

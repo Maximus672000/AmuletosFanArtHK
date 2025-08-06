@@ -261,3 +261,70 @@ h3:hover,
   animation: glow-gentle 1.5s var(--transition-glow);
   filter: brightness(1.2);
 }
+
+/* ================================ */
+/* OPTIMIZACIÓN DE ENCABEZADOS PARA MÓVILES */
+/* ================================ */
+
+@media screen and (max-width: 768px) {
+  header h1,
+  #amulet-name {
+    font-size: 2rem;
+    padding: 0.5rem 0.2rem;
+    letter-spacing: 1.5px;
+    text-shadow:
+      0 0 8px rgba(255,255,255,0.5),
+      0 0 16px rgba(182,170,255,0.3),
+      0 0 20px rgba(124,111,255,0.15);
+  }
+  h2 {
+    font-size: 1.3rem;
+    margin: 1.2rem 0 0.7rem;
+    letter-spacing: 1px;
+    text-shadow:
+      0 0 6px rgba(255,255,255,0.3),
+      0 0 12px rgba(182,170,255,0.15);
+  }
+  h3 {
+    font-size: 1.05rem;
+    margin-top: 1rem;
+    letter-spacing: 0.5px;
+    text-shadow:
+      0 0 4px rgba(255,255,255,0.2),
+      0 0 8px rgba(124,111,255,0.08);
+  }
+  /* Ajuste de glow en hover para evitar saturación en móvil */
+  header h1:hover,
+  #amulet-name:hover,
+  h2:hover,
+  h3:hover {
+    filter: brightness(1.08);
+    animation-duration: 1s;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header h1,
+  #amulet-name {
+    font-size: 1.3rem;
+    padding: 0.3rem 0.1rem;
+    letter-spacing: 1px;
+    text-shadow:
+      0 0 5px rgba(255,255,255,0.4),
+      0 0 10px rgba(182,170,255,0.12);
+  }
+  h2 {
+    font-size: 1.05rem;
+    margin: 0.8rem 0 0.5rem;
+    letter-spacing: 0.5px;
+    text-shadow:
+      0 0 3px rgba(255,255,255,0.18);
+  }
+  h3 {
+    font-size: 0.95rem;
+    margin-top: 0.7rem;
+    letter-spacing: 0.2px;
+    text-shadow:
+      0 0 2px rgba(255,255,255,0.1);
+  }
+}

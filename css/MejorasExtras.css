@@ -1,10 +1,12 @@
-/* ===== MEJORAS EXTRAS PARA RECOMENDACIONES Y SINERGIAS ===== */
-/* Oculta las secciones si no hay contenido (se activará con JS) */
+/* ===== SINERGIAS Y RECOMENDACIONES OPTIMIZADAS ===== */
+
+/* Oculta las secciones si no hay contenido */
 .amulet-synergies:empty,
 .amulet-recommendations:empty {
   display: none;
 }
-/* Contenedores principales (solo se muestran si tienen contenido) */
+
+/* Contenedores principales optimizados */
 .amulet-synergies,
 .amulet-recommendations {
   margin: 1.5rem 0;
@@ -13,36 +15,51 @@
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   position: relative;
-  backdrop-filter: blur(2px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  /* Aceleración por hardware */
+  transform: translateZ(0);
 }
-/* Efecto de borde sutil */
-.amulet-synergies::before,
-.amulet-recommendations::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(90deg,
-    transparent,
-    rgba(255, 255, 255, 0.4),
-    transparent
-  );
-  border-radius: 8px 8px 0 0;
+
+/* Backdrop-filter solo en desktop para mejor rendimiento */
+@media (min-width: 769px) {
+  .amulet-synergies,
+  .amulet-recommendations {
+    backdrop-filter: blur(2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  }
 }
-/* Títulos de sección */
+
+/* Efecto de borde sutil - solo en desktop */
+@media (min-width: 769px) {
+  .amulet-synergies::before,
+  .amulet-recommendations::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.4),
+      transparent
+    );
+    border-radius: 8px 8px 0 0;
+  }
+}
+
+/* Títulos de sección optimizados */
 .amulet-synergies h3,
 .amulet-recommendations h3 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   position: relative;
+  /* Text-shadow simplificado */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
 }
-/* Items (sinergias y recomendaciones) */
+
+/* Items principales optimizados */
 .sinergia,
 .recomendacion {
   display: flex;
@@ -51,99 +68,269 @@
   padding: 0.8rem;
   background: rgba(25, 25, 25, 0.5);
   border-radius: 6px;
-  transition: all 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.05);
+  /* Transición más rápida y específica */
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  /* Aceleración por hardware para hover */
+  will-change: transform;
 }
-.sinergia:hover,
-.recomendacion:hover {
-  background: rgba(35, 35, 35, 0.7);
-  border-color: rgba(255, 255, 255, 0.15);
-  transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+/* Hover solo en desktop */
+@media (min-width: 769px) {
+  .sinergia:hover,
+  .recomendacion:hover {
+    background: rgba(35, 35, 35, 0.7);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
 }
-/* Imágenes (SIN BORDE BLANCO - con efecto sutil y brillo) */
+
+/* En móviles solo cambio de color sin transform */
+@media (max-width: 768px) {
+  .sinergia,
+  .recomendacion {
+    will-change: auto; /* Ahorra memoria en móviles */
+  }
+  
+  .sinergia:active,
+  .recomendacion:active {
+    background: rgba(35, 35, 35, 0.7);
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+}
+
+/* Imágenes optimizadas */
 .sinergia-img,
 .recomendacion-img {
   border-radius: 4px;
-  transition: all 0.3s ease;
   background: transparent;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 4px rgba(255, 255, 255, 0.2));
   position: relative;
+  /* Filter simplificado */
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.6));
 }
 
-/* Efecto de brillo pulsante sutil */
-.sinergia-img::after,
-.recomendacion-img::after {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  border-radius: 6px;
-  background: linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.05),
-    rgba(255, 255, 255, 0.1)
-  );
-  z-index: -1;
-  opacity: 0;
-  animation: brilloSutil 4s ease-in-out infinite alternate;
-  pointer-events: none;
-}
-
-.sinergia:hover .sinergia-img,
-.recomendacion:hover .recomendacion-img {
-  transform: scale(1.05);
-  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 8px rgba(255, 255, 255, 0.4)) brightness(1.1);
-}
-
-.sinergia:hover .sinergia-img::after,
-.recomendacion:hover .recomendacion-img::after {
-  opacity: 0.6;
-  animation-duration: 2s;
-}
-
-/* Keyframes para el brillo sutil */
-@keyframes brilloSutil {
-  0% {
-    opacity: 0.1;
-    transform: scale(1);
+/* Animaciones solo en desktop */
+@media (min-width: 769px) {
+  .sinergia-img,
+  .recomendacion-img {
+    transition: transform 0.25s ease, filter 0.25s ease;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 4px rgba(255, 255, 255, 0.2));
   }
-  50% {
-    opacity: 0.25;
-    transform: scale(1.005);
+  
+  /* Efecto de brillo solo en desktop */
+  .sinergia-img::after,
+  .recomendacion-img::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 6px;
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.1)
+    );
+    z-index: -1;
+    opacity: 0;
+    animation: brilloSutil 4s ease-in-out infinite alternate;
+    pointer-events: none;
   }
-  100% {
-    opacity: 0.15;
-    transform: scale(1.002);
+  
+  .sinergia:hover .sinergia-img,
+  .recomendacion:hover .recomendacion-img {
+    transform: scale(1.03); /* Reducido para mejor rendimiento */
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 6px rgba(255, 255, 255, 0.3)) brightness(1.1);
+  }
+  
+  .sinergia:hover .sinergia-img::after,
+  .recomendacion:hover .recomendacion-img::after {
+    opacity: 0.5; /* Reducido */
+    animation-duration: 2.5s; /* Más lento para mejor rendimiento */
+  }
+  
+  /* Keyframes optimizados */
+  @keyframes brilloSutil {
+    0% {
+      opacity: 0.08; /* Reducido */
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.18; /* Reducido */
+      transform: scale(1.003); /* Reducido */
+    }
+    100% {
+      opacity: 0.12; /* Reducido */
+      transform: scale(1.001); /* Reducido */
+    }
   }
 }
-/* Texto */
+
+/* Texto optimizado */
 .sinergia-texto,
 .recomendacion-texto {
   font-size: 0.9rem;
   line-height: 1.4;
   color: #e0e0e0;
   flex: 1;
+  /* Eliminamos efectos costosos en texto */
 }
-/* Responsive para móviles */
+
+/* ===== RESPONSIVE OPTIMIZADO ===== */
+
+@media (max-width: 1024px) {
+  .amulet-synergies,
+  .amulet-recommendations {
+    margin: 1.3rem 0;
+  }
+}
+
 @media (max-width: 768px) {
+  /* Contenedores simplificados en móvil */
   .amulet-synergies,
   .amulet-recommendations {
     padding: 1rem;
     margin: 1.2rem 0;
+    /* Background simplificado */
+    background: rgba(15, 15, 15, 0.85);
+    box-shadow: none;
+    backdrop-filter: none;
   }
- 
+  
   .sinergia,
   .recomendacion {
-    padding: 0.5rem;
-    gap: 0.6rem;
+    padding: 0.6rem; /* Ligeramente más que el original */
+    gap: 0.7rem;
+    /* Background más simple */
+    background: rgba(25, 25, 25, 0.6);
   }
- 
+  
+  .sinergia-img,
+  .recomendacion-img {
+    /* Sin efectos en móviles */
+    filter: none;
+    transition: none;
+  }
+  
   .sinergia-texto,
   .recomendacion-texto {
     font-size: 0.85rem;
+    line-height: 1.3; /* Más compacto */
+  }
+  
+  .amulet-synergies h3,
+  .amulet-recommendations h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    text-shadow: none; /* Sin text-shadow en móviles */
+  }
+}
+
+@media (max-width: 480px) {
+  .amulet-synergies,
+  .amulet-recommendations {
+    padding: 0.8rem;
+    margin: 1rem 0;
+    border-radius: 6px;
+  }
+  
+  .sinergia,
+  .recomendacion {
+    padding: 0.5rem;
+    gap: 0.5rem;
+    border-radius: 4px;
+    /* Flex direction column para pantallas muy pequeñas si es necesario */
+  }
+  
+  .sinergia-texto,
+  .recomendacion-texto {
+    font-size: 0.8rem;
+    line-height: 1.25;
+  }
+  
+  .amulet-synergies h3,
+  .amulet-recommendations h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+  }
+}
+
+/* Optimización para dispositivos de muy baja potencia */
+@media (max-width: 768px) and (max-resolution: 150dpi) {
+  .sinergia-img,
+  .recomendacion-img {
+    border-radius: 2px; /* Menos procesamiento */
+  }
+  
+  .amulet-synergies,
+  .amulet-recommendations {
+    background: #0f0f0f; /* Color sólido */
+    border: 1px solid #333;
+    border-radius: 4px;
+  }
+  
+  .sinergia,
+  .recomendacion {
+    background: #191919; /* Color sólido */
+    border: none;
+  }
+}
+
+/* Preferencias de accesibilidad */
+@media (prefers-contrast: high) {
+  .amulet-synergies,
+  .amulet-recommendations {
+    background: rgba(0, 0, 0, 0.9);
+    border-color: #ffffff;
+  }
+  
+  .sinergia,
+  .recomendacion {
+    background: rgba(50, 50, 50, 0.8);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .sinergia-texto,
+  .recomendacion-texto {
+    color: #ffffff;
+  }
+}
+
+/* Reducción de movimiento - CRÍTICO para rendimiento */
+@media (prefers-reduced-motion: reduce) {
+  .sinergia-img,
+  .recomendacion-img,
+  .sinergia,
+  .recomendacion {
+    transition: none !important;
+    animation: none !important;
+  }
+  
+  .sinergia-img::after,
+  .recomendacion-img::after {
+    display: none !important;
+  }
+}
+
+/* Optimización adicional para conexiones lentas */
+@media (max-width: 768px) {
+  /* Reducir complejidad visual en móviles */
+  .amulet-synergies::before,
+  .amulet-recommendations::before {
+    display: none;
+  }
+  
+  /* Simplificar bordes redondeados */
+  .sinergia,
+  .recomendacion {
+    border-radius: 4px;
+  }
+  
+  .amulet-synergies,
+  .amulet-recommendations {
+    border-radius: 6px;
   }
 }

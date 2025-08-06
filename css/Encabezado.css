@@ -1,25 +1,37 @@
 /* ————————————————————————————
-   Variables de CSS para ajustes rápidos
+   Variables CSS optimizadas para móviles
 ———————————————————————————— */
 :root {
-  /* Altura mínima y máxima para los bordes */
-  --border-min: 60px;
-  --border-max: 140px;
-  --border-h: clamp(var(--border-min), 10vw, var(--border-max));
+  /* Altura de bordes más conservadora para móviles */
+  --border-min: 40px;     /* Reducido de 60px */
+  --border-max: 100px;    /* Reducido de 140px */
+  --border-h: clamp(var(--border-min), 8vw, var(--border-max)); /* Reducido de 10vw */
+  
+  /* Padding más compacto para pantallas pequeñas */
+  --pad-min: 8px;         /* Aumentado ligeramente para mejor toque */
+  --pad-max: 25px;        /* Reducido de 30px */
+  --pad-xy: clamp(var(--pad-min), 4vw, var(--pad-max)); /* Reducido de 5vw */
+  
+  /* Padding del h1 optimizado para legibilidad móvil */
+  --h1-pad-vertical: clamp(8px, 1.5vw, 16px);   /* Más compacto */
+  --h1-pad-horizontal: clamp(12px, 3vw, 20px);  /* Mantiene espacio lateral */
+  
+  /* Tamaño de fuente más apropiado para móviles */
+  --font-min: 1.25rem;    /* Reducido de 1.5rem para pantallas muy pequeñas */
+  --font-max: 2.5rem;     /* Reducido de 3rem */
+  --font-size: clamp(var(--font-min), 6vw, var(--font-max)); /* Aumentado a 6vw */
+  
+  /* Nuevas variables para móviles */
+  --mobile-breakpoint: 768px;
+  --small-mobile-breakpoint: 480px;
+}
 
-  /* Padding del contenedor de título, más ajustado */
-  --pad-min: 5px;    /* antes 15px */
-  --pad-max: 30px;   /* antes 55px */
-  --pad-xy: clamp(var(--pad-min), 5vw, var(--pad-max));
-
-  /* Padding del propio h1, más ajustado */
-  --h1-pad-vertical: clamp(10px, 2vw, 20px); /* antes clamp(20px,3vw,40px) */
-  --h1-pad-horizontal: clamp(10px, 2vw, 20px);
-
-  /* Tamaño de fuente fluido */
-  --font-min: 1.5rem;
-  --font-max: 3rem;
-  --font-size: clamp(var(--font-min), 5vw, var(--font-max));
+/* Estilos base del header */
+header {
+  margin: clamp(8px, 2.5vw, 16px) 0; /* Más compacto */
+  /* Mejora para el rendimiento en móviles */
+  will-change: transform;
+  transform: translateZ(0); /* Fuerza aceleración de hardware */
 }
 
 header .titulo-container {
@@ -28,6 +40,8 @@ header .titulo-container {
   align-items: center;
   justify-content: center;
   padding: var(--pad-xy);
+  /* Optimización táctil */
+  touch-action: manipulation;
 }
 
 header .horizontal-borders {
@@ -35,6 +49,8 @@ header .horizontal-borders {
   inset: 0;
   pointer-events: none;
   z-index: 1;
+  /* Mejora de rendimiento */
+  transform: translateZ(0);
 }
 
 header .horizontal-borders .border-top,
@@ -44,16 +60,19 @@ header .horizontal-borders .border-bottom {
   height: auto;
   max-height: var(--border-h);
   object-fit: contain;
+  /* Optimización para imágenes en móviles */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 header .horizontal-borders .border-top {
   top: 0;
-  transform: translateY(-50%);
+  transform: translateY(-50%) translateZ(0);
 }
 
 header .horizontal-borders .border-bottom {
   bottom: 0;
-  transform: translateY(50%);
+  transform: translateY(50%) translateZ(0);
 }
 
 header .titulo-container h1 {
@@ -63,8 +82,100 @@ header .titulo-container h1 {
   text-align: center;
   font-size: var(--font-size);
   padding: var(--h1-pad-vertical) var(--h1-pad-horizontal);
+  /* Mejoras de legibilidad móvil */
+  line-height: 1.2;         /* Altura de línea más compacta */
+  word-break: break-word;   /* Evita desbordamiento horizontal */
+  hyphens: auto;            /* Separación silábica cuando sea necesario */
+  /* Optimización de renderizado de texto */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-header {
-  margin: clamp(10px, 3vw, 20px) 0;
+/* ————————————————————————————
+   Media queries específicas para móviles
+———————————————————————————— */
+
+/* Tablets y pantallas medianas */
+@media screen and (max-width: 768px) {
+  :root {
+    --border-min: 35px;
+    --border-max: 80px;
+    --pad-min: 6px;
+    --pad-max: 20px;
+    --font-min: 1.2rem;
+    --font-max: 2.2rem;
+  }
+  
+  header .titulo-container h1 {
+    line-height: 1.1;
+  }
+}
+
+/* Móviles grandes */
+@media screen and (max-width: 480px) {
+  :root {
+    --border-min: 30px;
+    --border-max: 60px;
+    --pad-min: 5px;
+    --pad-max: 15px;
+    --font-min: 1.1rem;
+    --font-max: 1.8rem;
+    --h1-pad-vertical: clamp(6px, 1vw, 12px);
+    --h1-pad-horizontal: clamp(8px, 2vw, 16px);
+  }
+  
+  header {
+    margin: clamp(5px, 2vw, 12px) 0;
+  }
+}
+
+/* Móviles muy pequeños */
+@media screen and (max-width: 320px) {
+  :root {
+    --border-min: 25px;
+    --border-max: 50px;
+    --font-min: 1rem;
+    --font-max: 1.5rem;
+    --pad-min: 4px;
+    --pad-max: 12px;
+  }
+  
+  header .titulo-container h1 {
+    line-height: 1.05;
+    letter-spacing: -0.02em; /* Espaciado más compacto */
+  }
+}
+
+/* Optimizaciones para modo landscape en móviles */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  :root {
+    --border-min: 25px;
+    --border-max: 50px;
+    --h1-pad-vertical: clamp(4px, 1vw, 8px);
+  }
+  
+  header {
+    margin: clamp(4px, 1.5vw, 8px) 0;
+  }
+}
+
+/* Optimizaciones para pantallas de alta densidad (Retina) */
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+       screen and (min-resolution: 192dpi) {
+  header .horizontal-borders .border-top,
+  header .horizontal-borders .border-bottom {
+    image-rendering: -webkit-optimize-contrast;
+  }
+}
+
+/* Mejoras de accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  header,
+  header .horizontal-borders,
+  header .horizontal-borders .border-top,
+  header .horizontal-borders .border-bottom {
+    transform: none !important;
+    will-change: auto;
+  }
 }
