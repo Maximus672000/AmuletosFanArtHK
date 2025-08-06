@@ -340,7 +340,7 @@ function renderAmuletTable() {
 }
 
 /**
- * Navega a un amuleto específico con feedback mejorado
+ * Navega a un amuleto específico con feedback mejorado - VERSIÓN SIMPLIFICADA
  */
 async function navigateToAmulet(index) {
   try {
@@ -351,29 +351,36 @@ async function navigateToAmulet(index) {
       indexActual = index;
     }
     
+    // Variable para controlar si la navegación fue exitosa
+    let navigationSuccess = false;
+    
     // Mostrar el amuleto si la función existe
     if (typeof mostrarAmuleto === 'function') {
       await mostrarAmuleto(index);
+      navigationSuccess = true;
     } else if (typeof window.mostrarAmuleto === 'function') {
       await window.mostrarAmuleto(index);
+      navigationSuccess = true;
     } else {
       console.warn('⚠️ Función mostrarAmuleto no encontrada');
+      hideAmuletTable();
+      return;
     }
     
-    // Cerrar la tabla con una pequeña animación
-    setTimeout(() => {
+    // Solo cerrar la tabla si la navegación fue exitosa
+    if (navigationSuccess) {
       hideAmuletTable();
-    }, 150);
-    
-    // Scroll suave hacia arriba después de cerrar
-    setTimeout(() => {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    }, 300);
-    
-    console.log('✅ Navegación completada');
+      
+      // Scroll suave hacia arriba después de cerrar
+      setTimeout(() => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }, 300);
+      
+      console.log('✅ Navegación completada');
+    }
     
   } catch (error) {
     console.error('❌ Error al navegar al amuleto:', error);
