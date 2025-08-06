@@ -150,6 +150,10 @@ async function mostrarAmuleto(index) {
     await new Promise(resolve => setTimeout(resolve, 200));
     hideLoadingScreen();
 
+    // Precarga imágenes del anterior y siguiente amuleto
+    if (amuletos[index + 1]) precargarImagen(amuletos[index + 1].imagen);
+    if (amuletos[index - 1]) precargarImagen(amuletos[index - 1].imagen);
+
   } catch (error) {
     console.error("Error al mostrar el amuleto:", error);
     hideLoadingScreen();
@@ -161,28 +165,31 @@ async function mostrarAmuleto(index) {
 // ================================
 
 function cargarImagen(imgElement, src) {
-  return new Promise((resolve, reject) => {
+  const svgPlaceholder = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128"><rect width="100%" height="100%" fill="#222"/><text x="50%" y="50%" font-size="18" fill="#fff" text-anchor="middle" alignment-baseline="middle">Sin imagen</text></svg>';
+  return new Promise((resolve) => {
     if (!imgElement || !src) {
+      imgElement.src = svgPlaceholder;
       resolve();
       return;
     }
-    const img = new Image();
-    img.onload = () => {
-      imgElement.src = src;
+    if (imgElement.src === src) {
+      resolve();
+      return;
+    }
+    imgElement.onload = () => resolve();
+    imgElement.onerror = () => {
+      imgElement.src = svgPlaceholder;
       resolve();
     };
-    img.onerror = () => {
-      console.warn(`Error cargando imagen: ${src}`);
-      resolve();
-    };
-    setTimeout(() => {
-      if (!imgElement.src || imgElement.src === '') {
-        imgElement.src = src;
-      }
-      resolve();
-    }, 2000);
-    img.src = src;
+    imgElement.src = src;
   });
+}
+
+// Precarga imágenes adyacentes para navegación más fluida
+function precargarImagen(src) {
+  if (!src) return;
+  const img = new Image();
+  img.src = src;
 }
 
 // ================================

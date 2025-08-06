@@ -340,7 +340,19 @@ function renderAmuletTable() {
 }
 
 /**
- * Navega a un amuleto específico con feedback mejorado - VERSIÓN SIMPLIFICADA
+ * Precarga imágenes adyacentes en la tabla de navegación
+ */
+function precargarImagenTabla(index) {
+  [index - 1, index + 1].forEach(i => {
+    if (amuletTableData[i] && amuletTableData[i].imagen) {
+      const img = new Image();
+      img.src = amuletTableData[i].imagen;
+    }
+  });
+}
+
+/**
+ * Navega a un amuleto específico with feedback mejorado - VERSIÓN SIMPLIFICADA
  */
 async function navigateToAmulet(index) {
   try {
@@ -371,6 +383,9 @@ async function navigateToAmulet(index) {
     if (navigationSuccess) {
       hideAmuletTable();
       
+      // Precarga imágenes adyacentes para navegación fluida
+      precargarImagenTabla(index);
+
       // Scroll suave hacia arriba después de cerrar
       setTimeout(() => {
         window.scrollTo({
