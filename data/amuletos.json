@@ -74,13 +74,13 @@
       {
         "nombre": "Capa de musgo",
         "descripcion": "La capa adquiere a una forma menos metálica, similar a un Engulletonto, mientras sus raíces atacan con mayor velocidad y agresividad, respondiendo más rápido a los enemigos cercanos.",
-        "imagen": "images/amuletosC/0.webp"
+        "imagen": "images/amuletos/CapaDeMusgo.png"
       }
       ,
       {
         "nombre": "Porte elegante",
         "descripcion": "La capa se adapta visualmente a la vestimenta otorgada por el amuleto, pasando más desapercibida. Además, las raíces ya no cuentan con espinas afiladas, sino que cada extremo culmina en una bola de demolición compuesta por geos incrustados de valor 50, causando mayor daño por impacto.",
-        "imagen": "images/amuletosC/0.webp"
+        "imagen": "images/amuletos/PorteElegante.png"
       }
     ],
     "recomendaciones": [
@@ -429,7 +429,7 @@
     {
       "nombre": "Transmutador Onírico",
       "descripcion": "En lugar de alterar el arma principal con una forma onírica, Manto Radiante la transmuta en una versión 'Radiante', similar a las dagas de la diosa de la Luz.\n\n Esta arma conserva las ventajas de las forjadas con mineral pálido, incrementando su daño sin sufrir penalizaciones contra enemigos físicos a diferencia de las armas oníricas.",
-      "imagen": "images/amuletosC/TransmutadorOnirico.webp"
+      "imagen": "images/amuletos/TransmutadorOnirico.png"
     },
     {
      "nombre": "Materialización Onírica",
@@ -515,7 +515,7 @@
       {
         "nombre": "Saco de sabiavida",
         "descripcion": "El germen de sabiavida también tendrá porciones reservas de alma en su interior, y al morir recargará 3 vasijas de alma instantáneamente.",
-        "imagen": "images/amuletos/SacoDeSabiavida.png"
+        "imagen": "images/amuletos/SacoDeSaviavida.png"
       },
       {
         "nombre": "Tuerce hechizos",
@@ -647,8 +647,376 @@
       "descripcion": "Si la descarga del amuleto impacta de forma efectiva al enemigo, se generan abrazaderas cubiertas de espinas eléctricas que se aferran al cuerpo del agresor. Estas espinas se mantienen activas durante 5 segundos, causando 3 puntos de daño por segundo.",
       "imagen": "images/amuletosC/EspinasDeAgonia.webp"
     }
+  ],
+  "recomendaciones": [
+    {
+      "personaje": "assets/personaje-maximus.png",
+      "texto": "Presumida..."
+    }
+  ]
+},
+{
+  "id": "Berserker",
+  "nombre": "Berserker",
+  "imagen": "images/amuletos/Berserker.png",
+  "muescas": 4,
+  "rareza": "Pálida",
+  "historia": "Hallado en el cuerpo sin vida de un antiguo guerrero del coliseo de los insensatos, perdura el último aliento cristalizado de un caballero que sacrificó todo para asegurar la huida de sus camaradas. Luchó incansablemente durante horas, ofreciendo su valentía en pos de otorgar una oportunidad de escape.",
+  "efectos": [
+    "Duplica el daño físico actual del portador después de acabar con la vida de un enemigo. Este aumento de daño durará 20 segundos y se anulará si el portador es golpeado.",
+    "Agrega una máscara de sangre después de abatir a un enemigo hasta un máximo de 3."
+  ]
+},
+{
+  "id": "GuardianCambiante",
+  "nombre": "Guardián Cambiante",
+  "imagen": "images/amuletos/GuardianCambiante.png",
+  "muescas": 2,
+  "rareza": "Radiante",
+  "historia": "En un antiguo reino lejano a Hallownest, se alzaba un alto ser, venerado por su pueblo como protector frente a amenazas que los habitantes comunes no podían enfrentar. Aquel ser amaba profundamente el reino y a los insectos que lo habitaban, y, a su vez, era amado con devoción por todos ellos.\n\nSin embargo, un día, una amenaza sin precedentes surgió más allá de sus fronteras. Otro ser, igual de poderoso, puso en peligro la integridad de aquel reino. Nuestro guardián, sabiendo que no podía permitir la destrucción de su gente, lo enfrentó directamente. A costa de su vida, logrando repeler la amenaza, sellando su voluntad en lo que ahora es este amuleto.\n\nDesde entonces, el artefacto ha pasado de reino en reino, cruzando eras, conflictos y leyendas, hasta llegar finalmente a Hallownest… donde su guardián aún está dispuesto a levantarse una vez más.",
+  "efectos": [
+    "Invoca una versión pequeña de aquel alto ser, el cual tratará de defender al portador en todo momento.",
+    "El reptil cambiará dependiendo de la especie del portador, adaptando tanto su aspecto físico como su estilo de ataque y habilidades, imitando las características naturales de la especie a la que pertenece quien porta el amuleto.",
+    "Crecerá conforme pase el tiempo acumulado en combate junto al portador. Su crecimiento no se reinicia al desequipar el amuleto, y tras meses de uso activo, el guardián podrá alcanzar un tamaño ligeramente inferior al de un Nosk, con fuerza y resistencia aumentadas en consecuencia.",
+    "Si el guardián sufre una herida crítica, desaparecerá temporalmente y volverá al amuleto para sanar, reapareciendo con su forma física restaurada después de un día completo."
+  ],
+  "sinergias": [
+    {
+      "nombre": "Coraza de Baldur",
+      "descripcion": "El guardián ve aumentada considerablemente su defensa, pudiendo bloquear ataques con mayor facilidad. Su cuerpo se reviste de una coraza resistente que le permite resistir embestidas que normalmente lo harían retroceder.",
+      "imagen": "images/amuletosC/CorazaDeBaldur.webp"
+    }
+  ],
+  "recomendaciones": [
+    {
+      "personaje": "assets/personaje-maximus.png",
+      "texto": "Al principio pensé que Sly me había estafado cuando le compré el amuleto... aunque hoy, en la actualidad, este pequeño guardián se ha vuelto un compañero muy querido por mí y mis amigos."
+    }
+  ]
+},
+{
+  "id": "transmutador-onirico",
+  "nombre": "Transmutador Onírico",
+  "imagen": "images/amuletos/TransmutadorOnirico.png",
+  "muescas": 3,
+  "rareza": "Pálida",
+  "historia": "Un antiguo amuleto engendrado por la tribu de las polillas que canaliza la energía onírica del portador a su arma, antiguamente otorgada a guerreros y eruditos con poder onírico afiliados al Rey Pálido.\n\nFunciona como un catalizador que transfigura las armas convencionales en proyecciones oníricas, capaces de interactuar con planos no visibles para los insectos comunes, además de mantener cierta presencia aún en el mundo material.\n\nAunque muchos intentaron replicarlo, su forja requiere la intervención directa de las guardianas de los sueños, es decir, la tribu de las polillas.",
+  "efectos": [
+    "Altera el arma principal del portador en una versión onírica de la misma.",
+    "Recolectas el doble de alma por golpe, pero tu daño baja un 50% contra enemigos físicos, manteniéndose únicamente contra enemigos oníricos.",
+    "Las artes del aguijón son cambiadas por una versión onírica de la misma, agregando un pequeño ataque secundario al finalizar cada una.",
+    "Conforme recolectas esencia onírica tu daño volverá a la normalidad (600 = 65%, 1800 = 80%, 2400 = 100%)."
+  ],
+  "sinergias": [
+    {
+      "nombre": "Manto Radiante",
+      "descripcion": "Al ser usados en conjunto, el Transmutador Onírico convierte el arma del portador en una versión 'Radiante', inspirada en las antiguas dagas de luz de la diosa ancestral. Esta versión mantiene las propiedades de las armas físicas, pero con un incremento de daño y sin las debilidades de las armas puramente oníricas.",
+      "imagen": "images/amuletos/MantoRadiante.png"
+    },
+    {
+      "nombre": "Portador Onírico",
+      "descripcion": "La conexión entre ambos amuletos incrementa significativamente la agilidad del portador, aumentando la velocidad de ataque en un 60% mientras se utiliza un arma oníricas.",
+      "imagen": "images/amuletosC/PortadorOnirico.webp"
+    },
+    {
+      "nombre": "Escudo Onírico",
+      "descripcion": "Fortalece la estructura del escudo, otorgándole una forma onírica avanzada capaz de resistir hasta 2 golpes antes de entrar en su modo de reposo. Esta mejora lo vuelve más confiable en combates prolongados y contra múltiples enemigos.",
+      "imagen": "images/amuletosC/EscudoOnirico.webp"
+    },
+    {
+      "nombre": "Gloria del Maestro de Aguijones",
+      "descripcion": "Aumenta la potencia de las artes del aguijón cuando son ejecutadas en su versión onírica, incrementando su daño en un 50%.",
+      "imagen": "images/amuletosC/GloriaDelMaestroDeAguijones.webp"
+    }
+  ]
+},
+{
+  "id": "clonador-celestial",
+  "nombre": "Clonador Celestial",
+  "imagen": "images/amuletos/ClonadorCelestial.png",
+  "muescas": "¿?",
+  "rareza": "Pálida",
+  "historia": "Otorgados a seres con un poder similar al de una deidad, antiguos encantos que se perdieron o destruyeron con el pasar de milenios, en la actualidad son extremadamente difíciles de encontrar debido a su escasez y que se camuflan con otros encantos, para unos un mito, para otros un vestigio de la época dorada de los buscadores de dioses.",
+  "efectos": [
+    "Copia el último amuleto tocado por este mismo, adquiriendo sus efectos, muescas y apariencia visual.",
+    "Una vez copiado, conserva la transformación incluso si se aleja del amuleto clonado.",
+    "Para devolver el amuleto a su forma original, se debe tocar tres veces seguidas rápidamente (en menos de cinco segundos)."
+  ]
+},
+{
+  "id": "porte-elegante",
+  "nombre": "Porte Elegante",
+  "imagen": "images/amuletos/PorteElegante.png",
+  "muescas": 1,
+  "rareza": "Vacío",
+  "historia": "Encontrado en el cadáver de un insecto de alta sociedad en Ciudad de Lágrimas, un amuleto inútil para el combate pero útil para estar siempre presentable.",
+  "efectos": [
+    "Viste al portador con ropa elegante además de un sombrero de alta clase.",
+    "Si el portador cuenta con una vestimenta previamente, el amuleto la guardará mientras se esté usando y la devolverá terminando su uso.",
+    "La vestimenta que proporciona el amuleto siempre será cómoda para el usuario. Estando relacionada con sus gustos, especie, género y lo que él considere elegante. (Si el usuario no entiende ese concepto, el amuleto decidirá por él).",
+    "Si la ropa es dañada o ensuciada esta se reparará con el paso del tiempo, a lo mucho tardando minutos en volver a su estado original por completo.",
+    "Si el usuario se quita la ropa y se aleja 10 metros, esta volverá a él apareciendo nuevamente en su cuerpo."
+  ],
+ "sinergias": [
+  {
+    "nombre": "Coraza de Baldur",
+    "descripcion": "La vestimenta otorgada por el amuleto será sustituida por una armadura elegante, manteniendo las propiedades de comodidad y estilo.",
+    "imagen": "images/amuletosC/CorazaDeBaldur.webp"
+  },
+  {
+    "nombre": "Espinas de Agonía",
+    "descripcion": "El portador adquirirá una daga oculta en su atuendo, la cual puede utilizar para uso personal.",
+    "imagen": "images/amuletosC/EspinasDeAgonia.webp"
+  }
+]
+},
+{
+  "id": "lamento-de-eligos",
+  "nombre": "Lamento de Eligos",
+  "imagen": "images/amuletos/LamentoDeEligos.png",
+  "muescas": 3,
+  "rareza": "Vacío",
+  "historia": "En una era antigua, un insecto llamado Eligos lideró a su especie en el dominio del territorio, gracias a su excepcional habilidad en combate y el control del alma, que le permitía manipular el magma. Bajo su gobierno, el reino Thermobia prosperó, pero todo se desmoronó con su muerte.\n\nTras múltiples intentos por traerlo de vuelta, varios habitantes fueron sacrificados en un ritual sobre su tumba. Aunque nació un amuleto que podía ayudarlos, las ofrendas corrompieron su esencia… hasta dar forma a esta versión profana del artefacto.",
+  "efectos": [
+    "Por el coste de una máscara, el usuario puede lanzar su sangre como un proyectil ardiente hacia los enemigos, infligiendo 40 puntos de daño por impacto. (Si la vida del usuario está muy comprometida, no podrá usar esta habilidad.)",
+    "Si la vida del portador baja por debajo de la mitad, el amuleto empieza a reponerla automáticamente: una máscara recuperada cada 15 segundos.",
+    "Otorga cierta inmunidad al portador frente al fuego y la lava.",
+    "Aumenta ligeramente todas las capacidades físicas del portador en un 10% (fuerza, resistencia, velocidad, etc.)."
+  ],
+ "sinergias": [
+  {
+    "nombre": "Sangrecolmena",
+    "descripcion": "La velocidad de recuperación de máscaras se reduce a 5 segundos y ya no se reinicia al perder una máscara durante el proceso. Sin embargo, los proyectiles de Lamento de Eligos pasan a infligir 20 puntos de daño.",
+    "imagen": "images/amuletosC/Sangrecolmena.webp"
+  
+  },
+  {
+    "nombre": "Bendición de Joni",
+    "descripcion": "La recuperación de lamento de Eligos se activará en cuanto el usuario pierda una máscara de sabiavida, y la recuperación de vida no se reiniciará si se pierda otra máscara en el proceso.",
+    "imagen": "images/amuletosC/BendicionDeJoni.webp"
+  }
+]
+
+},
+{
+  "id": "bendicion-de-jade",
+  "nombre": "Bendición de Jade",
+  "imagen": "images/amuletos/BendicionDeJade.png",
+  "muescas": 2,
+  "rareza": "Radiante",
+  "historia": "Fragmento de alma de quien pudo haber sido la mejor sanadora de Hallownest.\n\nJade, una de las hijas del Rey Pálido, fue considerada una vasija imperfecta por su amabilidad e igual que otras fue desechada junto a cinco de sus hermanos por el monarca de Hallownest. A pesar de todo, siempre buscó el lado bueno de la vida y veló por el bienestar de sus hermanos, manteniéndolos vivos durante varios años en cuenca antigua. Sus habilidades de curación eran asombrosas, capaces de regenerar miembros amputados en minutos, gracias a la simbiosis perfecta entre el vacío y la sabivida en su cuerpo.\n\nA pesar de su don, encontró su fin cuando su pequeño grupo de hermanos fue acorralado por los Mawleks. Vio a sus hermanos caer uno a uno, hasta que ella fue la última, muriendo con el deseo de proteger a su familia.\n\n\"Perdónenme... por no tener el poder necesario... para salvarlos, mis queridos hermanos... perdon Cyrille...\"\n\n– Últimas palabras de Jade",
+  "efectos": [
+    "Duplica el efecto de curación realizado a otros aliados, como a él mismo.",
+    "Por cada máscara de vida curada, el usuario gana una carga de “Anhelo de Jade”, que se manifiesta como un orbe azulado que sigue al portador, hasta un máximo de 10 cargas.",
+    "El usuario puede usar “Anhelo de Jade” para realizar un ataque mágico de alto nivel (independiente de los hechizos de alma). “Anhelo de Jade” comienza con 45 de daño y suma +5 de daño por cada carga extra.",
+    "Si el portador cura teniendo las 10 cargas de “Anhelo de Jade”, el daño máximo del orbe se duplica, llegando a 180 de daño.",
+    "Si el portador cura tanto a sí mismo como a un aliado teniendo todas las máscaras, suma 2 cargas adicionales a “Anhelo de Jade”."
+  ],
+  "sinergias": [
+    {
+      "nombre": "Coraza de Baldur",
+      "descripcion": "Las cargas de bendición de Jade restauran la durabilidad de Coraza de Baldur.",
+      "imagen": "images/amuletosC/CorazaDeBaldur.webp"
+    },
+    {
+      "nombre": "Escudo Onírico",
+      "descripcion": "Las cargas de bendición de Jade pueden utilizarse para mejorar la durabilidad y el daño del Escudo Onírico, en proporción al número de cargas almacenadas.",
+      "imagen": "images/amuletosC/EscudoOnirico.webp"
+    }
+  ],
+   "recomendaciones": [
+    {
+      "personaje": "assets/personaje-cyrille.png",
+      "texto": "Te extraño... hermana mayor..."
+    }
+  ]
+},
+{
+  "id": "cleptomania",
+  "nombre": "Cleptomanía",
+  "imagen": "images/amuletos/Cleptomania.png",
+  "muescas": 2,
+  "rareza": "Vacío",
+  "historia": "Encanto obtenido de un ladrón ejecutado en la Ciudad de Lágrimas. Confiera la sabiduría para discernir la veracidad y el valor de ciertos objetos, diferenciando lo valioso de lo que no lo es.",
+  "efectos": [
+    "Los objetos valiosos, como geo, joyas, amuletos, minerales preciosos, entre otros, se marcarán en la visión del portador con un leve brillo plateado.",
+    "Los enemigos soltarán 10% más geo al morir."
+  ],
+  "sinergias": [
+    {
+      "nombre": "Brújula Caprichosa",
+      "descripcion": "Muestra mentalmente posibles depósitos de geo u objetos valiosos en sitios visitados por el usuario.",
+      "imagen": "images/amuletosC/BrujulaCaprichosa.webp"
+    },
+    {
+      "nombre": "Enjambre Recolector",
+      "descripcion": "El enjambre puede ser controlado de mejor manera por el portador, y traer más cosas además de geo, como plantas pequeñas, piedras, minerales, etc.",
+      "imagen": "images/amuletosC/EnjambreRecolector.webp"
+    }
+  ]
+},
+{
+  "id": "capa_de_musgo",
+  "nombre": "Capa de musgo",
+  "imagen": "images/amuletos/CapaDeMusgo.png",
+  "muescas": 2,
+  "rareza": "Vacío",
+  "historia": "Sus orígenes son inciertos, pero se especula que el amuleto surgió del trágico fin de un cuidador de Sendero Verde, caído ante los musgoagresores al inicio de la infección de Radiance.",
+  "efectos": [
+    "Proporciona al portador una capa de musgo que aumenta su velocidad en un 60%.",
+    "Permite al usuario realizar una embestida que causa daño si impacta con un enemigo. El daño infligido equivale a un golpe del arma equipada por el portador.",
+    "Los musgoagresores serán pacíficos con el portador."
+  ],
+  "sinergias": [
+    {
+      "nombre": "Maestro de Sprints",
+      "descripcion": "Mejora la velocidad del portador considerablemente, además de aumentar el daño de impacto de la embestida un 50%.",
+      "imagen": "images/amuletosC/MaestroDeSprints.webp"
+    },
+    {
+      "nombre": "Maestro de las Embestidas",
+      "descripcion": "El usuario podrá realizar Avance rápido en todas las direcciones posibles, además de aumentar la distancia de la embestida un 40%.",
+      "imagen": "images/amuletosC/MaestroDeLasEmbestidas.webp"
+    },
+    {
+      "nombre": "Sombra Afilada",
+      "descripcion": "Al atravesar a un enemigo no se causará el daño de impacto directo, ya que lo atraviesas. En su lugar, el enemigo quedará marcado y recibirá el daño de la embestida de Capa de musgo 2 segundos después.",
+      "imagen": "images/amuletosC/SombraAfilada.webp"
+    }
+  ]
+},
+{
+  "id": "guardian_de_unn",
+  "nombre": "Guardián de Unn",
+  "imagen": "images/amuletos/GuardianDeUnn.png",
+  "muescas": 4,
+  "rareza": "Vacío",
+  "historia": "Este amuleto fue encontrado en los restos de un antiguo guerrero de Sendero Verde, aunque su procedencia es difícil de precisar, se sospecha con gran certeza que fue forjado por el propio dios de ese lugar. En los inicios de la creación de los primeros musgo caballeros, Unn les otorgó estos amuletos con el objeto de cumplir con la noble misión de proteger el páramo.\n\nAl pasar el tiempo, los caballeros de musgo evolucionaron y desarrollaron la capacidad de generar sus propias esferas de musgo de manera biológica. Así el amuleto quedó obsoleto y eventualmente se perdió en las brumas del tiempo.",
+  "efectos": [
+    "El usuario tiene la habilidad de lanzar bolas de musgo desde sus manos y boca. Estas bolas de musgo pueden cargarse, incrementando su tamaño y letalidad a través de tres fases distintas:",
+    "- Fase 1: 3 puntos de daño",
+    "- Fase 2: 5 puntos de daño",
+    "- Fase 3: 10 puntos de daño",
+    "El proyectil comienza del tamaño de un germen de sabiavida y, en su fase final, es ligeramente más grande que un trepamusgo.",
+    "Para alcanzar su tamaño máximo, el usuario debe cargar el proyectil durante 3 segundos completos."
+  ],
+  "sinergias": [
+    {
+      "nombre": "Forma de Unn",
+      "descripcion": "Al lanzar una bola se generará automáticamente en su tamaño máximo sin necesidad de cargarla. Además, mejora la velocidad de desplazamiento en la forma de Unn.",
+      "imagen": "images/amuletosC/FormaDeUnn.webp"
+    },
+    {
+      "nombre": "Espinas de Agonía",
+      "descripcion": "Las bolas de musgo se recubren con pequeñas espinas, duplicando el daño infligido en cada fase.",
+      "imagen": "images/amuletosC/EspinasDeAgonia.webp"
+    }
+  ]
+},
+{
+  "id": "saco_de_saviavida",
+  "nombre": "Saco de Saviavida",
+  "imagen": "images/amuletos/SacoDeSaviavida.png",
+  "muescas": 3,
+  "rareza": "Pálida",
+  "historia": "Decomisado a inicios de la creación del reino de Hallownest, cuando el Rey Pálido hizo que la saviavida se viera como un tabú para los habitantes del reino, este amuleto pertenecía a los ocultistas y adoradores de este antiguo dios de la saviavida. Aunque sus orígenes son inciertos, se teoriza que este encanto nació tras la muerte de un germen de saviavida que creció más de lo normal, tratando de proteger a su amo.",
+  "efectos": [
+    "Invoca un germen de saviavida del tamaño de una Fungicría, el cual asistirá al portador durante el combate.",
+    "- Vida: 100 puntos.",
+    "- Daño: 7 por golpe cuerpo a cuerpo.",
+    "Si el germen muere, el portador recibirá un revestimiento protector de saviavida, capaz de absorber hasta 6 máscaras de daño.",
+    "Tras descansar (meditando o al estar un tiempo sin combate), el germen reaparecerá para volver al campo de batalla junto al portador."
+  ],
+  "sinergias": [
+    {
+      "nombre": "Tremanido",
+      "descripcion": "El germen de saviavida es reemplazado por 6 gusanos de saviavida más pequeños, cada uno con 25 puntos vida y 3 puntos de daño por impacto.Estos gusanos se mueven en enjambre y rodean al portador, atacando individualmente a enemigos cercanos. Si alguno es destruido, podrá regenerarse después de un breve periodo de calma.",
+      "imagen": "images/amuletosC/Tremanido.webp"
+    }
+  ]
+},
+{
+  "id": "alas-de-hada",
+  "nombre": "Alas de hada",
+  "imagen": "images/amuletos/AlasDeHada.png",
+  "muescas": 3,
+  "rareza": "Radiante",
+  "historia": "Proveniente de tierras lejanas, un hermoso amuleto con delicados grabados en su superficie irradia un aura de misticismo. Su origen se encuentra envuelto en un enigma profundo, permaneciendo en misterio hasta el día de hoy.",
+  "efectos": [
+    "Otorga al portador unas alas finas que le permiten volar durante 30 segundos.",
+    "(Tiempo de recuperación: 10 segundos)"
+  ],
+  "sinergias": [
+    {
+      "nombre": "Muestra de los Sprints",
+      "descripcion": "Permite al usuario realizar un avance rápido con el triple de distancia mientras vuela.",
+      "imagen": "images/amuletosC/MaestroDeSprints.webp"
+    },
+    {
+      "nombre": "Capa de musgo",
+      "descripcion": "Si el usuario realiza un avance rápido e impacta con un enemigo en pleno vuelo, el radio de la onda de impacto se verá extremadamente aumentada (+1.25).",
+      "imagen": "images/amuletos/CapaDeMusgo.png"
+    }
+  ]
+},
+{
+  "id": "alma-voraz",
+  "nombre": "Alma Voraz",
+  "imagen": "images/amuletos/AlmaVoraz.png",
+  "muescas": 3,
+  "rareza": "Pálida",
+  "historia": "Creado por un erudito en el santuario de almas, este amuleto surgió como una innovación del amuleto de Atrapalmas, con el fin de entregárselo a los sabios del santuario del más alto rango.\n\nTodo iba bien hasta que las acciones del Maestro de Alma y sus múltiples secuaces salieron a la luz, lo que hizo que el Rey Pálido clausurara el lugar, decomisando una gran cantidad de objetos mágicos.\n\nAunque la técnica para la creación de amuletos fue recuperada, además del amuleto en cuestión, los pasos necesarios para crear este amuleto en específico se perdieron con el tiempo, haciendo imposible recrearlo nuevamente por el momento.",
+  "efectos": [
+    "Otorga la capacidad de reponer el doble de alma de todas las fuentes posibles."
+  ],
+  "sinergias": [
+  {
+    "nombre": "Tuercehechizos",
+    "descripcion": "Al impactar con éxito un hechizo ofensivo, el usuario recupera automáticamente la cantidad de alma que fue reducida gracias al efecto de Tuercehechizos. Esta recuperación es inmediata y proporcional al coste reducido.",
+    "imagen": "images/amuletosC/Tuercehechizos.webp"
+  }
+]
+},
+{
+  "id": "polaridad",
+  "nombre": "Polaridad",
+  "imagen": "images/amuletos/Polaridad.png",
+  "muescas": 2,
+  "rareza": "Vacío",
+  "historia": "El origen de este amuleto se remonta a un lejano reino habitado por una tribu de mantis.\n\nComo es sabido, las hembras mantis son más grandes y fuertes que los machos. Por esta razón, durante épocas de guerra, la tribu forjó unos amuletos especiales que eran entregados a los varones con el propósito de potenciar sus habilidades físicas. Gracias a estos artefactos, los machos se volvieron igual de formidables que sus contrapartes femeninas, permitiendo que la tribu conquistara vastas regiones del reino y se consolidara como una de las más poderosas y avanzadas hasta el día de hoy.",
+  "efectos": [
+    "Transforma el sexo del usuario al opuesto.",
+    "Si el usuario no posee un sexo definido, el amuleto le asignará aquel cuyas características estén más alineadas con su comportamiento y preferencias naturales."
+  ],
+  "sinergias": [
+    {
+      "nombre": "Dúo Transmutador",
+      "descripcion": "Al tocar a otro insecto, además de copiar su especie, el usuario también adoptará su sexo, si este posee uno definido.",
+      "imagen": "images/amuletos/DuoTransmutador.png"
+    }
+  ]
+},
+{
+  "id": "duo-transmutador",
+  "nombre": "Dúo Transmutador",
+  "imagen": "images/amuletos/DuoTransmutador.png",
+  "muescas": 2,
+  "rareza": "Vacío",
+  "historia": "Forjado con el propósito de estrechar la comprensión entre especies, este amuleto posee el poder de intercambiar las especies de sus portadores cuando lo usan simultáneamente.\n\nAunque al principio fue un bonito invento, un trágico accidente empañó su propósito. Al morir uno de los portadores mientras usaba su mitad, el sobreviviente no solo conservó su forma, sino que también heredó la especie y los años de vida del fallecido.\n\nEste suceso distorsionó su uso, transformando al amuleto en un objeto codiciado por motivos egoístas y oscuros, muy lejos de su propósito original.",
+  "efectos": [
+    "Intercambio simultáneo:\nSi dos insectos utilizan cada uno una mitad del amuleto al mismo tiempo, sus especies se intercambian entre sí. El efecto se mantiene hasta que uno de los portadores se retire el amuleto.",
+    "Transmutación asimétrica:\nSi un portador usa ambas mitades y toca a otro insecto, copiará su especie en un 80%. Algunos rasgos propios de su especie original permanecerán."
+  ],
+  "sinergias": [
+    {
+      "nombre": "Polaridad",
+      "descripcion": "Además de copiar la especie de otro insecto, el portador también asumirá su sexo si este posee uno definido. Este cambio ocurre al tocar al objetivo mientras se porta ambas mitades del Dúo Transmutador.",
+      "imagen": "images/amuletos/Polaridad.png"
+    }
   ]
 }
+
+
 
 
 ]
