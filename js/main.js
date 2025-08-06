@@ -173,33 +173,37 @@ async function mostrarAmuleto(index) {
 
 // Función auxiliar para cargar imágenes de forma asíncrona
 function cargarImagen(imgElement, src) {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     if (!imgElement || !src) {
       resolve();
       return;
     }
-    
-    const img = new Image();
-    img.onload = () => {
+
+    // 👇 Limpio antes de todo
+    imgElement.src = "";
+    imgElement.classList.add("loading");  // si quieres mostrar un spinner con CSS
+
+    const tmp = new Image();
+    tmp.onload = () => {
       imgElement.src = src;
+      imgElement.classList.remove("loading");
       resolve();
     };
-    img.onerror = () => {
+    tmp.onerror = () => {
       console.warn(`Error cargando imagen: ${src}`);
-      resolve(); // Resolver de todos modos para no bloquear
+      resolve();
     };
-    
-    // Establecer timeout para evitar carga infinita
+
+    // fallback en 2 s
     setTimeout(() => {
-      if (!imgElement.src || imgElement.src === '') {
-        imgElement.src = src; // Cargar de todos modos
-      }
+      if (!imgElement.src) imgElement.src = src;
       resolve();
     }, 2000);
-    
-    img.src = src;
+
+    tmp.src = src;
   });
 }
+
 
 // ================================
 // NAVEGACIÓN MEJORADA
