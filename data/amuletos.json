@@ -48,7 +48,7 @@
     ],
     "recomendaciones": [
       {
-        "personaje": "assets/personaje-maximus.png",
+        "personaje": "images/Personajes/Ma2.png",
         "texto": "Aunque la voz de este amuleto puede ser un poco intensa al principio... se siente como si alguien te estuviera cuidando desde adentro.La luciérnaga atrapada tiene carácter, eso sí. A veces habla de más, pero no lo hace con mala intención jeje. Me cae bien, espero poder sacarla de ahí en un futuro."
       }
     ]
@@ -85,7 +85,7 @@
     ],
     "recomendaciones": [
        {
-    "personaje": "assets/personaje-maximus.png",
+    "personaje": "images/Personajes/Ma3.png",
     "texto": "Para ser el primer amuleto serio que hice… salió bastante bien, je.\nAunque, bueno… por andar con prisas y querer aprovechar el cadáver del Engullecodicias, me gasté toda mi alma al forjarlo.\nY claro, justo después tuve que ir a cazar otro insecto para reponerme… casi me matan. Je… cosas que pasan.\nPero oye, valió la pena. ¡Mira esa capa viviente!"
   }
     ]
@@ -115,7 +115,7 @@
     ],
     "recomendaciones": [
   {
-    "personaje": "assets/personaje-seabreaz.png",
+    "personaje": "images/Personajes/Sea4.png",
     "texto": "No me gusta admitirlo… pero cada golpe con este amuleto me provoca un cosquilleo por dentro. ¡Oye, no me juzgues! ¡Que yo sigo siendo un sanador, eh!"
   }
 ]
@@ -151,7 +151,7 @@
   ],
   "recomendaciones": [
     {
-      "personaje": "assets/personaje-maximus.png",
+      "personaje": "images/Personajes/Ma5.png",
       "texto": "A veces me pregunto por qué los insectos adoraban tanto a mi padre...\nTal vez sea una duda que nunca podré resolver.\nCambiando de tema, el amuleto puede llegar a ser útil en situaciones donde sepas que recibirás un golpe sí o sí, pudiendo marcar la diferencia entre la vida y la muerte."
     }
     ]
@@ -205,7 +205,7 @@
   ],
     "recomendaciones": [
       {
-        "personaje": "assets/personaje-iris.png",
+        "personaje": "images/Personajes/Ir7.png",
         "texto": "Es bastante divertido de usar si eres una mantis.\nSientes que todos los ataques pasan en cámara lenta.\nAdemás, ayuda bastante en zonas oscuras jeje."      }
     ]
   },
@@ -283,7 +283,7 @@
     ],
     "recomendaciones": [
       {
-         "personaje": "assets/personaje-lilly.png",
+         "personaje": "images/Personajes/Li10.png",
     "texto": "¿Este amuleto era suyo…? Tiene sentido jeje... cuando lo uso, siento como si alguien caminara a mi lado... como si Isma aún velara por este lugar, por Sendero verde."
       }
     ]
@@ -317,7 +317,7 @@
     ],
     "recomendaciones": [
   {
-    "personaje": "assets/personaje-maximus.png",
+    "personaje": "images/Personajes/Ma11.png",
     "texto": "Sí, funcionan los 3 juntos. Y sí, es tan divertido como suena. ¿Quieres una torre? ¿Un puente viviente? ¿Una catapulta? Ve y hazlo, pequeño insecto jeje."
   }
 ]
@@ -354,7 +354,7 @@
   ],
   "recomendaciones": [
   {
-    "personaje": "assets/personaje-molly.png",
+    "personaje": "images/Personajes/Mo12.png",
     "texto": "Bastante útil si necesitas estar recuperando alma para probar un hechizo, aunque no lo veo factible en combate... a diferencia de cierta araña."
   }
 ]
@@ -470,7 +470,7 @@
   ],
   "recomendaciones": [
     {
-      "personaje": "assets/personaje-maximus.png",
+      "personaje": "images/Personajes/Ma16.png",
       "texto": "Pelear contra alguien con este amuleto es un dolor de cabeza jeje, y más si sus ataques son rápidos y precisos. ¿Eh? ¿Por qué lo sé?... amm, digamos que una caballera protectora de Sendero verde me ayudó a probar el amuleto, je..."
     }
   ]
@@ -495,7 +495,7 @@
   ],
   "recomendaciones": [
     {
-      "personaje": "assets/personaje-cyrille.png",
+      "personaje": "images/Personajes/Cy17.png",
       "texto": "Me encanta usarlo con mis ballestas jsjsjsj, no tienes idea de lo útil que es para abrumar a alguien. ¡Funde los escudos antes de que puedan reaccionar!"
     }
   ]
@@ -530,7 +530,7 @@
     ],
     "recomendaciones": [
       {
-        "personaje": "assets/personaje-maximus.png",
+        "personaje": "images/Personajes/Ma18.png",
         "texto": "Mi padre siempre fue un estupido... Lo que él veía como un 'invento fallido', cualquier hechicero lo consideraría una obra maestra. Tener reservas de alma prácticamente ilimitadas... eso cambia todo en combate."
       }
     ]
@@ -650,7 +650,7 @@
   ],
   "recomendaciones": [
     {
-      "personaje": "assets/personaje-maximus.png",
+      "personaje": "images/Personajes/Ma23.png",
       "texto": "Presumida..."
     }
   ]
@@ -689,7 +689,7 @@
   ],
   "recomendaciones": [
     {
-      "personaje": "assets/personaje-maximus.png",
+      "personaje": "images/Personajes/Ma25.png",
       "texto": "Al principio pensé que Sly me había estafado cuando le compré el amuleto... aunque hoy, en la actualidad, este pequeño guardián se ha vuelto un compañero muy querido por mí y mis amigos."
     }
   ]
@@ -826,7 +826,7 @@
   ],
    "recomendaciones": [
     {
-      "personaje": "assets/personaje-cyrille.png",
+      "personaje": "images/Personajes/Cy30.png",
       "texto": "Te extraño... hermana mayor..."
     }
   ]
