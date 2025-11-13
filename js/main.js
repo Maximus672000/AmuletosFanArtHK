@@ -111,13 +111,20 @@ async function mostrarAmuleto(index) {
       for (const sin of amuleto.sinergias) {
         const contenedor = document.createElement("div");
         contenedor.className = "sinergia";
-        contenedor.innerHTML = `
-          <div class="sinergia-texto">
-            <h4>${sin.nombre}</h4>
-            <p>${sin.descripcion}</p>
-          </div>
-          <img src="${sin.imagen}" alt="${sin.nombre}" class="sinergia-img" />
-        `;
+        const descripcionHTML = sin.descripcion
+      .split("\n\n")
+      .map(bloque => bloque.replace(/\n/g, "<br>"))
+      .map(parrafo => `<p>${parrafo}</p>`)
+      .join("");
+
+    contenedor.innerHTML = `
+      <div class="sinergia-texto">
+       <h4>${sin.nombre}</h4>
+       ${descripcionHTML}
+      </div>
+  <img src="${sin.imagen}" alt="${sin.nombre}" class="sinergia-img" />
+`;
+
         sinergiasCont.appendChild(contenedor);
         const sinergiaImg = contenedor.querySelector('.sinergia-img');
         await cargarImagen(sinergiaImg, sin.imagen);

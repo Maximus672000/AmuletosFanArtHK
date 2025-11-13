@@ -1014,9 +1014,79 @@
       "imagen": "images/amuletos/Polaridad.webp"
     }
   ]
+},
+{
+  "id": "expansor-oro-purpura",
+  "nombre": "Expansor de oro púrpura",
+  "imagen": "images/amuletos/ExpansorDeOroPurpura.webp",
+  "muescas": 1,
+  "rareza": "Pálida",
+  "historia": "Forjado con una aleación sumamente extraña y extremadamente difícil de replicar. Este amuleto le costó más de lo que le gustaría admitir a nuestro arácnido forjador de amuletos, aunque sus frutos valieron la pena después de tantos esfuerzos.",
+  "efectos": [
+    "Otorga +5 espacios de muescas adicionales mientras la salud esté por encima del 50%.",
+    "Si la salud cae por debajo del 50%, los amuletos equipados en las ranuras extra se desactivan hasta recuperar salud."
+  ]
+},
+{
+  "id": "princesa-guardiana",
+  "nombre": "Princesa guardiana",
+  "imagen": "images/amuletos/PrincesaGuardiana.webp",
+  "muescas": 2,
+  "rareza": "Pálida",
+  "historia": "Colaboración conjunta nacida de la amistad espontánea entre un arácnido y un caracol, para crear un amuleto memorable. Un encanto forjado a partir de dos esencias poderosas y materiales de gran valor encontrados en la vasta Hallownest.",
+  "efectos": [
+    "Permite al portador otorgar vida a su arma, convirtiéndola en un fiel secuaz que luchará por y para él. El portador podrá, además, desactivar voluntariamente el efecto del amuleto y utilizar su arma de manera convencional.",
+    "La forma que toma el arma tras cobrar vida varía entre portadores, pero siempre presentan mantener cierta apariencia arácnida, además de utilizar ataques principalmente aéreos y que priorizan la velocidad por sobre el daño.",
+    "Activar y desactivar el amuleto no requiere puntos de alma, pero sí consume una pequeña cantidad de esencia onírica, por lo que el portador puede sentirse cansado u olvidar cierta información poco valiosa al usarlo."
+  ],
+  "sinergias": [
+    {
+      "nombre": "Eco de la Colmena",
+      "descripcion": "El arma adopta la forma de una abeja en lugar de una araña. Sus ataques se convierten en embestidas lentas pero muy poderosas, manteniéndose siempre en el aire.",
+      "imagen": "images/amuletos/EcoDeLaColmena.webp"
+    },
+    {
+      "nombre": "Marca del Orgullo",
+      "descripcion": "El arma toma la apariencia de una pequeña mantis guerrera. Ataca únicamente desde tierra, con un estilo rápido y preciso que equilibra daño y velocidad.",
+      "imagen": "images/amuletosC/MarcaDeOrgullo.webp"
+    },
+    {
+      "nombre": "Útero Brillante",
+      "descripcion": "El arma adquiere la forma de un Áspid y ya no se invocan crías. El arma se mantiene al lado del portador y dispara proyectiles certeros a distancia.",
+      "imagen": "images/amuletosC/UteroBrillante.webp"
+    },
+    {
+      "nombre": "Niño Grimm",
+      "descripcion": "El arma se impregna con la llama carmesí del Niño Grimm. Su poder aumenta un 20% de daño, emanando un brillo rojizo.",
+      "imagen": "images/amuletosC/NiñoGrimm.webp"
+    },
+    {
+  "nombre": "Despertar pálido",
+  "descripcion": "El arma desarrolla conciencia y voluntad propia, siendo capaz de tomar decisiones por sí misma. Su forma también cambiara adquiriendo una coraza biológica, cuyas características físicas varían según diversos factores, como el material original del arma, la percepción que el portador tenga de ella o los fragmentos de otros insectos incorporados en su estructura.\n\nEn un inicio, la actitud del arma hacia su portador suele ser servicial, mostrando cierta lealtad e incluso conservando recuerdos de su existencia anterior como herramienta de combate. Sin embargo, si en el pasado fue maltratada o usada sin cuidado, puede volverse hostil y atacar a su portador.\n\nDurante este estado consciente, el portador no podrá devolver al insecto a su forma de arma. Intentar hacerlo provocará una intensa jaqueca tanto para él como para la criatura, acompañada de un dolor agudo durante un par de segundos.\n\nSi el portador mantiene el dúo de amuletos durante una semana (o una tercia, en caso de existir una sinergia), el insecto será capaz de conservar su forma viva sin depender más del conjunto de amuletos.",
+  "imagen": "images/amuletos/DespertarPalido.webp"
 }
 
-
+  ]
+},
+{
+  "id": "despertar-palido",
+  "nombre": "Despertar pálido",
+  "imagen": "images/amuletos/DespertarPalido.webp",
+  "muescas": 0,
+  "rareza": "Radiante",
+  "historia": "Un amuleto surgido de las cenizas del cadáver de la forma primigenia del antiguo monarca de Hallownest, el wyrm blanco. Nació bajo circunstancias excepcionales, fruto de una cadena de eventos tan peculiares como improbables.",
+  "efectos": [
+    "Si un insecto consciente intenta usarlo, no producirá ningún efecto. Sin embargo, si un insecto salvaje llega a portarlo, el amuleto le concederá una forma antropomorfizada, adaptada a su naturaleza y dotada de una conciencia propia.",
+    "El efecto se desvanecerá tras unas horas si el amuleto es retirado. Pero si la criatura logra conservarlo durante una semana completa, la transformación se volverá permanente."
+  ],
+  "sinergias": [
+    {
+  "nombre": "Princesa guardiana",
+  "descripcion": "El arma desarrolla conciencia y voluntad propia, siendo capaz de tomar decisiones por sí misma. Su forma también cambiara adquiriendo una coraza biológica, cuyas características físicas varían según diversos factores, como el material original del arma, la percepción que el portador tenga de ella o los fragmentos de otros insectos incorporados en su estructura.\n\nEn un inicio, la actitud del arma hacia su portador suele ser servicial, mostrando cierta lealtad e incluso conservando recuerdos de su existencia anterior como herramienta de combate. Sin embargo, si en el pasado fue maltratada o usada sin cuidado, puede volverse hostil y atacar a su portador.\n\nDurante este estado consciente, el portador no podrá devolver al insecto a su forma de arma. Intentar hacerlo provocará una intensa jaqueca tanto para él como para la criatura, acompañada de un dolor agudo durante un par de segundos.\n\nSi el portador mantiene el dúo de amuletos durante una semana (o una tercia, en caso de existir una sinergia), el insecto será capaz de conservar su forma viva sin depender más del conjunto de amuletos.",
+  "imagen": "images/amuletos/PrincesaGuardiana.webp"
+}
+  ]
+}
 
 
 ]
