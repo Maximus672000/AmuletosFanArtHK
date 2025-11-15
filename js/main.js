@@ -84,8 +84,18 @@ async function mostrarAmuleto(index) {
     await cargarImagen(imagen, amuleto.imagen);
 
     document.getElementById("amulet-notches").textContent = amuleto.muescas;
-    document.getElementById("amulet-rarity").textContent = amuleto.rareza;
+    // Generar iconos de muesca
+const notchIconsCont = document.getElementById("amulet-notches-icons");
+notchIconsCont.innerHTML = "";
 
+for (let i = 0; i < amuleto.muescas; i++) {
+  const icon = document.createElement("div");
+  icon.classList.add("notch-icon");
+  notchIconsCont.appendChild(icon);
+}
+
+    document.getElementById("amulet-rarity").textContent = amuleto.rareza;
+    
     // Historia
     const historiaHTML = amuleto.historia
       .split("\n")

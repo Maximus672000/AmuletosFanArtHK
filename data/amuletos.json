@@ -1086,7 +1086,19 @@
   "imagen": "images/amuletos/PrincesaGuardiana.webp"
 }
   ]
+},
+{
+  "id": "clonador-de-alma",
+  "nombre": "Clonador de alma",
+  "imagen": "images/amuletos/ClonadorDeAlma.webp",
+  "muescas": 3,
+  "rareza": "Pálido",
+  "historia": "En mis múltiples viajes por diferentes reinos me encontré con un insecto de lo más peculiar, un Wyrm de ropajes extravagantes, lleno de cascabeles, telas rotas y colores que parecían no tener sentido entre sí. A simple vista parecía un bufón cualquiera, pero su presencia imponía.\n\nOtorgaba amuletos únicos a quienes completaran sus pruebas, a las cuales llamaba “ciegas”. No exagero al decir que algunas me llevaron al borde de la muerte. Trampas ocultas, criaturas amaestradas para el espectáculo y desafíos que solo un loco intentaría superar.\n\nSu reino era igual de extraño. Todo allí giraba en torno al entretenimiento, al ruido, a la risa forzada. Su gente vivía y respiraba espectáculo, cada habitante un actor involuntario. Para ellos, ese Wyrm no era solo un líder, sino la encarnación misma de su identidad. Y por eso lo nombraron con orgullo... “Balatro Balatrez, el Wyrm Bufón”.\n\n—Maximus",
+  "efectos": [
+    "Tras lanzar un hechizo, este se relanzará automáticamente sin consumir alma y con un aumento del daño o efecto x1.5."
+  ]
 }
+
 
 
 ]
