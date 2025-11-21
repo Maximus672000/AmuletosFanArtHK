@@ -932,7 +932,13 @@
       "nombre": "Tremanido",
       "descripcion": "El germen de saviavida es reemplazado por 6 gusanos de saviavida más pequeños, cada uno con 25 puntos vida y 3 puntos de daño por impacto.Estos gusanos se mueven en enjambre y rodean al portador, atacando individualmente a enemigos cercanos. Si alguno es destruido, podrá regenerarse después de un breve periodo de calma.",
       "imagen": "images/amuletosC/Tremanido.webp"
-    }
+    },
+    {
+  "nombre": "Suministro Maestro",
+  "descripcion": "El germen de sabiavida también tendrá porciones reservas de alma en su interior, y al morir recargará 3 vasijas de alma instantáneamente.",
+  "imagen": "images/amuletos/SuministroMaestro.webp"
+}
+
   ]
 },
 {
@@ -1096,6 +1102,20 @@
   "historia": "En mis múltiples viajes por diferentes reinos me encontré con un insecto de lo más peculiar, un Wyrm de ropajes extravagantes, lleno de cascabeles, telas rotas y colores que parecían no tener sentido entre sí. A simple vista parecía un bufón cualquiera, pero su presencia imponía.\n\nOtorgaba amuletos únicos a quienes completaran sus pruebas, a las cuales llamaba “ciegas”. No exagero al decir que algunas me llevaron al borde de la muerte. Trampas ocultas, criaturas amaestradas para el espectáculo y desafíos que solo un loco intentaría superar.\n\nSu reino era igual de extraño. Todo allí giraba en torno al entretenimiento, al ruido, a la risa forzada. Su gente vivía y respiraba espectáculo, cada habitante un actor involuntario. Para ellos, ese Wyrm no era solo un líder, sino la encarnación misma de su identidad. Y por eso lo nombraron con orgullo... “Balatro Balatrez, el Wyrm Bufón”.\n\n—Maximus",
   "efectos": [
     "Tras lanzar un hechizo, este se relanzará automáticamente sin consumir alma y con un aumento del daño o efecto x1.5."
+  ]
+},
+{
+  "id": "avispa-azul",
+  "nombre": "Avispa Azul",
+  "imagen": "images/amuletos/AvispaAzul.webp",
+  "muescas": 2,
+  "rareza": "Pálida",
+  "historia": "Conseguir este amuleto fue un maldito dolor de cabeza...\n\nLa ciega jefe conocida como “La Planta” era una criatura musgosa, enorme y segmentada, parecida a un Garpies. Tenía la habilidad de anular hechizos y cualquier otra capacidad mágica de objetos mediante las esporas que liberaba.\n\nMe entregaron una daga de mala calidad para 'acabar' con ella, la cual terminó cediendo contra la coraza del insecto. Al final tuve que abrirme paso con mis propias garras, poniendo mis capacidades físicas al límite. Tras derrotarla, me otorgaron el amuleto… y el permiso de marcharme.\n\nPero... estaba lejos de dejar ese reino sin ver primero todo lo que tenía para ofrecer.\n\n—Maximus",
+  "efectos": [
+    "Copia la habilidad del amuleto equipado inmediatamente después (si es activable) y la reproduce con un ligero retardo.",
+    "Los amuletos pasivos no pueden copiarse.",
+    "Si el amuleto original funciona por probabilidad, usa los mismos porcentajes, pero las activaciones son independientes.",
+    "Si el efecto requiere espacio físico o es un buff, no replica como tal, pero añade sus beneficios a los efectos principales del usuario (más daño, resistencia, impactos, etc.)."
   ]
 }
 
