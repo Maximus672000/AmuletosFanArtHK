@@ -312,7 +312,12 @@
         "nombre": "Portador Onírico",
         "descripcion": "El usuario puede mantener hasta tres plataformas oníricas activas al mismo tiempo. Además obtiene un control más preciso sobre su tamaño, pudiendo duplicar sus dimensiones estándar si así lo desea. Esto permite crear plataformas más grandes, útiles tanto en combate como en exploración.",
         "imagen": "images/amuletosC/PortadorOnirico.webp"
-      }
+      },
+      {
+      "nombre": "Mantis de papel",
+      "descripcion": "Además de generar plataformas, el usuario podrá crear insectos de papel, en base a dibujos hechos por este, siendo carentes de conciencia y siguiendo las órdenes del usuario. Entre mas detallado sea el dibujo, los insectos de papel, imitaran mas las características físicas de los originales. Cada metro cúbico de insecto creado, gastará 100 de esencia onírica, además que el poder de los insectos estará limitado al poder bruto del usuario.",
+      "imagen": "images/amuletos/MantisDePapel.webp"
+    }
 
     ],
     "recomendaciones": [
@@ -1067,7 +1072,7 @@
       "imagen": "images/amuletosC/NiñoGrimm.webp"
     },
     {
-  "nombre": "Despertar pálido",
+  "nombre": "Despertar Pálido",
   "descripcion": "El arma desarrolla conciencia y voluntad propia, siendo capaz de tomar decisiones por sí misma. Su forma también cambiara adquiriendo una coraza biológica, cuyas características físicas varían según diversos factores, como el material original del arma, la percepción que el portador tenga de ella o los fragmentos de otros insectos incorporados en su estructura.\n\nEn un inicio, la actitud del arma hacia su portador suele ser servicial, mostrando cierta lealtad e incluso conservando recuerdos de su existencia anterior como herramienta de combate. Sin embargo, si en el pasado fue maltratada o usada sin cuidado, puede volverse hostil y atacar a su portador.\n\nDurante este estado consciente, el portador no podrá devolver al insecto a su forma de arma. Intentar hacerlo provocará una intensa jaqueca tanto para él como para la criatura, acompañada de un dolor agudo durante un par de segundos.\n\nSi el portador mantiene el dúo de amuletos durante una semana (o una tercia, en caso de existir una sinergia), el insecto será capaz de conservar su forma viva sin depender más del conjunto de amuletos.",
   "imagen": "images/amuletos/DespertarPalido.webp"
 }
@@ -1087,7 +1092,7 @@
   ],
   "sinergias": [
     {
-  "nombre": "Princesa guardiana",
+  "nombre": "Princesa Guardiana",
   "descripcion": "El arma desarrolla conciencia y voluntad propia, siendo capaz de tomar decisiones por sí misma. Su forma también cambiara adquiriendo una coraza biológica, cuyas características físicas varían según diversos factores, como el material original del arma, la percepción que el portador tenga de ella o los fragmentos de otros insectos incorporados en su estructura.\n\nEn un inicio, la actitud del arma hacia su portador suele ser servicial, mostrando cierta lealtad e incluso conservando recuerdos de su existencia anterior como herramienta de combate. Sin embargo, si en el pasado fue maltratada o usada sin cuidado, puede volverse hostil y atacar a su portador.\n\nDurante este estado consciente, el portador no podrá devolver al insecto a su forma de arma. Intentar hacerlo provocará una intensa jaqueca tanto para él como para la criatura, acompañada de un dolor agudo durante un par de segundos.\n\nSi el portador mantiene el dúo de amuletos durante una semana (o una tercia, en caso de existir una sinergia), el insecto será capaz de conservar su forma viva sin depender más del conjunto de amuletos.",
   "imagen": "images/amuletos/PrincesaGuardiana.webp"
 }
@@ -1117,8 +1122,75 @@
     "Si el amuleto original funciona por probabilidad, usa los mismos porcentajes, pero las activaciones son independientes.",
     "Si el efecto requiere espacio físico o es un buff, no replica como tal, pero añade sus beneficios a los efectos principales del usuario (más daño, resistencia, impactos, etc.)."
   ]
+},
+{
+  "id": "mantis-de-papel",
+  "nombre": "Mantis de papel",
+  "imagen": "images/amuletos/MantisDePapel.webp",
+  "muescas": 2,
+  "rareza": "Pálida",
+  "historia": "Conservar este amuleto fue sorprendentemente sencillo. Después de derrotar a 'El Psíquico', un guerrero que solo podía ser herido usando hechizos con un coste específico de alma, me vi obligado a resolver un acertijo contra reloj. Pero... la respuesta no me gustó... Al completarlo entendí algo que, siendo honesto, debí haber notado desde el principio.\n\nTodos estos amuletos... y todas estas 'ciegas'... eran parte de un ciclo. Cada prueba estaba diseñada para causar emociones fuertes, a los insectos al borde de la muerte. 'Un deseo... fuerte antes de morir' Las pruebas eran adictivas para cualquier insecto extranjero, reducidos a un mero espectáculo para el Wyrm bufón.\n\nO superabas las pruebas, o morías en ellas... convirtiéndote en el siguiente premio que alimentaría la fantasía del reino de los bufones.",
+  "efectos": [
+    "Copia la habilidad del primer amuleto equipado, si este es activable (no funciona con amuletos pasivos) y la replica con un ligero retardo de segundos.",
+    "Si el amuleto original funciona por probabilidad, usa los mismos porcentajes, pero las activaciones son independientes.",
+    "Si el efecto requiere espacio físico o es un buffo, no lo replica como tal, pero añade sus beneficios a los efectos principales (mas daño, resistencia, impactos, etc).",
+    "Al copiar cualquier efecto, se disparan 2 proyectiles de papel, cada uno causando 10 de daño."
+  ],
+  "sinergias": [
+    {
+      "nombre": "Materialización Onírica",
+      "descripcion": "Además de generar plataformas, el usuario podrá crear insectos de papel, en base a dibujos hechos por este, siendo carentes de conciencia y siguiendo las órdenes del usuario. Entre mas detallado sea el dibujo, los insectos de papel, imitaran mas las características físicas de los originales. Cada metro cúbico de insecto creado, gastará 100 de esencia onírica, además que el poder de los insectos estará limitado al poder bruto del usuario.",
+      "imagen": "images/amuletos/MaterializacionOnirica.webp"
+    },
+    {
+      "nombre": "Marca del Orgullo",
+      "descripcion": "Mejora el daño de los proyectiles de papel a 20, pudiendo atravesar 3 objetivos.",
+      "imagen": "images/amuletosC/MarcaDeOrgullo.webp"
+    }
+  ]
+},
+{
+  "id": "sobrecarga-abstracta",
+  "nombre": "Sobrecarga abstracta",
+  "imagen": "images/amuletos/SobrecargaAbstracta.webp",
+  "muescas": 1,
+  "rareza": "Vacío",
+  "historia": "Ese maldito Wyrm… y esa maldita ciega. Pasé días atrapado en ese laberinto de cien salas. Desafíos, enemigos, varios jefes… sus colores, movimientos y formas eran un tormento. Si fallaba una prueba o entraba en la habitación equivocada, volvía al inicio, pero cargando aun el desgaste de todo lo superado.\n\nPoco a poco entendí el patrón. Con cada reinicio ganaba experiencia, hasta que por fin logré completarlo.\n\nVer la mezcla de molestia y desconcierto en el rostro del hermano de mi padre… ese gusto me lo guardo hasta hoy, jeje.\n\n—Maximus",
+  "efectos": [
+    "Aumenta la fuerza del portador según la cantidad de amuletos vinculados a su alma.",
+    "(Otorga +5 de daño físico por cada amuleto equipado, incluido este mismo.)"
+  ],
+  "sinergias": [
+    {
+      "nombre": "Expansor de oro púrpura",
+      "descripcion": "Los amuletos equipados en las muescas otorgadas por 'Expansor de oro púrpura' conceden +5 de daño físico por encanto.",
+      "imagen": "images/amuletos/ExpansorDeOroPurpura.webp"
+    }
+  ]
+},
+{
+  "id": "perforador-de-alma",
+  "nombre": "Perforador de alma",
+  "imagen": "images/amuletos/PerforadorDeAlma.webp",
+  "muescas": 1,
+  "rareza": "Vacío",
+  "historia": "Tras provocar al Wyrm, la prueba final me enfrentó a la Vasija Púrpura, la última ciega. Un guerrero bendecido por Balatrez, cuya fuerza y resistencia superaban incluso a las de mi hermano Pure. Mis ataques apenas le afectaban, y cada golpe suyo atravesaba mi guardia con violencia brutal.\n\nEn clara desventaja, entendí que la fuerza no bastaría.\n\nRecurriendo a mis hilos de vacío y a una combinación precisa de amuletos, forcé un equilibrio en la batalla. Alargando el combate hasta quebrar su resistencia, logré finalmente derrotarlo.\n\nCon la última prueba superada, se me otorgó el amuleto, y la oportunidad de irme con los viajeros que me habían traído a este reino.\n\nMientras volvíamos a Hallownest tuve un pensamiento en mente... de que algún día regresaré para acabar con ese maldito Wyrm bufón.\n\n—Maximus",
+  "efectos": [
+    "Al golpear a un enemigo con un arma onírica y tomar alma de este, una marca silenciosa queda impresa en él. Esa marca se activa a distancia dos veces, otorgándole al portador la misma cantidad de alma obtenida en el golpe inicial. Cada activación devuelve la primera cantidad y ocurre con un intervalo fijo de un segundo."
+  ]
+},
+{
+  "id": "broches-de-mithril",
+  "nombre": "Broches de Mithril",
+  "imagen": "images/amuletos/BrochesDeMithril.webp",
+  "muescas": 0,
+  "rareza": "Creador¿?",
+  "historia": "Intentando por replicar el amuleto 'Dúo Transmutador', el arácnido creó este artefacto. Hecho con materiales de la más alta calidad. Una aleación desconocida proveniente del reino de origen del primer amuleto, refinada a la perfección con aceite pálido. Además de usar como base un corazón de seda como fuente de energía.\n\nAsí nació este artefacto, un amuleto capaz de entrelazar el alma y el cuerpo de dos seres en una nueva entidad.",
+  "efectos": [
+    "Fusiona a dos individuos cuando cada uno porta una de las mitades, sumando todas sus cualidades, técnicas y poder en un híbrido perfecto. El nuevo ser será independiente de quienes conformen la fusión, poseyendo una mezcla de ambas personalidades.",
+    "Si los individuos mantienen una rivalidad, se aplicará un bono de poder considerable, aumentando aún más las características del nuevo ser.",
+    "La fusión durará una hora y, al finalizar, el amuleto entrará en un estado de reposo durante unos minutos antes de poder reutilizarse.",
+    "Si se usan ambas mitades al mismo tiempo, funcionará como un Alma de Monarca mejorada."
+  ]
 }
-
-
-
 ]
