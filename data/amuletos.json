@@ -857,6 +857,11 @@
       "nombre": "Enjambre Recolector",
       "descripcion": "El enjambre puede ser controlado de mejor manera por el portador, y traer más cosas además de geo, como plantas pequeñas, piedras, minerales, etc.",
       "imagen": "images/amuletosC/EnjambreRecolector.webp"
+    },
+    {
+      "nombre": "Fauces Quiméricas",
+      "descripcion": "Tras tocar un insecto, vivo o muerto, el portador adquiere una noción clara de cuáles son sus partes de mejor calidad para la fabricación de armas y otros artefactos. Si la criatura posee una coraza resistente, garras afiladas, glándulas especiales o bendiciones de alto valor, estas se marcarán en la visión del usuario con un brillo tenue. La intensidad del resplandor aumentará conforme la pureza y calidad del material.",
+      "imagen": "images/amuletos/FaucesQuimericas.webp"
     }
   ]
 },
@@ -1191,6 +1196,57 @@
     "Si los individuos mantienen una rivalidad, se aplicará un bono de poder considerable, aumentando aún más las características del nuevo ser.",
     "La fusión durará una hora y, al finalizar, el amuleto entrará en un estado de reposo durante unos minutos antes de poder reutilizarse.",
     "Si se usan ambas mitades al mismo tiempo, funcionará como un Alma de Monarca mejorada."
+  ]
+},
+{
+    "id": "relicario-de-los-suenos",
+    "nombre": "Relicario de los sueños",
+    "imagen": "images/amuletos/RelicarioDeLossuenos.webp",
+    "muescas": 3,
+    "rareza": "Radiante",
+    "historia": "Un muleto nacido de un reto entre Whyp y Maximus.\n\nLa idea fue planteada inicialmente por Max, quien descartó el proyecto casi de inmediato al considerarlo excesivamente complejo, lento y demandante... Convencido de que ni siquiera Whyp tendría la paciencia necesaria para completarlo, dio la idea por poco factible y la trato de descartar.\n\nPero Whyp, tomándose el comentario como un desafío personal, decidió probar lo contrario. Arrastró a Max de vuelta al laboratorio y, a base de insistencia, precisión y agotadoras horas de trabajo, lo obligó a colaborar hasta el final.\nEl resultado fue un amuleto de alta calidad, forjado con metal impregnado en alma y cristales que encapsulan esencia onírica pura, siendo capaz de recolectar enormes cantidades de esencia de forma pasiva y constante.\n\n\"Gracias chamana jsjs, realmente agradezco tu terquedad en momentos así\"\n\n-Maximus",
+    "efectos": [
+      "Absorbe una pequeña cantidad de esencia onírica de todos los seres vivos dentro de un rango extremadamente grande, otorgándole 300 de esencia onírica al portador a lo largo del día, de forma pasiva.",
+      "La esencia onírica estará directamente ligada a la existencia del portador en caso de no contar con un arma onírica para utilizarla.",
+      "Si un usuario sin herramientas oníricas pasa demasiado tiempo con el amuleto reuniendo esencia, la acumulación de energía terminará mutando una herramienta del portador, obteniendo lo equivalente a un aguijón onírico de dicha herramienta. Sin embargo, la esencia onírica acumulada volverá a 0. (Se requieren 100 000 de esencia onírica para que este efecto ocurra)."
+    ],
+    "sinergias": [
+      {
+        "nombre": "Portador Onírico",
+        "descripcion": "Mejora la conexión entre el mundo onírico y el portador, extrayendo esencia onírica del propio plano onírico. Aumenta la cantidad de esencia onírica diaria a 900.",
+        "imagen": "images/amuletosC/PortadorOnirico.webp"
+      },
+      {
+        "nombre": "Alma de Monarca",
+        "descripcion": "Cada vez que el usuario obtiene puntos de alma a través de 'Alma de Monarca', recibe la misma cantidad en esencia onírica. De esta forma, puede conseguir 100 de esencia onírica en un lapso de 3 minutos con 20 segundos.",
+        "imagen": "images/amuletosC/AlmaDelMonarca.webp"
+      }
+    ]
+  },
+  {
+  "id": "fauces-quimericas",
+  "nombre": "Fauces Quiméricas",
+  "imagen": "images/amuletos/FaucesQuimericas.webp",
+  "muescas": 2,
+  "rareza": "Vacío",
+  "historia": "Nacido de la estupidez de una mantis desertora que, durante la guerra de las tres tribus, huyó hacia Páramos Fúngicos en busca de refugio.\n\nTras ocultarse en lo profundo de una cueva húmeda, se alimentó de la flora y la fauna del lugar.\n\nLamentablemente, su organismo no logró adaptarse a un cambio tan brusco y, tras semanas de agonía silenciosa, pereció en la oscuridad.",
+  "efectos": [
+    "Al tocar insectos o flora, el portador identifica instintivamente las partes más nutritivas y de mayor calidad para el consumo. Sabiendo cómo comer dichos alimentos de forma instintiva.",
+    "Permite alimentarse de criaturas con venenos, toxinas o defensas naturales sin sufrir sus efectos completos.",
+    "El consumo repetido de una misma especie venenosa o defensiva otorga resistencia progresiva a sus toxinas o habilidades biológicas.",
+    "Ingerir grandes cantidades de una criatura específica puede transferir rasgos de esta (ej. secreciones ácidas, piel endurecida, tolerancia ambiental, defensas biológicas, etc). Tanto las mejoras como las adaptaciones se mantendrán después de quitarse el amuleto."
+  ],
+  "sinergias": [
+    {
+      "nombre": "Cleptomanía",
+      "descripcion": "Tras tocar un insecto, vivo o muerto, el portador adquiere una noción clara de cuáles son sus partes de mejor calidad para la fabricación de armas y otros artefactos. Si la criatura posee una coraza resistente, garras afiladas, glándulas especiales o bendiciones de alto valor, estas se marcarán en la visión del usuario con un brillo tenue. La intensidad del resplandor aumentará conforme la pureza y calidad del material.",
+      "imagen": "images/amuletos/Cleptomania.webp"
+    },
+    {
+      "nombre": "Hongo con esporas",
+      "descripcion": "Al tocar insectos abatidos, el portador imagina automáticamente qué tipo de hongo combinaría mejor con su sabor... No siempre existen esos hongos...",
+      "imagen": "images/amuletosC/HongoConEsporas.webp"
+    }
   ]
 }
 ]
